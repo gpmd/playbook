@@ -11,13 +11,14 @@
           <a href="/" title="Home">{{ site.title }}</a>
           <small>{{ site.tagline }}</small>
         </h3>
+        {% include nav.html %}
       </div>
 
       {{ content }}
 
       <div class="footer">
         <p>
-          &copy; {{ site.time | date: '%Y' }}. All rights reserved.
+          &copy; {{ site.time | date: '%Y' }}.
         </p>
       </div>
     </div>
