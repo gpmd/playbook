@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body>
+<body>
 
     <div class="container content">
-      <div class="masthead">
-        <h3 class="masthead-title">
-          <a href="/" title="Home">{{ site.title }}</a>
-          <small>{{ site.tagline }}</small>
-        </h3>
-        {% include nav.html %}
-      </div>
+        <div class="masthead">
+            <h3 class="masthead-title">
+                <a href="/" title="Home">{{ site.title }}</a>
+                <small>{{ site.tagline }}</small>
+            </h3>
+            {% include nav.html %}
+        </div>
 
-      {{ content }}
+        {{ content }}
 
-      <div class="footer">
-        <p>
-          &copy; {{ site.time | date: '%Y' }} | Version {{ site.version }}
-        </p>
-      </div>
+        <div class="footer">
+            <p>
+                &copy; {{ site.time | date: '%Y' }} | Version {{ site.version }}
+            </p>
+        </div>
     </div>
 
-  </body>
+</body>
 </html>
