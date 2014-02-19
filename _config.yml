@@ -9,8 +9,7 @@ permalink:        pretty
 title:            Colophon
 tagline:          'How we work and make stuff at GPMD'
 description:      'This site outlines how we operate as a company'
-baseurl:          /colophon
-url:              http://gpmd.github.io
+url:              http://gpmd.github.io/colophon
 
 author:
   name:           'Matt Bailey'
