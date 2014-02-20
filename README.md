@@ -4,7 +4,7 @@ How we work and make stuff at GPMD
 
 ## About
 
-This is a static site build using [Jekyll](http://jekyllrb.com/) and hosted on [Github Pages](http://pages.github.com/).
+This is a static site built using [Jekyll](http://jekyllrb.com/) and hosted on [Github Pages](http://pages.github.com/).
 
 ## Requirements for local development
 
