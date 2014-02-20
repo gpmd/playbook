@@ -46,11 +46,15 @@ Then open `http://0.0.0.0:4000` in your browser.
 
 Layouts are a mixture of HTML and [Liquid](http://wiki.shopify.com/Liquid). Content is written in [Markdown](http://daringfireball.net/projects/markdown/).
 
+Either edit the files locally and push the changes to the repo, or use an in-browser authoring tool, such as the excellent [prose.io](http://prose.io/).
+
 ## CSS (SCSS)
 
 *To do...*
 
 ## Deployment
+
+*Note: Make sure you pull before you push!*
 
 Simply commit and push changes to the `gh-pages` branch to Github. Because Github Pages uses Jekyll to build its pages it will automatically build and publish the site for you, pretty much immediately.
 
