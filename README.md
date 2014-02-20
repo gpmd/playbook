@@ -10,13 +10,17 @@ This is a static site built using [Jekyll](http://jekyllrb.com/) and hosted on [
 
 * [Ruby](http://www.ruby-lang.org/en/downloads/)
 * [RubyGems](http://rubygems.org/pages/download)
-* [Jekyll](http://jekyllrb.com/), `$ gem install jekyll`
+* [Jekyll](http://jekyllrb.com/):
+
+```bash
+$ gem install jekyll
+```
 
 ## Installation
 
 Clone the repo into your project folder:
 
-```
+```bash
 $ git clone https://github.com/gpmd/colophon.git .
 ```
 
@@ -26,13 +30,13 @@ Run `git fetch` and check out the `gh-pages` branch. From now on all work should
 
 To build the project:
 
-```
+```bash
 $ jekyll build
 ```
 
 To Preview the site locally and watch for changes:
 
-```
+```bash
 $ jekyll serve --watch --baseurl=
 ```
 
@@ -42,7 +46,7 @@ Then open `http://0.0.0.0:4000` in your browser.
 
 Simply commit and push changes to the `gh-pages` branch to Github. Because Github Pages uses Jekyll to build its pages it will automatically build and publish the site for you, pretty much immediately.
 
-```
+```bash
 $ git push origin gh-pages
 ```
 
