@@ -42,6 +42,14 @@ $ jekyll serve --watch --baseurl=
 
 Then open `http://0.0.0.0:4000` in your browser.
 
+## Editing content
+
+Layouts are a mixture of HTML and [Liquid](http://wiki.shopify.com/Liquid). Content is written in [Markdown](http://daringfireball.net/projects/markdown/).
+
+## CSS (SCSS)
+
+*To do...*
+
 ## Deployment
 
 Simply commit and push changes to the `gh-pages` branch to Github. Because Github Pages uses Jekyll to build its pages it will automatically build and publish the site for you, pretty much immediately.
