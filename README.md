@@ -10,11 +10,8 @@ This is a static site built using [Jekyll](http://jekyllrb.com/) and hosted on [
 
 * [Ruby](http://www.ruby-lang.org/en/downloads/)
 * [RubyGems](http://rubygems.org/pages/download)
-* [Jekyll](http://jekyllrb.com/):
-
-```bash
-$ gem install jekyll
-```
+* [Jekyll](http://jekyllrb.com/): `gem install jekyll`
+* [Sass](https://rubygems.org/gems/sass): `gem install sass`
 
 ## Installation
 
