@@ -10,7 +10,6 @@ title:          Colophon
 tagline:        'How we work and make stuff at GPMD'
 description:    'This site outlines how we operate as a company'
 baseurl:        http://gpmd.github.io/colophon
-url:            http://gpmd.github.io/colophon
 
 author:
   name:         'Matt Bailey'

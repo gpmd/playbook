@@ -28,29 +28,29 @@ Run `git fetch` and check out the `gh-pages` branch. From now on all work should
 
 ## Basic Jekyll usage
 
-To build the project:
+**To build the project:**
 
 ```bash
-$ jekyll build
+$ jekyll build & sass assets/stylesheets/:assets/stylesheets
 ```
 
-To Preview the site locally and watch for changes:
+This runs two commands concurrently: `jekyll build` and `sass`.
+
+**To Preview the site locally and watch for changes:**
 
 ```bash
-$ jekyll serve --watch --baseurl=
+$ jekyll serve --watch --baseurl= & sass --watch assets/stylesheets/:assets/stylesheets
 ```
 
-Then open `http://0.0.0.0:4000` in your browser.
+This runs two commands concurrently: `jekyll serve` and `sass --watch`.
+
+Then open `http://0.0.0.0:4000` in your browser. You will need to refresh the browser window to see changes.
 
 ## Editing content
 
 Layouts are a mixture of HTML and [Liquid](http://wiki.shopify.com/Liquid). Content is written in [Markdown](http://daringfireball.net/projects/markdown/).
 
 Either edit the files locally and push the changes to the repo, or use an in-browser authoring tool, such as the excellent [prose.io](http://prose.io/).
-
-## CSS (SCSS)
-
-*To do...*
 
 ## Deployment
 
