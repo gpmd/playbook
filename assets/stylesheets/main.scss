@@ -1,0 +1,39 @@
+/**
+ * _main.scss
+ */
+
+/* ==========================================================================
+   Imports
+   ========================================================================== */
+
+@import "vendor/normalize";
+
+/* Modules
+   ========================================================================== */
+
+/**
+ * Bourbon: http://bourbon.io/
+ * Neat: http://neat.bourbon.io/
+ */
+
+@import 'modules/bourbon/bourbon';
+@import "modules/grid-settings"; // Required before Neat
+@import "modules/neat/neat";
+
+@import "modules/variables";
+@import "modules/extends";
+@import "modules/mixins";
+
+/* Partials
+   ========================================================================== */
+
+@import "partials/scaffolding";
+@import "partials/syntax";
+@import "partials/typography";
+@import "partials/forms";
+@import "partials/tables";
+@import "partials/lists";
+@import "partials/flashes";
+
+/* Vendor
+   ========================================================================== */
