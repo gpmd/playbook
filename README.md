@@ -2,7 +2,7 @@
 
 How we work and make stuff at GPMD.
 
-[http://colophon.github.io](http://colophon.github.io)
+[http://gpmd.github.io/colophon/](http://gpmd.github.io/colophon/)
 
 ## About
 
