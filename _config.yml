@@ -7,7 +7,7 @@ permalink:      pretty
 
 # Setup
 title:          Colophon
-tagline:        'How we work and make stuff at GPMD'
+tagline:        'How we work and make things at GPMD'
 description:    'This site outlines how we operate as a company'
 baseurl:        http://gpmd.github.io/colophon
 
@@ -16,6 +16,9 @@ author:
   url:          https://twitter.com/_mattbailey
 
 #paginate:      1
+
+# Exclusions
+exclude:		['*.sublime-project','*.sublime-workspace']
 
 # Custom vars
 version:        1.0.0

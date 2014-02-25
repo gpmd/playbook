@@ -1,0 +1,15 @@
+/**
+ * _footer.scss
+ */
+
+/* ==========================================================================
+   Default styling
+   ========================================================================== */
+
+.footer {
+	padding: $base-line-height;
+	margin-top: $base-line-height * 3;
+	background-color: $dark-gray;
+	@extend %text-align--center;
+	color: $white;
+}

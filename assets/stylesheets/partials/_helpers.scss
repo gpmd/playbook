@@ -1,0 +1,69 @@
+/**
+ * _helpers.scss
+ */
+
+/* ==========================================================================
+   Text formatting
+   ========================================================================== */
+
+/* font-weight */
+
+.font-weight--regular {
+	@extend %font-weight--regular;
+}
+
+.font-weight--bold {
+	@extend %font-weight--bold;
+}
+
+/* text-align */
+
+.text-align--right {
+	@extend %text-align--right;
+}
+
+.text-align--center {
+	@extend %text-align--center;
+}
+
+.text-align--left {
+	@extend %text-align--left;
+}
+
+/* text-transform */
+
+.text-transform--uppercase {
+	@extend %text-transform--uppercase;
+}
+
+.text-transform--capitalize {
+	@extend %text-transform--capitalize;
+}
+
+.text-transform--none {
+	@extend %text-transform--none;
+}
+
+/* ==========================================================================
+   Colors
+   ========================================================================== */
+
+/* color */
+
+.color--primary {
+	@extend %color--primary;
+}
+
+.color--dark-gray {
+	@extend %color--dark-gray;
+}
+
+/* background-color */
+
+.background-color--primary {
+	@extend %background-color--primary;
+}
+
+.background-color--dark-gray {
+	@extend %background-color--dark-gray;
+}
