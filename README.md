@@ -1,6 +1,8 @@
 # Colophon
 
-How we work and make stuff at GPMD
+How we work and make stuff at GPMD.
+
+[http://colophon.github.io](http://colophon.github.io)
 
 ## About
 
