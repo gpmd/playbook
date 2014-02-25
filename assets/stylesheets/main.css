@@ -909,7 +909,8 @@ blockquote {
   color: #737373;
   font-size: 1.6875em;
   font-style: italic;
-  line-height: 1.25em; }
+  line-height: 1.25em;
+  letter-spacing: -0.025em; }
 
 cite {
   color: #737373;
