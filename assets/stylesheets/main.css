@@ -489,11 +489,7 @@ h1, h2, h3, h4, h5, h6, .text-transform--uppercase {
     clear: both; }
 
 .content {
-  padding: 260px 20px 0;
-  /* Media queries */ }
-  @media screen and (min-width: 33.75em) {
-    .content {
-      padding: 160px 20px 0; } }
+  padding: 160px 20px 0; }
 
 /**
  * _header.scss

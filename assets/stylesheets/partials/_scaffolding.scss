@@ -17,15 +17,9 @@
    ========================================================================== */
 
 .container {
-	@include outer-container;
+    @include outer-container;
 }
 
 .content {
-	padding: 260px 20px 0;
-
-	/* Media queries */
-
-	@include media($small-screen) { // Small screen and up
-		padding: 160px 20px 0;
-	}
+    padding: 160px 20px 0;
 }
