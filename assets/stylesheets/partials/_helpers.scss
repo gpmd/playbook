@@ -1,0 +1,121 @@
+/**
+ * _helpers.scss
+ */
+
+/* ==========================================================================
+   Text formatting
+   ========================================================================== */
+
+/* font-weight */
+
+.font-weight--regular {
+	@extend %font-weight--regular;
+}
+
+.font-weight--bold {
+	@extend %font-weight--bold;
+}
+
+/* text-align */
+
+.text-align--right {
+	@extend %text-align--right;
+}
+
+.text-align--center {
+	@extend %text-align--center;
+}
+
+.text-align--left {
+	@extend %text-align--left;
+}
+
+/* text-transform */
+
+.text-transform--uppercase {
+	@extend %text-transform--uppercase;
+}
+
+.text-transform--capitalize {
+	@extend %text-transform--capitalize;
+}
+
+.text-transform--none {
+	@extend %text-transform--none;
+}
+
+/* ==========================================================================
+   Colors
+   ========================================================================== */
+
+/* color */
+
+.color--primary {
+	@extend %color--primary;
+}
+
+.color--dark-gray {
+	@extend %color--dark-gray;
+}
+
+/* background-color */
+
+.background-color--primary {
+	@extend %background-color--primary;
+}
+
+.background-color--dark-gray {
+	@extend %background-color--dark-gray;
+}
+
+/* ==========================================================================
+   Responsive visibility
+   ========================================================================== */
+
+// Widths are defined in `_grid-settings.scss`
+
+.visible--small-screen,
+.visible--medium-screen,
+.visible--large-screen {
+	@include invisible;
+}
+
+/* Visible */
+
+.visible--small-screen {
+	@include media(min-width $small-screen-min max-width $small-screen-max) { // Small screen up to medium screen
+		@include visible;
+	}
+}
+
+.visible--medium-screen {
+	@include media(min-width $medium-screen-min max-width $medium-screen-max) { // Medium screen up to Large screen
+		@include visible;
+	}
+}
+
+.visible--large-screen {
+	@include media(min-width $large-screen-min) { // Large screen and up
+		@include visible;
+	}
+}
+
+/* Invisible */
+
+.invisible--small-screen {
+	@include media(min-width $small-screen-min max-width $small-screen-max) { // Small screen up to medium screen
+		@include invisible;
+	}
+}
+
+.invisible--medium-screen {
+	@include media(min-width $medium-screen-min max-width $medium-screen-max) { // Medium screen up to Large screen
+		@include invisible;
+	}
+}
+
+.invisible--large-screen {
+	@include media(min-width $large-screen-min) { // Large screen and up
+		@include invisible;
+	}
+}

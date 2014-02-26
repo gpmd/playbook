@@ -1,0 +1,78 @@
+/**
+ * _extends.scss
+ */
+
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+
+%button {
+	@include button(simple, $base-accent-color);
+	font-size: $base-font-size;
+}
+
+/* ==========================================================================
+   Text formatting
+   ========================================================================== */
+
+/* font-weight */
+
+%font-weight--regular {
+	font-weight: $regular-font-weight;
+}
+
+%font-weight--bold {
+	font-weight: $bold-font-weight;
+}
+
+/* text-align */
+
+%text-align--right {
+	text-align: right;
+}
+
+%text-align--center {
+	text-align: center;
+}
+
+%text-align--left {
+	text-align: left;
+}
+
+/* text-transform */
+
+%text-transform--uppercase {
+	text-transform: uppercase;
+}
+
+%text-transform--capitalize {
+	text-transform: capitalize;
+}
+
+%text-transform--none {
+	text-transform: none;
+}
+
+/* ==========================================================================
+   Colors
+   ========================================================================== */
+
+/* color */
+
+%color--primary {
+	color: $primary-color;
+}
+
+%color--dark-gray {
+	color: $dark-gray;
+}
+
+/* background-color */
+
+%background-color--primary {
+	background-color: $primary-color;
+}
+
+%background-color--dark-gray {
+	background-color: $dark-gray;
+}

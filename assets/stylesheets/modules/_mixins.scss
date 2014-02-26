@@ -1,0 +1,51 @@
+/**
+ * _mixins.scss
+ */
+
+/* ==========================================================================
+   Flashes
+   ========================================================================== */
+
+@mixin flash($color) {
+	background: $color;
+	color: darken($color, 60);
+	font-weight: bold;
+	margin-bottom: $base-line-height / 2;
+	padding: $base-line-height / 2;
+
+	a {
+		color: darken($color, 70);
+
+		&:hover {
+			color: darken($color, 90);
+		}
+	}
+}
+
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+
+@mixin flat-button($colour) {
+    @include inline-block;
+    min-width: ($column * 2) + $gutter;
+    border: none;
+    border-radius: $base-border-radius;
+    padding: ($base-font-size * 0.5) $base-font-size;
+    background-color: $colour;
+    color: #fff;
+    font-size: $base-font-size;
+    font-weight: $bold-font-weight;
+}
+
+/* ==========================================================================
+   Responsive utilities
+   ========================================================================== */
+
+@mixin visible {
+  display: block !important;
+}
+
+@mixin invisible {
+  display: none !important;
+}

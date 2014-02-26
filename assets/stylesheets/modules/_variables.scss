@@ -1,0 +1,63 @@
+/**
+ * _variables.scss
+ */
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+$sans-serif: "brandon-grotesque", $helvetica;
+$serif: $georgia;
+
+$base-font-family: $sans-serif;
+$header-font-family: $base-font-family;
+
+$regular-font-weight: 300;
+$regular-font-style: normal;
+$bold-font-weight: 700;
+$bold-font-style: normal;
+
+/* ==========================================================================
+   Sizes
+   ========================================================================== */
+
+$base-font-size: 1.125em; // 1em = 16px therefor 1.125em = 18px
+$base-line-height: $base-font-size * 1.5;
+$base-border-radius: em(3);
+
+/* ==========================================================================
+   Colours
+   ========================================================================== */
+
+$blue: #477dca;
+$dark-gray: #333;
+$medium-gray: #999;
+$light-gray: #ddd;
+$pale-gray: #ddd;
+$light-red: #fbe3e4;
+$light-yellow: #fff6bf;
+$light-green: #e6efc2;
+$white: #fff;
+
+// Core brand colours
+
+$primary-color: #ffcc00;
+
+// Body Color
+$base-body-color: white;
+
+//  Font Colors
+$base-font-color: $dark-gray;
+$base-accent-color: $primary-color;
+
+//  Text Link Colors
+$base-link-color: $base-accent-color;
+$hover-link-color: darken($base-accent-color, 15);
+
+// Border color
+$base-border-color: $light-gray;
+
+// Flash Colors
+$error-color: $light-red;
+$notice-color: $light-yellow;
+$success-color: $light-green;

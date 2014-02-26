@@ -1,0 +1,37 @@
+/**
+ * _grid-settings.scss
+ */
+
+/* ==========================================================================
+   Imports
+   ========================================================================== */
+
+@import "neat/neat-helpers";
+
+/* ==========================================================================
+   Variables
+   ========================================================================== */
+
+$column: 40px;
+$gutter: 20px;
+$grid-columns: 12;
+$max-width: em(700);
+
+/* ==========================================================================
+   Breakpoints
+   ========================================================================== */
+
+$small-screen: new-breakpoint(min-width em(540) 2);
+$medium-screen: new-breakpoint(min-width em(760) 4);
+$large-screen: new-breakpoint(min-width em(920) 8);
+
+/* min/max */
+
+$small-screen-min: em(540);
+$small-screen-max: em(760);
+
+$medium-screen-min: em(760);
+$medium-screen-max: em(920);
+
+$large-screen-min: em(920);
+$large-screen-max: em(1280);
