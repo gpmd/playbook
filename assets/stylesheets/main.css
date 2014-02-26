@@ -502,6 +502,7 @@ h1, h2, h3, h4, h5, h6, .text-transform--uppercase {
   top: 0;
   right: 0;
   left: 0;
+  z-index: 10000;
   display: block;
   width: 100%;
   padding: 1.6875em;
@@ -511,7 +512,7 @@ h1, h2, h3, h4, h5, h6, .text-transform--uppercase {
    Typography
    ========================================================================== */
 .masthead h1, .masthead h2, .masthead h3, .masthead h4, .masthead h5, .masthead h6, .masthead p {
-  padding: 0;
+  padding: 0 30px 0 0;
   margin: 0;
   color: white;
   text-align: right;
@@ -556,6 +557,140 @@ h1, h2, h3, h4, h5, h6, .text-transform--uppercase {
 .no-svg .logo {
   background: transparent url("../images/gpmd-new-logo.png") no-repeat top left;
   background-size: 100%; }
+
+/* ==========================================================================
+   Menu button
+   ========================================================================== */
+.menu-btn {
+  position: absolute;
+  top: 26px;
+  right: 20px;
+  display: block;
+  color: white;
+  font-size: 1.25em;
+  cursor: pointer;
+  cursor: hand; }
+
+/**
+ * _off-canvas.scss
+ */
+/**
+ * This is a sassified, modifed version of Pushy, switching the orientation from left to right
+ */
+/*! Pushy - v0.9.1 - 2013-9-16
+* Pushy is a responsive off-canvas navigation menu using CSS transforms & transitions.
+* https://github.com/christophery/pushy/
+* by Christopher Yee */
+html, body {
+  /* These styles help the off-canvas menu */
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  height: 100%; }
+
+/* Menu Appearance */
+.pushy {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+  width: 280px;
+  height: 100%;
+  padding: 120px 20px 20px;
+  background: #333333;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  /* enables momentum scrolling in iOS overflow elements */ }
+
+/* Typography */
+.pushy {
+  /* Defaults */
+  line-height: 1.5em;
+  color: white;
+  /* Headings */
+  /* Link lists */ }
+  .pushy h1, .pushy h2, .pushy h3, .pushy h4, .pushy h5, .pushy h6 {
+    color: #ffcc00; }
+  .pushy h6 {
+    font-size: 1em; }
+  .pushy ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0.84375em; }
+    .pushy ul a {
+      display: block;
+      color: white;
+      -webkit-transition: opacity 0.15s linear;
+      -moz-transition: opacity 0.15s linear;
+      transition: opacity 0.15s linear; }
+      .pushy ul a:hover {
+        background-color: transparent;
+        color: white;
+        opacity: 0.75; }
+      .pushy ul a:active, .pushy ul a:focus {
+        color: white;
+        opacity: 0.75;
+        outline: none; }
+
+/* Menu Movement */
+.pushy-right {
+  -webkit-transform: translate3d(280px, 0, 0);
+  -moz-transform: translate3d(280px, 0, 0);
+  -ms-transform: translate3d(280px, 0, 0);
+  -o-transform: translate3d(280px, 0, 0);
+  transform: translate3d(280px, 0, 0); }
+
+.pushy-open {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+.container-push, .push-push {
+  -webkit-transform: translate3d(-280px, 0, 0);
+  -moz-transform: translate3d(-280px, 0, 0);
+  -ms-transform: translate3d(-280px, 0, 0);
+  -o-transform: translate3d(-280px, 0, 0);
+  transform: translate3d(-280px, 0, 0); }
+
+/* Menu Transitions */
+.pushy, #page-wrapper, .push {
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+  -moz-transition: -moz-transform 0.2s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+  -o-transition: -o-transform 0.2s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+  transition: transform 0.2s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+  /* improves performance issues on mobile*/
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000; }
+
+/* Site Overlay */
+.site-overlay {
+  display: none; }
+
+.pushy-active .site-overlay {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 280px;
+  bottom: 0;
+  left: 0;
+  z-index: 9999; }
+
+/* Example Media Query */
+/**
+ * _toc.scss
+ */
+/* ==========================================================================
+   Table of Contents (homepage)
+   ========================================================================== */
+.toc ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0.84375em; }
+  .toc ul li {
+    line-height: 1.5em; }
 
 /**
  * _footer.scss
@@ -688,9 +823,11 @@ h6 {
 /* ==========================================================================
    Body copy
    ========================================================================== */
+/* Paragraphs */
 p {
   margin: 0 0 0.84375em; }
 
+/* Links */
 a {
   color: #ffcc00;
   text-decoration: none;
@@ -704,6 +841,18 @@ a {
     color: #b38f00;
     outline: none; }
 
+/* Blockquotes */
+blockquote {
+  border-left: 6px solid #ffcc00;
+  margin: 1.6875em 0;
+  padding-left: 0.84375em;
+  color: #737373;
+  font-size: 1.6875em;
+  font-style: italic;
+  line-height: 1.25em;
+  letter-spacing: -0.035em; }
+
+/* Horizontial rules */
 hr {
   border-bottom: 1px solid #dddddd;
   border-left: none;
@@ -711,10 +860,12 @@ hr {
   border-top: none;
   margin: 1.6875em 0; }
 
+/* Images */
 img {
   margin: 0;
   max-width: 100%; }
 
+/* Misc */
 abbr, acronym {
   border-bottom: 1px dotted #dddddd;
   cursor: help; }
@@ -728,16 +879,6 @@ hgroup {
 
 del {
   color: #595959; }
-
-blockquote {
-  border-left: 6px solid #ffcc00;
-  margin: 1.6875em 0;
-  padding-left: 0.84375em;
-  color: #737373;
-  font-size: 1.6875em;
-  font-style: italic;
-  line-height: 1.25em;
-  letter-spacing: -0.035em; }
 
 cite {
   color: #737373;
@@ -754,7 +895,11 @@ cite {
 .highlight {
   padding: 0.42188em 1.6875em;
   border-radius: 0.1875em;
-  margin-bottom: 1.6875em;
+  margin-bottom: 1.6875em; }
+
+.highlight,
+.highlight pre,
+.highlight table {
   background-color: #333333 !important; }
 
 fieldset {
