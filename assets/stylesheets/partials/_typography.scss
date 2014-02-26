@@ -62,15 +62,18 @@ h6 {
    Body copy
    ========================================================================== */
 
+/* Paragraphs */
+
 p {
     margin: 0 0 ($base-line-height * 0.5);
 }
+
+/* Links */
 
 a {
     color: $base-link-color;
     text-decoration: none;
     @include transition(background-color 0.15s linear);
-    //@include transition(color 0.15s linear);
 
     &:hover {
         background-color: rgba($base-link-color, 0.25);
@@ -83,6 +86,21 @@ a {
     }
 }
 
+/* Blockquotes */
+
+blockquote {
+    border-left: 6px solid $primary-color;
+    margin: $base-line-height 0;
+    padding-left: ($base-line-height * 0.5);
+    color: lighten($base-font-color, 25);
+    font-size: $base-font-size * 1.5; // 16 * 1.5 = 24px
+    font-style: italic;
+    line-height: 1.25em;
+    letter-spacing: -0.035em;
+}
+
+/* Horizontial rules */
+
 hr {
     border-bottom: 1px solid $base-border-color;
     border-left: none;
@@ -91,10 +109,14 @@ hr {
     margin: $base-line-height 0;
 }
 
+/* Images */
+
 img {
     margin: 0;
     max-width: 100%;
 }
+
+/* Misc */
 
 abbr, acronym {
     border-bottom: 1px dotted $base-border-color;
@@ -112,17 +134,6 @@ hgroup {
 
 del {
     color: lighten($base-font-color, 15);
-}
-
-blockquote {
-    border-left: 6px solid $primary-color;
-    margin: $base-line-height 0;
-    padding-left: ($base-line-height * 0.5);
-    color: lighten($base-font-color, 25);
-    font-size: $base-font-size * 1.5; // 16 * 1.5 = 24px
-    font-style: italic;
-    line-height: 1.25em;
-    letter-spacing: -0.035em;
 }
 
 cite {
@@ -146,5 +157,10 @@ cite {
     padding: ($base-line-height * 0.25) $base-line-height;
     border-radius: $base-border-radius;
     margin-bottom: $base-line-height;
+}
+
+.highlight,
+.highlight pre,
+.highlight table {
     background-color: $dark-gray !important;
 }

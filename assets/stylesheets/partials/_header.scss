@@ -11,6 +11,7 @@
 	top: 0;
 	right: 0;
 	left: 0;
+	z-index: 10000; // Place above off-canvas elements
 	display: block;
 	width: 100%;
 	padding: $base-line-height;
@@ -24,7 +25,7 @@
 
 .masthead {
 	h1, h2, h3, h4, h5, h6, p {
-		padding: 0;
+		padding: 0 30px 0 0;
 		margin: 0;
 		color: $white;
 		text-align: right;
@@ -73,4 +74,19 @@
 		background: transparent url("../images/gpmd-new-logo.png") no-repeat top left;
 		background-size: 100%;
 	}
+}
+
+/* ==========================================================================
+   Menu button
+   ========================================================================== */
+
+.menu-btn {
+	position: absolute;
+	top: 26px;
+	right: 20px;
+	display: block;
+	color: $white;
+	font-size: 1.25em;
+	cursor: pointer;
+	cursor: hand;
 }
