@@ -37,3 +37,15 @@
     font-size: $base-font-size;
     font-weight: $bold-font-weight;
 }
+
+/* ==========================================================================
+   Responsive utilities
+   ========================================================================== */
+
+@mixin visible {
+  display: block !important;
+}
+
+@mixin invisible {
+  display: none !important;
+}

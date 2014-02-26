@@ -30,7 +30,7 @@ Run `git fetch` and check out the `gh-pages` branch. From now on all work should
 **To build the project:**
 
 ```bash
-$ jekyll build & sass assets/stylesheets/:assets/stylesheets
+$ sass assets/stylesheets/main.scss:assets/stylesheets/main.css && jekyll build
 ```
 
 This runs two commands concurrently: `jekyll build` and `sass`.
