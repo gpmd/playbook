@@ -29,6 +29,7 @@ github:
 # prose.io config
 prose:
   siteurl: 'http://gpmd.github.io/colophon/'
+  relativeLinks: 'http://prose.github.io/starter/links.jsonp'
   media: 'assets/uploads'
   ignore:
     - /_includes/footer.html
@@ -36,7 +37,6 @@ prose:
     - /_includes/masthead.html
     - /_includes/nav.html
     - /_layouts
-    - /_posts
     - /_site
     - /assets/images
     - /assets/scripts
@@ -46,7 +46,21 @@ prose:
     - _config.yml
     - atom.xml
   metadata:
-    _pages:
+    _posts:
+      - name: 'category'
+        field:
+          element: 'hidden'
+          value: 'blog'
+      - name: 'layout'
+        field:
+          element: 'hidden'
+          value: 'blog'
+      - name: 'title'
+        field:
+          element: 'text'
+          label: 'Title'
+          value: ''
+    _posts/static:
       - name: 'Layout'
         field:
           element: 'hidden'

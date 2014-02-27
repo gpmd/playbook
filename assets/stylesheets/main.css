@@ -545,13 +545,7 @@ h1, h2, h3, h4, h5, h6, .text-transform--uppercase {
   height: 55px;
   margin: 0to;
   background: transparent url("../images/gpmd-new-logo.svg") no-repeat top left;
-  background-size: 100%;
-  -webkit-transition: opacity 0.15s ease-out;
-  -moz-transition: opacity 0.15s ease-out;
-  transition: opacity 0.15s ease-out; }
-  .logo:hover {
-    background-color: transparent;
-    opacity: 0.75; }
+  background-size: 100%; }
 
 /* PNG fallback */
 .no-svg .logo {

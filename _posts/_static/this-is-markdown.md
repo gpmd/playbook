@@ -1,7 +1,8 @@
 ---
-layout: default
+published: true
+layout: page
 title: This is Markdown
-permalink: this-is-markdown
+permalink: this-is-markdown/
 ---
 
 # This is Markdown
