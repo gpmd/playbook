@@ -7,6 +7,7 @@
    ========================================================================== */
 
 .footer {
+	z-index: 10000; // Place above off-canvas elements
 	padding: $base-line-height;
 	margin-top: $base-line-height * 3;
 	background-color: $dark-gray;

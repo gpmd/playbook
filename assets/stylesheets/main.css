@@ -693,6 +693,7 @@ html, body {
    Default styling
    ========================================================================== */
 .footer {
+  z-index: 10000;
   padding: 1.6875em;
   margin-top: 5.0625em;
   background-color: #333333;
