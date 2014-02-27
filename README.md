@@ -1,6 +1,6 @@
 # Colophon
 
-How we work and make stuff at GPMD.
+This site outlines how we work and make stuff at GPMD.
 
 [http://gpmd.github.io/colophon/](http://gpmd.github.io/colophon/)
 
@@ -53,7 +53,7 @@ Either edit the files locally and push the changes to the repo, or use an in-bro
 
 ## Deployment
 
-*Note: Make sure you pull before you push!*
+**Note: Don't forget to pull before you push!**
 
 Simply commit and push changes to the `gh-pages` branch to Github. Because Github Pages uses Jekyll to build its pages it will automatically build and publish the site for you, pretty much immediately.
 

@@ -2,6 +2,9 @@
 markdown: redcarpet
 pygments: true
 
+redcarpet:
+  extensions: ['smart']
+
 # Permalinks
 permalink: pretty
 
