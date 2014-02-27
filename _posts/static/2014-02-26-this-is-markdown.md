@@ -100,7 +100,7 @@ A horizontal rule is a line that goes across the middle of the page. It's someti
 
 Markdown can also contain images.
 
-![Mark](/assets/uploads/mark.jpg)
+![Mark](assets/uploads/mark.jpg)
 
 *This is the lovely Mark, our Managing Director*
 
