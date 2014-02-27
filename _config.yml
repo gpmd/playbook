@@ -42,14 +42,13 @@ prose:
     - /_includes/nav.html
     - /_layouts
     - /_site
-    - /assets/images
-    - /assets/scripts
-    - /assets/stylesheets
-    - /assets/favicon.ico
+    - /assets
     - .gitignore
+    - 404.html
     - _config.yml
     - atom.xml
     - links.jsonp
+    - README.md
   metadata:
     _posts:
       - name: 'category'
