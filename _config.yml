@@ -62,7 +62,7 @@ prose:
           element: 'text'
           label: 'Title'
           value: ''
-    _posts/static:
+    _posts/pages:
       - name: 'Layout'
         field:
           element: 'hidden'
