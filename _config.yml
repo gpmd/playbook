@@ -63,7 +63,7 @@ prose:
           label: 'Title'
           value: ''
     _posts/pages:
-      - name: 'Layout'
+      - name: 'layout'
         field:
           element: 'hidden'
           value: 'page'
