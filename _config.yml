@@ -30,7 +30,7 @@ github:
 # prose.io config
 prose:
   siteurl: 'http://gpmd.github.io/colophon/'
-  relativeLinks: 'http://prose.github.io/starter/links.jsonp'
+  relativeLinks: 'http://gpmd.github.io/colophon/links.jsonp'
   media: 'assets/uploads'
   ignore:
     - /_includes/footer.html
@@ -46,6 +46,7 @@ prose:
     - .gitignore
     - _config.yml
     - atom.xml
+    - links.jsonp
   metadata:
     _posts:
       - name: 'category'
