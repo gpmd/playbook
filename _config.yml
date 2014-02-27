@@ -1,30 +1,31 @@
 # Dependencies
-markdown:       redcarpet
-pygments:       true
+markdown: redcarpet
+pygments: true
 
 # Permalinks
-permalink:      pretty
+permalink: pretty
 
 # Setup
-title:          Colophon
-tagline:        'How we work and make things at GPMD'
-description:    'This site outlines how we operate as a company'
-baseurl:        http://gpmd.github.io/colophon
+title: Colophon
+tagline: 'How we work and make things at GPMD'
+description: 'This site outlines how we operate as a company'
+baseurl: http://gpmd.github.io/colophon
 
 author:
-  name:         'Matt Bailey'
-  url:          https://twitter.com/_mattbailey
+  name: 'Matt Bailey'
+  url: https://twitter.com/_mattbailey
 
-#paginate:      1
+# Pagination
+#paginate: 1
 
 # Exclusions
-exclude:        ['*.sublime-project','*.sublime-workspace']
+exclude: ['*.sublime-project','*.sublime-workspace']
 
 # Custom vars
-version:        1.0.0
+version: 1.0.0
 
 github:
-  repo:         https://github.com/gpmd/colophon
+  repo: https://github.com/gpmd/colophon
 
 # prose.io config
 prose:
