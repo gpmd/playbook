@@ -1,6 +1,7 @@
 ---
 layout: default
 title: This is Markdown
+permalink: this-is-markdown
 ---
 
 # This is Markdown

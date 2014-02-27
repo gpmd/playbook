@@ -28,11 +28,25 @@ github:
 
 # prose.io config
 prose:
-  rooturl: '_posts'
   siteurl: 'http://gpmd.github.io/colophon/'
   media: 'assets/uploads'
+  ignore:
+    - /_includes/footer.html
+    - /_includes/head.html
+    - /_includes/masthead.html
+    - /_includes/nav.html
+    - /_layouts
+    - /_posts
+    - /_site
+    - /assets/images
+    - /assets/scripts
+    - /assets/stylesheets
+    - /assets/favicon.ico
+    - .gitignore
+    - _config.yml
+    - atom.xml
   metadata:
-    _posts/static:
+    _pages:
       - name: 'Layout'
         field:
           element: 'hidden'
