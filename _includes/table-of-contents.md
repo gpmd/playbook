@@ -4,22 +4,10 @@
 
 * [This is Markdown]({{ site.baseurl }}/this-is-markdown)
 * [About]({{ site.baseurl }}/about)
-* [Test Link](http://www.gpmd.co.uk)
-* [Test Link](http://www.gpmd.co.uk)
-* [Test Link](http://www.gpmd.co.uk)
+* [Hello World](http://gpmd.github.io/colophon/blog/2014/02/27/hello-world/)
 
 ###### Test Subheading
 
-* [Test Link](http://www.gpmd.co.uk)
-* [Test Link](http://www.gpmd.co.uk)
-* [Test Link](http://www.gpmd.co.uk)
-* [Test Link](http://www.gpmd.co.uk)
-* [Test Link](http://www.gpmd.co.uk)
-
-###### Test Subheading
-
-* [Test Link](http://www.gpmd.co.uk)
-* [Test Link](http://www.gpmd.co.uk)
 * [Test Link](http://www.gpmd.co.uk)
 * [Test Link](http://www.gpmd.co.uk)
 * [Test Link](http://www.gpmd.co.uk)
