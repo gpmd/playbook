@@ -1,27 +1,82 @@
 # Dependencies
-markdown:       redcarpet
-pygments:       true
+markdown: redcarpet
+pygments: true
+
+redcarpet:
+  extensions: ['smart']
 
 # Permalinks
-permalink:      pretty
+permalink: pretty
 
 # Setup
-title:          Colophon
-tagline:        'How we work and make things at GPMD'
-description:    'This site outlines how we operate as a company'
-baseurl:        http://gpmd.github.io/colophon
+title: Colophon
+tagline: 'How we work and make things at GPMD'
+description: 'This site outlines how we operate as a company'
+baseurl: http://gpmd.github.io/colophon
 
 author:
-  name:         'Matt Bailey'
-  url:          https://twitter.com/_mattbailey
+  name: 'Matt Bailey'
+  url: https://twitter.com/_mattbailey
 
-#paginate:      1
+# Pagination
+#paginate: 1
 
 # Exclusions
-exclude:		['*.sublime-project','*.sublime-workspace']
+exclude: ['*.sublime-project','*.sublime-workspace']
 
 # Custom vars
-version:        1.0.0
+version: 1.0.0
 
 github:
-  repo:         https://github.com/gpmd/colophon
+  repo: https://github.com/gpmd/colophon
+
+# prose.io config
+prose:
+  siteurl: 'http://gpmd.github.io/colophon/'
+  relativeLinks: 'http://gpmd.github.io/colophon/links.jsonp'
+  media: 'assets/uploads'
+  ignore:
+    - /_includes/footer.html
+    - /_includes/head.html
+    - /_includes/masthead.html
+    - /_includes/nav.html
+    - /_layouts
+    - /_site
+    - /assets/images
+    - /assets/scripts
+    - /assets/stylesheets
+    - /assets/favicon.ico
+    - .gitignore
+    - _config.yml
+    - atom.xml
+    - links.jsonp
+  metadata:
+    _posts:
+      - name: 'category'
+        field:
+          element: 'hidden'
+          value: 'blog'
+      - name: 'layout'
+        field:
+          element: 'hidden'
+          value: 'blog'
+      - name: 'title'
+        field:
+          element: 'text'
+          label: 'Title'
+          value: ''
+    _posts/pages:
+      - name: 'layout'
+        field:
+          element: 'hidden'
+          value: 'page'
+      - name: 'title'
+        field:
+          element: 'text'
+          label: 'Title'
+          value: ''
+      - name: 'permalink'
+        field:
+          element: 'text'
+          label: 'Permalink'
+          value: ''

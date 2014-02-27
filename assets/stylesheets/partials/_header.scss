@@ -59,12 +59,6 @@
 	margin: 0to;
 	background: transparent url("../images/gpmd-new-logo.svg") no-repeat top left;
 	background-size: 100%;
-	@include transition(opacity 0.15s ease-out);
-
-	&:hover {
-		background-color: transparent;
-		opacity: 0.75;
-	}
 }
 
 /* PNG fallback */

@@ -1,9 +1,9 @@
 ---
-layout: default
+layout: page
+published: true
 title: This is Markdown
+permalink: this-is-markdown/
 ---
-
-# This is Markdown
 
 This page demonstrates some of [Markdown][1]'s capabilities.
 
@@ -100,7 +100,7 @@ A horizontal rule is a line that goes across the middle of the page. It's someti
 
 Markdown can also contain images.
 
-![Mark](assets/images/mark.jpg)
+![Mark]({{ site.baseurl }}/assets/uploads/mark.jpg)
 
 *This is the lovely Mark, our Managing Director*
 

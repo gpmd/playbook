@@ -1,6 +1,6 @@
 # Colophon
 
-How we work and make stuff at GPMD.
+This site outlines how we work and make stuff at GPMD.
 
 [http://gpmd.github.io/colophon/](http://gpmd.github.io/colophon/)
 
@@ -47,13 +47,19 @@ Then open `http://0.0.0.0:4000` in your browser. You will need to refresh the br
 
 ## Editing content
 
+### For developers
+
 Layouts are a mixture of HTML and [Liquid](http://wiki.shopify.com/Liquid). Content is written in [Markdown](http://daringfireball.net/projects/markdown/).
 
-Either edit the files locally and push the changes to the repo, or use an in-browser authoring tool, such as the excellent [prose.io](http://prose.io/).
+### For site editors
+
+Sign up for a [Github account](https://github.com/). Ask one of our developers to add you to the Colophon project. Then use [prose.io](http://prose.io/) - when you first visit prose you will be asked to authorise access to your Github account.
+
+More information on using prose can be found on their [website](http://prose.io/#about) and on the [wiki page of their Github repo](http://prose.io/#about).
 
 ## Deployment
 
-*Note: Make sure you pull before you push!*
+**Note: Don't forget to pull before you push!**
 
 Simply commit and push changes to the `gh-pages` branch to Github. Because Github Pages uses Jekyll to build its pages it will automatically build and publish the site for you, pretty much immediately.
 
