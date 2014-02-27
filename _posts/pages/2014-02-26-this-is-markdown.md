@@ -1,6 +1,6 @@
 ---
-published: true
 layout: page
+published: true
 title: This is Markdown
 permalink: this-is-markdown/
 ---
