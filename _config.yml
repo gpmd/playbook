@@ -31,7 +31,7 @@ github:
 prose:
   siteurl: 'http://gpmd.github.io/colophon/'
   relativeLinks: 'http://gpmd.github.io/colophon/links.jsonp'
-  media: 'assets/uploads'
+  media: 'http://gpmd.github.io/colophon/assets/uploads'
   ignore:
     - /_includes/footer.html
     - /_includes/head.html
