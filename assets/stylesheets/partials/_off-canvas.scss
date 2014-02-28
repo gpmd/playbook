@@ -59,12 +59,12 @@
 			&:hover {
 		        background-color: transparent;
 		        color: $white;
-		        opacity: 0.75;
+		        opacity: 0.5;
 		    }
 
 		    &:active, &:focus {
 		        color: $white;
-		        opacity: 0.75;
+		        opacity: 0.5;
 		        outline: none;
 		    }
 		}

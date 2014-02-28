@@ -478,10 +478,7 @@ h1, h2, h3, h4, h5, h6, .text-transform--uppercase {
 html, body {
   overflow-x: hidden;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  height: 100%; }
-
-body {
-  overflow-y: scroll;
+  height: 100%;
   -webkit-overflow-scrolling: touch; }
 
 /* ==========================================================================
@@ -549,10 +546,10 @@ body {
   font: 0/0 a;
   text-shadow: none;
   position: absolute;
-  top: 15px;
+  top: 20px;
   display: block;
-  width: 70px;
-  height: 55px;
+  width: 64px;
+  height: 50px;
   margin: 0to;
   background: transparent url("../images/gpmd-new-logo.svg") no-repeat top left;
   background-size: 100%; }
@@ -624,10 +621,10 @@ body {
       .pushy ul a:hover {
         background-color: transparent;
         color: white;
-        opacity: 0.75; }
+        opacity: 0.5; }
       .pushy ul a:active, .pushy ul a:focus {
         color: white;
-        opacity: 0.75;
+        opacity: 0.5;
         outline: none; }
 
 /* Menu Movement */
