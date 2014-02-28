@@ -474,17 +474,22 @@ h1, h2, h3, h4, h5, h6, .text-transform--uppercase {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+/* iOS Helpers */
 html, body {
   overflow-x: hidden;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   height: 100%; }
+
+body {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch; }
 
 /* ==========================================================================
    Layout
    ========================================================================== */
 .container {
   *zoom: 1;
-  max-width: 43.75em;
+  max-width: 33.33333em;
   margin-left: auto;
   margin-right: auto; }
   .container:before, .container:after {
@@ -677,13 +682,32 @@ html, body {
 /* ==========================================================================
    Table of Contents (homepage)
    ========================================================================== */
+/* Panel */
+.toc {
+  padding: 1.6875em;
+  border: 1px solid #dddddd;
+  border-radius: 0.1875em; }
+
+/* Lists */
 .toc ul {
   list-style-type: none;
   padding-left: 0;
-  margin-top: 0;
+  margin: 0;
   margin-bottom: 0.84375em; }
   .toc ul li {
     line-height: 1.5em; }
+  .toc ul:last-child {
+    margin-bottom: 0; }
+
+/* Links */
+.toc a {
+  color: #333333; }
+  .toc a:hover {
+    background-color: rgba(51, 51, 51, 0.15);
+    color: #333333; }
+  .toc a:active, .toc a:focus {
+    color: #333333;
+    outline: none; }
 
 /**
  * _footer.scss
@@ -971,7 +995,7 @@ input[type="submit"] {
   zoom: 1;
   *display: inline;
   *vertical-align: auto;
-  min-width: 100px;
+  min-width: 90px;
   border: none;
   border-radius: 0.1875em;
   padding: 0.5625em 1.125em;

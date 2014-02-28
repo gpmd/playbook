@@ -12,10 +12,11 @@
    Variables
    ========================================================================== */
 
-$column: 40px;
-$gutter: 20px;
+$column: 37px;
+$gutter: 16px;
 $grid-columns: 12;
-$max-width: em(700);
+// Add max-width to `container` in ems - equates to 600px / base font-size of 18px
+$max-width: em(600, 18);
 
 /* ==========================================================================
    Breakpoints

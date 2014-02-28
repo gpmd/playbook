@@ -7,6 +7,8 @@ permalink: this-is-markdown/
 
 This page demonstrates some of [Markdown][1]'s capabilities.
 
+*<strong>NOTE:</strong> You can also use regular html in your markdown document.*
+
 ---
 
 ## Basic formatting
@@ -26,7 +28,7 @@ Paragraphs are separated by a blank line. Basic formatting of *italics* and **bo
 3. Number 3
 4. Ⅳ
 
-*Note: the fourth item uses the Unicode character for [Roman numeral four][2].*
+*<strong>NOTE:</strong> the fourth item uses the Unicode character for [Roman numeral four][2].*
 
 ### Unordered list
 
