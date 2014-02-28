@@ -90,7 +90,7 @@ a {
 
 blockquote {
     border-left: 6px solid $primary-color;
-    margin: $base-line-height 0;
+    margin: ($base-line-height * 0.75) 0;
     padding-left: ($base-line-height * 0.5);
     color: lighten($base-font-color, 25);
     font-size: $base-font-size * 1.5; // 16 * 1.5 = 24px
@@ -154,9 +154,10 @@ cite {
  */
 
 .highlight {
-    padding: ($base-line-height * 0.25) $base-line-height;
+    padding: ($base-line-height * 0.25) ($base-line-height * 0.35);
     border-radius: $base-border-radius;
     margin-bottom: $base-line-height;
+    pre { margin: 0; }
 }
 
 .highlight,

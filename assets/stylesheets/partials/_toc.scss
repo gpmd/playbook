@@ -6,13 +6,43 @@
    Table of Contents (homepage)
    ========================================================================== */
 
+/* Panel */
+
+.toc {
+	padding: $base-line-height;
+	border: 1px solid $base-border-color;
+	border-radius: $base-border-radius;
+}
+
+/* Lists */
+
 .toc {
 	ul {
 		list-style-type: none;
 		padding-left: 0;
-		margin-top: 0;
+		margin: 0;
 		margin-bottom: ($base-line-height * 0.5);
 
 		li { line-height: 1.5em; }
+
+		&:last-child { margin-bottom: 0; }
+	}
+}
+
+/* Links */
+
+.toc {
+	a {
+	    color: $dark-gray;
+
+	    &:hover {
+	        background-color: rgba($dark-gray, 0.15);
+	        color: $dark-gray;
+	    }
+
+	    &:active, &:focus {
+	        color: $dark-gray;
+	        outline: none;
+	    }
 	}
 }
