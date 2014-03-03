@@ -27,6 +27,10 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: -0.025em;
     margin: 0 0 ($base-font-size * 0.5);
     text-rendering: optimizeLegibility; // Fix the character spacing for headings
+    .sub-heading {
+        font-weight: $regular-font-weight;
+        font-style: $regular-font-style;
+    }
 }
 
 h1 {
@@ -66,6 +70,10 @@ h6 {
 
 p {
     margin: 0 0 ($base-line-height * 0.5);
+    &.lead {
+        font-size: $base-font-size * 1.5;
+        line-height: 1.25em;
+    }
 }
 
 /* Links */
@@ -92,8 +100,8 @@ blockquote {
     border-left: 6px solid $primary-color;
     margin: ($base-line-height * 0.75) 0;
     padding-left: ($base-line-height * 0.5);
-    color: lighten($base-font-color, 25);
-    font-size: $base-font-size * 1.5; // 16 * 1.5 = 24px
+    //color: lighten($base-font-color, 25);
+    font-size: $base-font-size * 1.375;
     font-style: italic;
     line-height: 1.25em;
     letter-spacing: -0.035em;
@@ -107,13 +115,6 @@ hr {
     border-right: none;
     border-top: none;
     margin: $base-line-height 0;
-}
-
-/* Images */
-
-img {
-    margin: 0;
-    max-width: 100%;
 }
 
 /* Misc */
@@ -143,25 +144,4 @@ cite {
     &:before {
         content: '\2014 \00A0';
     }
-}
-
-/* ==========================================================================
-   Code
-   ========================================================================== */
-
-/**
- * Most code styling can be found in `_pygments-[theme].min.scss`
- */
-
-.highlight {
-    padding: ($base-line-height * 0.25) ($base-line-height * 0.35);
-    border-radius: $base-border-radius;
-    margin-bottom: $base-line-height;
-    pre { margin: 0; }
-}
-
-.highlight,
-.highlight pre,
-.highlight table {
-    background-color: $dark-gray !important;
 }

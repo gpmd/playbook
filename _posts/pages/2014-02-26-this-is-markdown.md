@@ -5,15 +5,13 @@ title: This is Markdown
 permalink: this-is-markdown/
 ---
 
-This page demonstrates some of [Markdown][1]'s capabilities.
-
-*<strong>NOTE:</strong> You can also use regular html in your markdown document.*
+This page demonstrates some of [Markdown][1]'s capabilities. It's worth pointing out that you can also use regular [HTML](http://developers.whatwg.org/) in your markdown document.
 
 ---
 
 ## Basic formatting
 
-This is a paragraph, it forms the basic structure of a Markdown document. This is some Lorem Ipsum text to pad out the paragraph a bit more. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vestibulum ornare erat vitae bibendum. Integer porttitor purus nec justo faucibus pulvinar. Nulla ultrices lectus et viverra imperdiet.
+This is a paragraph, it forms the basic structure of a Markdown document. This is some Lorem Ipsum text to pad out the paragraph a bit more. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
 Paragraphs are separated by a blank line. Basic formatting of *italics* and **bold** is supported.
 
@@ -41,6 +39,53 @@ Paragraphs are separated by a blank line. Basic formatting of *italics* and **bo
 
 ## Paragraph modifiers
 
+### Quote
+
+> This is a blockquote. Quotes are automatically indented when they are used. They can also contain **bold** text and even [links to other things][6].
+
+---
+
+## Headings
+
+There are six levels of headings. They correspond with the six levels of HTML headings. You've probably noticed them already on this page.
+
+# h1. Heading
+## h2. Heading
+### h3. Heading
+#### h4. Heading
+##### h5. Heading
+###### h6. Heading
+
+Also...
+
+### Headings can contain formatting such as *italicised* text
+
+### They can even contain `inline code`
+
+You can also add 'subheading' styling, but you will need to use HTML rather than markdown:
+
+<h1>h1. Heading<br>
+<span class="sub-heading">h1. Subheading</span></h1>
+
+And here's the code for that:
+
+```html
+<h1>h1. Heading<br>
+<span class="sub-heading">h1. Subheading</span></h1>
+```
+
+---
+
+## Links
+
+Links can be made in a handful of ways:
+
+* A named link to [GPMD][3]
+* Another named link to [GPMD](http://www.gpmd.co.uk/)
+* Sometimes you just want a URL like <http://www.gpmd.co.uk/>
+
+---
+
 ### Code block
 
 ```javascript
@@ -57,41 +102,6 @@ You can also make `inline code` to add code into other things.
 
 ---
 
-### Quote
-
-> This is a blockquote. Quotes are automatically indented when they are used. They can also contain **bold** text and [links to other things][6].
-
----
-
-## Headings
-
-There are six levels of headings. They correspond with the six levels of HTML headings. You've probably noticed them already in the page. Each level down uses one more # (hash) character.
-
-# h1. Heading
-## h2. Heading
-### h3. Heading
-#### h4. Heading
-##### h5. Heading
-###### h6. Heading    
-
-Also...
-
-### Headings can contain formatting such as *italicised* text
-
-### They can even contain `inline code`
-
----
-
-## URLs
-
-URLs can be made in a handful of ways:
-
-* A named link to [GPMD][3]
-* Another named link to [GPMD](http://www.gpmd.co.uk/)
-* Sometimes you just want a URL like <http://www.gpmd.co.uk/>
-
----
-
 ## Horizontal rule
 
 A horizontal rule is a line that goes across the middle of the page. It's sometimes handy for breaking up blocks of content.
@@ -105,6 +115,24 @@ Markdown can also contain images.
 ![Mark]({{ site.baseurl }}/assets/uploads/mark.jpg)
 
 *This is the lovely Mark, our Managing Director*
+
+You can do nice things with images, such as 'outset' them, but in order to do so you need to embed the image using regular HTML, like so:
+
+<figure class="outset--center">
+	<img src="{{ site.baseurl }}/assets/uploads/rainbow.jpg" alt="Rainbow">
+	<figcaption>Up above the streets and houses, rainbow flying high...</figcaption>
+</figure>
+
+Here's the markup (yes, we're using the [HTML5 figure element](http://developers.whatwg.org/grouping-content.html#the-figure-element)):
+
+```html
+<figure class="outset--center">
+	<img src="{{ site.baseurl }}/assets/uploads/rainbow.jpg" alt="Rainbow">
+	<figcaption>Up above the streets and houses, rainbow flying high...</figcaption>
+</figure>
+```
+
+The 'outset' classes available are `outset--right`, `outset--center` and `outset--left`.
 
 ---
 
