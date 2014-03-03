@@ -558,11 +558,11 @@ h1, h2, h3, h4, h5, h6, .text-transform--uppercase {
    ========================================================================== */
 .menu-btn {
   position: absolute;
-  top: 26px;
+  top: 29px;
   right: 20px;
   display: block;
   color: white;
-  font-size: 1.25em;
+  font-size: 1.125em;
   cursor: pointer;
   cursor: hand; }
 
