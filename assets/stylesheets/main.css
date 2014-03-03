@@ -412,6 +412,9 @@ th {
 .font-weight--bold {
   font-weight: 700; }
 
+.font-weight--extra-bold {
+  font-weight: 900; }
+
 /* text-align */
 .text-align--right {
   text-align: right; }
