@@ -21,8 +21,8 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: $header-font-family;
     line-height: 1.25em;
-    font-weight: $bold-font-weight;
-    font-style: $bold-font-style;
+    font-weight: $extra-bold-font-weight;
+    font-style: $extra-bold-font-style;
     @extend %text-transform--uppercase;
     letter-spacing: -0.025em;
     margin: 0 0 ($base-font-size * 0.5);
