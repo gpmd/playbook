@@ -73,7 +73,3 @@ $ git push origin gh-pages
 
 * [https://github.com/matt-bailey](https://github.com/matt-bailey)
 * [https://twitter.com/_mattbailey](https://twitter.com/_mattbailey)
-
-## License
-
-*To do...*
