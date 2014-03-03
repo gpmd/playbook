@@ -16,6 +16,10 @@
 	@extend %font-weight--bold;
 }
 
+.font-weight--extra-bold {
+	@extend %font-weight--extra-bold;
+}
+
 /* text-align */
 
 .text-align--right {
