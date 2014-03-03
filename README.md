@@ -2,7 +2,7 @@
 
 This site is all about how we work and make things, how we operate as a company.
 
-[http://gpmd.github.io/playbook/](http://gpmd.github.io/playbook/)
+[http://playbook.gpmd.io/](http://playbook.gpmd.io/)
 
 ## About
 

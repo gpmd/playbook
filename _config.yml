@@ -12,7 +12,7 @@ permalink: pretty
 title: Playbook
 tagline: 'How we work and make things at GPMD'
 description: 'This site outlines how we operate as a company'
-baseurl: http://gpmd.github.io/playbook
+baseurl: http://playbook.gpmd.io
 
 author:
   name: 'Matt Bailey'
@@ -32,7 +32,7 @@ github:
 
 # prose.io config
 prose:
-  siteurl: 'http://gpmd.github.io/playbook/'
+  siteurl: 'http://playbook.gpmd.io'
   relativeLinks: 'http://gpmd.github.io/playbook/links.jsonp'
   media: 'assets/uploads'
   ignore:
