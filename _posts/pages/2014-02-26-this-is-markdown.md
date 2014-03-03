@@ -123,6 +123,8 @@ You can do nice things with images, such as 'outset' them, but in order to do so
 	<figcaption>Up above the streets and houses, rainbow flying high...</figcaption>
 </figure>
 
+*<strong>Note:</strong> on smaller devices the outset is removed.*
+
 Here's the markup (yes, we're using the [HTML5 figure element](http://developers.whatwg.org/grouping-content.html#the-figure-element)):
 
 ```html
