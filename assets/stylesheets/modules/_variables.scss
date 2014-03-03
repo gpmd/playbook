@@ -23,7 +23,7 @@ $extra-bold-font-style: normal;
    Sizes
    ========================================================================== */
 
-$base-font-size: 1.125em; // 1.125em = 18px
+$base-font-size: 1.125em; // 1.125em = 18px - adjust $base-font-unit in `_grid-settings.scss` to match this
 $base-line-height: $base-font-size * 1.5;
 $base-border-radius: em(2);
 
