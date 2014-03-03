@@ -604,8 +604,6 @@ html, body {
   color: white;
   /* Headings */
   /* Link lists */ }
-  .pushy h1, .pushy h2, .pushy h3, .pushy h4, .pushy h5, .pushy h6 {
-    color: #ffcc00; }
   .pushy h6 {
     font-size: 1em; }
   .pushy ul {
@@ -613,20 +611,6 @@ html, body {
     padding-left: 0;
     margin-top: 0;
     margin-bottom: 0.84375em; }
-    .pushy ul a {
-      display: block;
-      color: white;
-      -webkit-transition: opacity 0.15s linear;
-      -moz-transition: opacity 0.15s linear;
-      transition: opacity 0.15s linear; }
-      .pushy ul a:hover {
-        background-color: transparent;
-        color: white;
-        opacity: 0.5; }
-      .pushy ul a:active, .pushy ul a:focus {
-        color: white;
-        opacity: 0.5;
-        outline: none; }
 
 /* Menu Movement */
 .pushy-right {
