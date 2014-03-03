@@ -9,10 +9,10 @@ redcarpet:
 permalink: pretty
 
 # Setup
-title: Colophon
+title: Playbook
 tagline: 'How we work and make things at GPMD'
 description: 'This site outlines how we operate as a company'
-baseurl: http://gpmd.github.io/colophon
+baseurl: http://gpmd.github.io/playbook
 
 author:
   name: 'Matt Bailey'
@@ -28,12 +28,12 @@ exclude: ['*.sublime-project','*.sublime-workspace']
 version: 1.0.0
 
 github:
-  repo: https://github.com/gpmd/colophon
+  repo: https://github.com/gpmd/playbook
 
 # prose.io config
 prose:
-  siteurl: 'http://gpmd.github.io/colophon/'
-  relativeLinks: 'http://gpmd.github.io/colophon/links.jsonp'
+  siteurl: 'http://gpmd.github.io/playbook/'
+  relativeLinks: 'http://gpmd.github.io/playbook/links.jsonp'
   media: 'assets/uploads'
   ignore:
     - /_includes/footer.html

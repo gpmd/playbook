@@ -1,8 +1,8 @@
-# Colophon
+# Playbook
 
-This site outlines how we work and make stuff at GPMD.
+This site is all about how we work and make things, how we operate as a company.
 
-[http://gpmd.github.io/colophon/](http://gpmd.github.io/colophon/)
+[http://gpmd.github.io/playbook/](http://gpmd.github.io/playbook/)
 
 ## About
 
@@ -20,7 +20,7 @@ This is a static site built using [Jekyll](http://jekyllrb.com/) and hosted on [
 Clone the repo into your project folder:
 
 ```bash
-$ git clone https://github.com/gpmd/colophon.git .
+$ git clone https://github.com/gpmd/playbook.git .
 ```
 
 Run `git fetch` and check out the `gh-pages` branch. From now on all work should be done on the `gh-pages` branch.
@@ -33,7 +33,7 @@ Run `git fetch` and check out the `gh-pages` branch. From now on all work should
 $ sass assets/stylesheets/main.scss:assets/stylesheets/main.css && jekyll build
 ```
 
-This runs two commands concurrently: `jekyll build` and `sass`.
+This runs the two commands one after the other: `sass` and then `jekyll build`.
 
 **To Preview the site locally and watch for changes:**
 
@@ -41,7 +41,7 @@ This runs two commands concurrently: `jekyll build` and `sass`.
 $ jekyll serve --watch --baseurl= & sass --watch assets/stylesheets/:assets/stylesheets
 ```
 
-This runs two commands concurrently: `jekyll serve` and `sass --watch`.
+This runs the two commands: `jekyll serve` and `sass --watch`.
 
 Then open `http://0.0.0.0:4000` in your browser. You will need to refresh the browser window to see changes.
 
@@ -53,7 +53,7 @@ Layouts are a mixture of HTML and [Liquid](http://wiki.shopify.com/Liquid). Cont
 
 ### For site editors
 
-Sign up for a [Github account](https://github.com/). Ask one of our developers to add you to the Colophon project. Then use [prose.io](http://prose.io/) - when you first visit prose you will be asked to authorise access to your Github account.
+Sign up for a [Github account](https://github.com/). Ask one of our developers to add you to the playbook project. Then use [prose.io](http://prose.io/) - when you first visit prose you will be asked to authorise access to your Github account.
 
 More information on using prose can be found on their [website](http://prose.io/#about) and on the [wiki page of their Github repo](http://prose.io/#about).
 
