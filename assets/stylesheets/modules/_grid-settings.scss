@@ -15,7 +15,7 @@
 $column: 37px;
 $gutter: 16px;
 $grid-columns: 12;
-$base-font-unit: 18;
+$base-font-unit: 18; // This should match the desired $base-font-size in `_variables.scss`
 // $main-column + ($side-margins * 2) = 960
 $main-column: 620;
 $side-margins: 170;
