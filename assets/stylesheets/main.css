@@ -474,7 +474,6 @@ h1, h2, h3, h4, h5, h6, .text-transform--uppercase {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* iOS Helpers */
 /* ==========================================================================
    Layout
    ========================================================================== */
@@ -915,32 +914,34 @@ figcaption {
 .outset--left,
 .outset--center {
   position: relative;
-  overflow: hidden; }
-
-.outset--right {
-  margin-right: -9.44444em;
+  margin-right: 0;
   margin-left: 0; }
 
-.outset--right figcaption {
-  margin-right: 9.44444em;
-  margin-left: 0; }
+/* Media queries */
+@media screen and (min-width: 47.5em) {
+  .outset--right {
+    margin-right: -9.44444em;
+    margin-left: 0; }
 
-.outset--center {
-  margin-right: -9.44444em;
-  margin-left: -9.44444em; }
+  .outset--right figcaption {
+    margin-right: 9.44444em;
+    margin-left: 0; }
 
-.outset--center figcaption {
-  margin-right: 9.44444em;
-  margin-left: 9.44444em; }
+  .outset--center {
+    margin-right: -9.44444em;
+    margin-left: -9.44444em; }
 
-.outset--left {
-  margin-right: 0;
-  margin-left: -9.44444em; }
+  .outset--center figcaption {
+    margin-right: 9.44444em;
+    margin-left: 9.44444em; }
 
-.outset--left figcaption {
-  margin-right: 0;
-  margin-left: 9.44444em; }
+  .outset--left {
+    margin-right: 0;
+    margin-left: -9.44444em; }
 
+  .outset--left figcaption {
+    margin-right: 0;
+    margin-left: 9.44444em; } }
 /**
  * _columns.scss
  */

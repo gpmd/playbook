@@ -33,44 +33,53 @@ figcaption {
 .outset--left,
 .outset--center {
 	position: relative;
-	overflow: hidden; // Prevent scrollbars on small screens
-}
-
-// Right
-.outset--right {
-	margin-right: -(em($side-margins, $base-font-unit));
+	// Start off with no outsets
+	margin-right: 0;
 	margin-left: 0;
 }
 
-.outset--right {
-	figcaption {
-		margin-right: em($side-margins, $base-font-unit);
+/* Media queries */
+
+// Add outsets to medium screens and bigger
+@include media($medium-screen) { // Medium screen and up
+
+	// Right
+	.outset--right {
+		margin-right: -(em($side-margins, $base-font-unit));
 		margin-left: 0;
 	}
-}
 
-// Center
-.outset--center {
-	margin-right: -(em($side-margins, $base-font-unit));
-	margin-left: -(em($side-margins, $base-font-unit));
-}
-
-.outset--center {
-	figcaption {
-		margin-right: em($side-margins, $base-font-unit);
-		margin-left: em($side-margins, $base-font-unit);
+	.outset--right {
+		figcaption {
+			margin-right: em($side-margins, $base-font-unit);
+			margin-left: 0;
+		}
 	}
-}
 
-// Left
-.outset--left {
-	margin-right: 0;
-	margin-left: -(em($side-margins, $base-font-unit));
-}
+	// Center
+	.outset--center {
+		margin-right: -(em($side-margins, $base-font-unit));
+		margin-left: -(em($side-margins, $base-font-unit));
+	}
 
-.outset--left {
-	figcaption {
+	.outset--center {
+		figcaption {
+			margin-right: em($side-margins, $base-font-unit);
+			margin-left: em($side-margins, $base-font-unit);
+		}
+	}
+
+	// Left
+	.outset--left {
 		margin-right: 0;
-		margin-left: em($side-margins, $base-font-unit);
+		margin-left: -(em($side-margins, $base-font-unit));
 	}
+
+	.outset--left {
+		figcaption {
+			margin-right: 0;
+			margin-left: em($side-margins, $base-font-unit);
+		}
+	}
+
 }
