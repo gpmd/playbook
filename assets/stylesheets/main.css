@@ -507,7 +507,7 @@ h1, h2, h3, h4, h5, h6, .text-transform--uppercase {
   display: block;
   width: 100%;
   padding: 1.6875em;
-  background-color: #333333; }
+  background-color: rgba(0, 0, 0, 0.8); }
 
 /* ==========================================================================
    Typography
@@ -586,7 +586,7 @@ h1, h2, h3, h4, h5, h6, .text-transform--uppercase {
   width: 280px;
   height: 100%;
   padding: 120px 20px 20px;
-  background: #333333;
+  background: rgba(0, 0, 0, 0.8);
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   /* enables momentum scrolling in iOS overflow elements */ }
@@ -686,7 +686,7 @@ h1, h2, h3, h4, h5, h6, .text-transform--uppercase {
   z-index: 10000;
   padding: 1.6875em;
   margin-top: 5.0625em;
-  background-color: #333333;
+  background-color: rgba(0, 0, 0, 0.8);
   color: white; }
 
 /* zenburn syntax highlighting - from http://userstyles.org/styles/88895/github-zenburn */
@@ -914,7 +914,8 @@ figcaption {
 .outset--right,
 .outset--left,
 .outset--center {
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
 
 .outset--right {
   margin-right: -9.44444em;

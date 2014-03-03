@@ -31,7 +31,10 @@ figcaption {
 // Defaults
 .outset--right,
 .outset--left,
-.outset--center { position: relative; }
+.outset--center {
+	position: relative;
+	overflow: hidden; // Prevent scrollbars on small screens
+}
 
 // Right
 .outset--right {
