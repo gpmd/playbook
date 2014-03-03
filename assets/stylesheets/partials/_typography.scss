@@ -39,10 +39,10 @@ h1, h2, h3, h4, h5, h6 {
  * Uses Bourbon px to em function - $base-font-unit can be found in `_grid-settings.scss`
  */
 
-h1 { font-size: em(60, $base-font-unit); }
-h2 { font-size: em(54, $base-font-unit); }
-h3 { font-size: em(48, $base-font-unit); }
-h4 { font-size: em(36, $base-font-unit); }
+h1 { font-size: em(48, $base-font-unit); }
+h2 { font-size: em(42, $base-font-unit); }
+h3 { font-size: em(36, $base-font-unit); }
+h4 { font-size: em(30, $base-font-unit); }
 h5 { font-size: em(24, $base-font-unit); }
 h6 { font-size: $base-font-size; }
 
