@@ -474,19 +474,12 @@ h1, h2, h3, h4, h5, h6, .text-transform--uppercase {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* iOS Helpers */
-html, body {
-  overflow-x: hidden;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  height: 100%;
-  -webkit-overflow-scrolling: touch; }
-
 /* ==========================================================================
    Layout
    ========================================================================== */
 .container {
   *zoom: 1;
-  max-width: 33.33333em;
+  max-width: 34.44444em;
   margin-left: auto;
   margin-right: auto; }
   .container:before, .container:after {
@@ -513,7 +506,7 @@ html, body {
   display: block;
   width: 100%;
   padding: 1.6875em;
-  background-color: #333333; }
+  background-color: rgba(0, 0, 0, 0.8); }
 
 /* ==========================================================================
    Typography
@@ -522,6 +515,7 @@ html, body {
   padding: 0 30px 0 0;
   margin: 0;
   color: white;
+  font-size: 1.125em;
   text-align: right;
   /* Media queries */ }
   .masthead h1 .tagline, .masthead h2 .tagline, .masthead h3 .tagline, .masthead h4 .tagline, .masthead h5 .tagline, .masthead h6 .tagline, .masthead p .tagline {
@@ -564,11 +558,11 @@ html, body {
    ========================================================================== */
 .menu-btn {
   position: absolute;
-  top: 26px;
+  top: 29px;
   right: 20px;
   display: block;
   color: white;
-  font-size: 1.25em;
+  font-size: 1.125em;
   cursor: pointer;
   cursor: hand; }
 
@@ -591,7 +585,7 @@ html, body {
   width: 280px;
   height: 100%;
   padding: 120px 20px 20px;
-  background: #333333;
+  background: rgba(0, 0, 0, 0.8);
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   /* enables momentum scrolling in iOS overflow elements */ }
@@ -603,8 +597,6 @@ html, body {
   color: white;
   /* Headings */
   /* Link lists */ }
-  .pushy h1, .pushy h2, .pushy h3, .pushy h4, .pushy h5, .pushy h6 {
-    color: #ffcc00; }
   .pushy h6 {
     font-size: 1em; }
   .pushy ul {
@@ -612,20 +604,6 @@ html, body {
     padding-left: 0;
     margin-top: 0;
     margin-bottom: 0.84375em; }
-    .pushy ul a {
-      display: block;
-      color: white;
-      -webkit-transition: opacity 0.15s linear;
-      -moz-transition: opacity 0.15s linear;
-      transition: opacity 0.15s linear; }
-      .pushy ul a:hover {
-        background-color: transparent;
-        color: white;
-        opacity: 0.5; }
-      .pushy ul a:active, .pushy ul a:focus {
-        color: white;
-        opacity: 0.5;
-        outline: none; }
 
 /* Menu Movement */
 .pushy-right {
@@ -683,7 +661,7 @@ html, body {
 .toc {
   padding: 1.6875em;
   border: 1px solid #dddddd;
-  border-radius: 0.1875em; }
+  border-radius: 0.125em; }
 
 /* Lists */
 .toc ul {
@@ -697,15 +675,6 @@ html, body {
     margin-bottom: 0; }
 
 /* Links */
-.toc a {
-  color: #333333; }
-  .toc a:hover {
-    background-color: rgba(51, 51, 51, 0.15);
-    color: #333333; }
-  .toc a:active, .toc a:focus {
-    color: #333333;
-    outline: none; }
-
 /**
  * _footer.scss
  */
@@ -716,7 +685,7 @@ html, body {
   z-index: 10000;
   padding: 1.6875em;
   margin-top: 5.0625em;
-  background-color: #333333;
+  background-color: rgba(0, 0, 0, 0.8);
   color: white; }
 
 /* zenburn syntax highlighting - from http://userstyles.org/styles/88895/github-zenburn */
@@ -816,6 +785,9 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -0.025em;
   margin: 0 0 0.5625em;
   text-rendering: optimizeLegibility; }
+  h1 .sub-heading, h2 .sub-heading, h3 .sub-heading, h4 .sub-heading, h5 .sub-heading, h6 .sub-heading {
+    font-weight: 300;
+    font-style: normal; }
 
 h1 {
   font-size: 2.25em; }
@@ -841,19 +813,22 @@ h6 {
 /* Paragraphs */
 p {
   margin: 0 0 0.84375em; }
+  p.lead {
+    font-size: 1.6875em;
+    line-height: 1.25em; }
 
 /* Links */
 a {
-  color: #ffcc00;
+  color: #ffbb11;
   text-decoration: none;
   -webkit-transition: background-color 0.15s linear;
   -moz-transition: background-color 0.15s linear;
   transition: background-color 0.15s linear; }
   a:hover {
-    background-color: rgba(255, 204, 0, 0.25);
-    color: #b38f00; }
+    background-color: rgba(255, 187, 17, 0.25);
+    color: #c48c00; }
   a:active, a:focus {
-    color: #b38f00;
+    color: #c48c00;
     outline: none; }
 
 /* Blockquotes */
@@ -861,8 +836,7 @@ blockquote {
   border-left: 6px solid #ffcc00;
   margin: 1.26563em 0;
   padding-left: 0.84375em;
-  color: #737373;
-  font-size: 1.6875em;
+  font-size: 1.54688em;
   font-style: italic;
   line-height: 1.25em;
   letter-spacing: -0.035em; }
@@ -874,11 +848,6 @@ hr {
   border-right: none;
   border-top: none;
   margin: 1.6875em 0; }
-
-/* Images */
-img {
-  margin: 0;
-  max-width: 100%; }
 
 /* Misc */
 abbr, acronym {
@@ -909,7 +878,7 @@ cite {
  */
 .highlight {
   padding: 0.42188em 0.59062em;
-  border-radius: 0.1875em;
+  border-radius: 0.125em;
   margin-bottom: 1.6875em; }
   .highlight pre {
     margin: 0; }
@@ -918,6 +887,142 @@ cite {
 .highlight pre,
 .highlight table {
   background-color: #333333 !important; }
+
+/**
+ * _images.scss
+ */
+/* ==========================================================================
+   Images
+   ========================================================================== */
+/* Responsive images */
+img {
+  margin: 0;
+  max-width: 100%; }
+
+/* figure and figcaption */
+figure {
+  padding: 0;
+  margin: 1.6875em 0; }
+
+figcaption {
+  font-style: italic;
+  text-align: center;
+  color: #8c8c8c; }
+
+/* Ouset alignment */
+.outset--right,
+.outset--left,
+.outset--center {
+  position: relative;
+  margin-right: 0;
+  margin-left: 0; }
+
+/* Media queries */
+@media screen and (min-width: 47.5em) {
+  .outset--right {
+    margin-right: -9.44444em;
+    margin-left: 0; }
+
+  .outset--right figcaption {
+    margin-right: 9.44444em;
+    margin-left: 0; }
+
+  .outset--center {
+    margin-right: -9.44444em;
+    margin-left: -9.44444em; }
+
+  .outset--center figcaption {
+    margin-right: 9.44444em;
+    margin-left: 9.44444em; }
+
+  .outset--left {
+    margin-right: 0;
+    margin-left: -9.44444em; }
+
+  .outset--left figcaption {
+    margin-right: 0;
+    margin-left: 9.44444em; } }
+/**
+ * _columns.scss
+ */
+/* ==========================================================================
+   Columns
+   ========================================================================== */
+.column-count--1,
+.column-count--2,
+.column-count--3,
+.column-count--4,
+.column-count--5,
+.column-count--6,
+.column-count--7,
+.column-count--8,
+.column-count--9,
+.column-count--10,
+.column-count--11,
+.column-count--12 {
+  -webkit-column-gap: 16px;
+  -moz-column-gap: 16px;
+  column-gap: 16px; }
+
+.column-count--1 {
+  -webkit-column-count: 1;
+  -moz-column-count: 1;
+  column-count: 1; }
+
+.column-count--2 {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2; }
+
+.column-count--3 {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3; }
+
+.column-count--4 {
+  -webkit-column-count: 4;
+  -moz-column-count: 4;
+  column-count: 4; }
+
+.column-count--5 {
+  -webkit-column-count: 5;
+  -moz-column-count: 5;
+  column-count: 5; }
+
+.column-count--6 {
+  -webkit-column-count: 6;
+  -moz-column-count: 6;
+  column-count: 6; }
+
+.column-count--7 {
+  -webkit-column-count: 7;
+  -moz-column-count: 7;
+  column-count: 7; }
+
+.column-count--8 {
+  -webkit-column-count: 8;
+  -moz-column-count: 8;
+  column-count: 8; }
+
+.column-count--9 {
+  -webkit-column-count: 9;
+  -moz-column-count: 9;
+  column-count: 9; }
+
+.column-count--10 {
+  -webkit-column-count: 10;
+  -moz-column-count: 10;
+  column-count: 10; }
+
+.column-count--11 {
+  -webkit-column-count: 11;
+  -moz-column-count: 11;
+  column-count: 11; }
+
+.column-count--12 {
+  -webkit-column-count: 12;
+  -moz-column-count: 12;
+  column-count: 12; }
 
 fieldset {
   background: #f7f7f7;
@@ -949,7 +1054,7 @@ input[type="email"], input[type="number"], input[type="password"], input[type="s
   -moz-transition: border-color;
   transition: border-color;
   background-color: white;
-  border-radius: 0.1875em;
+  border-radius: 0.125em;
   border: 1px solid #dddddd;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
   font-family: "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -994,7 +1099,7 @@ input[type="submit"] {
   *vertical-align: auto;
   min-width: 90px;
   border: none;
-  border-radius: 0.1875em;
+  border-radius: 0.125em;
   padding: 0.5625em 1.125em;
   background-color: #ffcc00;
   color: #fff;

@@ -1,0 +1,20 @@
+/* ==========================================================================
+   Code
+   ========================================================================== */
+
+/**
+ * Most code styling can be found in `_pygments-[theme].min.scss`
+ */
+
+.highlight {
+    padding: ($base-line-height * 0.25) ($base-line-height * 0.35);
+    border-radius: $base-border-radius;
+    margin-bottom: $base-line-height;
+    pre { margin: 0; }
+}
+
+.highlight,
+.highlight pre,
+.highlight table {
+    background-color: $dark-gray !important;
+}

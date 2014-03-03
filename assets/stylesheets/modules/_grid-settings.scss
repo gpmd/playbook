@@ -15,8 +15,12 @@
 $column: 37px;
 $gutter: 16px;
 $grid-columns: 12;
+$base-font-unit: 18;
+// $main-column + ($side-margins * 2) = 960
+$main-column: 620;
+$side-margins: 170;
 // Add max-width to `container` in ems - equates to 600px / base font-size of 18px
-$max-width: em(600, 18);
+$max-width: em($main-column, $base-font-unit);
 
 /* ==========================================================================
    Breakpoints

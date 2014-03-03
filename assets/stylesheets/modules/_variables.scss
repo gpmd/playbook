@@ -23,7 +23,7 @@ $bold-font-style: normal;
 
 $base-font-size: 1.125em; // 1.125em = 18px
 $base-line-height: $base-font-size * 1.5;
-$base-border-radius: em(3);
+$base-border-radius: em(2);
 
 /* ==========================================================================
    Colours
@@ -31,6 +31,7 @@ $base-border-radius: em(3);
 
 $blue: #477dca;
 $dark-gray: #333;
+$dark-gray-transparent: rgba(0,0,0,0.8);
 $medium-gray: #999;
 $light-gray: #ddd;
 $pale-gray: #f6f6f6;
@@ -38,10 +39,13 @@ $light-red: #fbe3e4;
 $light-yellow: #fff6bf;
 $light-green: #e6efc2;
 $white: #fff;
+$black: #000;
 
 // Core brand colours
 
 $primary-color: #ffcc00;
+$primary-color-darker: #ffbb11; // For links as the primary yellow is a bit light
+$secondary-color: $dark-gray;
 
 // Body Color
 $base-body-color: white;
@@ -51,8 +55,8 @@ $base-font-color: $dark-gray;
 $base-accent-color: $primary-color;
 
 //  Text Link Colors
-$base-link-color: $base-accent-color;
-$hover-link-color: darken($base-accent-color, 15);
+$base-link-color: $primary-color-darker;
+$hover-link-color: darken($primary-color-darker, 15);
 
 // Border color
 $base-border-color: $light-gray;

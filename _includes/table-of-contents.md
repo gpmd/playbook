@@ -1,6 +1,4 @@
-[Home]({{ site.baseurl }}/)
-
-###### About
+###### Section Heading
 
 * [This is Markdown]({{ site.baseurl }}/this-is-markdown)
-* [About]({{ site.baseurl }}/about)
+* [Test]({{ site.baseurl }}/about)

@@ -1,0 +1,85 @@
+/**
+ * _images.scss
+ */
+
+/* ==========================================================================
+   Images
+   ========================================================================== */
+
+/* Responsive images */
+
+img {
+    margin: 0;
+    max-width: 100%;
+}
+
+/* figure and figcaption */
+
+figure {
+	padding: 0;
+	margin: ($base-font-size * 1.5) 0;
+}
+
+figcaption {
+	font-style: italic;
+	text-align: center;
+	color: lighten($base-font-color, 35);
+}
+
+/* Ouset alignment */
+
+// Defaults
+.outset--right,
+.outset--left,
+.outset--center {
+	position: relative;
+	// Start off with no outsets
+	margin-right: 0;
+	margin-left: 0;
+}
+
+/* Media queries */
+
+// Add outsets to medium screens and bigger
+@include media($medium-screen) { // Medium screen and up
+
+	// Right
+	.outset--right {
+		margin-right: -(em($side-margins, $base-font-unit));
+		margin-left: 0;
+	}
+
+	.outset--right {
+		figcaption {
+			margin-right: em($side-margins, $base-font-unit);
+			margin-left: 0;
+		}
+	}
+
+	// Center
+	.outset--center {
+		margin-right: -(em($side-margins, $base-font-unit));
+		margin-left: -(em($side-margins, $base-font-unit));
+	}
+
+	.outset--center {
+		figcaption {
+			margin-right: em($side-margins, $base-font-unit);
+			margin-left: em($side-margins, $base-font-unit);
+		}
+	}
+
+	// Left
+	.outset--left {
+		margin-right: 0;
+		margin-left: -(em($side-margins, $base-font-unit));
+	}
+
+	.outset--left {
+		figcaption {
+			margin-right: 0;
+			margin-left: em($side-margins, $base-font-unit);
+		}
+	}
+
+}
