@@ -56,12 +56,6 @@ There are six levels of headings. They correspond with the six levels of HTML he
 ##### h5. Heading
 ###### h6. Heading
 
-Also...
-
-### Headings can contain formatting such as *italicised* text
-
-### They can even contain `inline code`
-
 You can also add 'subheading' styling, but you will need to use HTML rather than markdown:
 
 <h1>h1. Heading<br>
