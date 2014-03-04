@@ -2,7 +2,7 @@
 layout: page
 published: true
 title: This is Markdown
-permalink: this-is-markdown/
+permalink: "this-is-markdown/"
 ---
 
 This page demonstrates some of [Markdown][1]'s capabilities. It's worth pointing out that you can also use regular [HTML](http://developers.whatwg.org/) in your markdown document.
@@ -112,7 +112,7 @@ Markdown can also contain images.
 
 You can do nice things with images, such as 'outset' them, but in order to do so you need to embed the image using regular HTML, like so:
 
-<figure class="outset--center">
+<figure class="">
 	<img src="{{ site.baseurl }}/assets/uploads/rainbow.jpg" alt="Rainbow">
 	<figcaption>Up above the streets and houses, rainbow flying high...</figcaption>
 </figure>
