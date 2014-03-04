@@ -27,6 +27,7 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: -0.025em;
     margin: 0 0 ($base-font-size * 0.5);
     text-rendering: optimizeLegibility; // Fix the character spacing for headings
+    @include transition(font-size 0.15s linear); // Animate font-size changes
     .sub-heading {
         font-weight: $regular-font-weight;
         font-style: $regular-font-style;
@@ -39,12 +40,23 @@ h1, h2, h3, h4, h5, h6 {
  * Uses Bourbon px to em function - $base-font-unit can be found in `_grid-settings.scss`
  */
 
-h1 { font-size: em(48, $base-font-unit); }
-h2 { font-size: em(42, $base-font-unit); }
-h3 { font-size: em(36, $base-font-unit); }
-h4 { font-size: em(30, $base-font-unit); }
-h5 { font-size: em(24, $base-font-unit); }
+h1 { font-size: em(42, $base-font-unit); }
+h2 { font-size: em(36, $base-font-unit); }
+h3 { font-size: em(30, $base-font-unit); }
+h4 { font-size: em(24, $base-font-unit); }
+h5 { font-size: $base-font-unit; }
 h6 { font-size: $base-font-size; }
+
+/* Media queries */
+
+// Increase the heading sizes on larger screens
+@include media($small-screen) { // Small screen and up
+    h1 { font-size: em(48, $base-font-unit); }
+    h2 { font-size: em(42, $base-font-unit); }
+    h3 { font-size: em(36, $base-font-unit); }
+    h4 { font-size: em(30, $base-font-unit); }
+    h5 { font-size: em(24, $base-font-unit); }
+}
 
 /* ==========================================================================
    Body copy
