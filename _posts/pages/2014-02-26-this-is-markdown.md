@@ -112,7 +112,7 @@ Markdown can also contain images.
 
 You can do nice things with images, such as 'outset' them, but in order to do so you need to embed the image using regular HTML, like so:
 
-<figure class="">
+<figure class="outset--center">
 	<img src="{{ site.baseurl }}/assets/uploads/rainbow.jpg" alt="Rainbow">
 	<figcaption>Up above the streets and houses, rainbow flying high...</figcaption>
 </figure>
