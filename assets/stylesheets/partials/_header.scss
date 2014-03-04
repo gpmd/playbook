@@ -35,7 +35,7 @@
 
 		/* Media queries */
 
-		@include media($small-screen) { // Small screen and up
+		@include media($medium-screen) { // Medium screen and up
 			padding: 0 90px;
 			text-align: center;
 			.tagline {

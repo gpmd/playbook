@@ -28,19 +28,21 @@ $max-width: em($max-width-unitless, $base-font-unit); // Adds a max-width to `.c
    Breakpoints
    ========================================================================== */
 
-// $small-screen: new-breakpoint(min-width em(540) 2);
-// $medium-screen: new-breakpoint(min-width em(760) 4);
-// $large-screen: new-breakpoint(min-width em(920) 8);
-$small-screen: new-breakpoint(min-width em(480) 2);
-$medium-screen: new-breakpoint(min-width em(620) 4);
-$large-screen: new-breakpoint(min-width em(960) 8);
-
 /* min/max */
 
+// Small screens
 $small-screen-min: em(480);
-$small-screen-max: em(619);
+$small-screen-max: em(568);
 
-$medium-screen-min: em(620);
+// Medium screens
+$medium-screen-min: em(569);
 $medium-screen-max: em(959);
 
-$large-screen-min: em(960);
+// Large screens
+$large-screen-min: em(961);
+
+/* Bourbon Neat media contexts: http://neat.bourbon.io/docs/#new-breakpoint  */
+
+$small-screen: new-breakpoint(min-width em(480) 2);
+$medium-screen: new-breakpoint(min-width em(569) 4);
+$large-screen: new-breakpoint(min-width em(961) 8);
