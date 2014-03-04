@@ -36,12 +36,20 @@ prose:
   relativeLinks: 'http://gpmd.github.io/playbook/links.jsonp'
   media: 'assets/uploads'
   ignore:
-    - /*
-    - !/_includes/table-of-contents.md
-    - !/_posts/pages/
-    - !/_posts/pages/*
-    - !/_posts/pages/**/*
-    - !index.md
+    - /_includes/footer.html
+    - /_includes/head.html
+    - /_includes/masthead.html
+    - /_includes/nav.html
+    - /_layouts
+    - /_site
+    - /assets
+    - .gitignore
+    - 404.html
+    - _config.yml
+    - atom.xml
+    - CNAME
+    - links.jsonp
+    - README.md
   metadata:
     _posts:
       - name: 'category'
