@@ -37,8 +37,10 @@ prose:
   media: 'assets/uploads'
   ignore:
     - /*
-    - !_includes/table-of-contents.md
-    - !_posts/pages
+    - !/_includes/table-of-contents.md
+    - !/_posts/pages/
+    - !/_posts/pages/*
+    - !/_posts/pages/**/*
     - !index.md
   metadata:
     _posts:
