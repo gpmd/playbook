@@ -37,9 +37,9 @@ prose:
   media: 'assets/uploads'
   ignore:
     - /*
-    - !/_includes/table-of-contents.md
-    - !/_posts/pages
-    - index.md
+    - !_includes/table-of-contents.md
+    - !_posts/pages
+    - !index.md
   metadata:
     _posts:
       - name: 'category'
