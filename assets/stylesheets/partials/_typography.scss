@@ -40,10 +40,11 @@ h1, h2, h3, h4, h5, h6 {
  * Uses Bourbon px to em function - $base-font-unit can be found in `_grid-settings.scss`
  */
 
-h1 { font-size: em(42, $base-font-unit); }
-h2 { font-size: em(36, $base-font-unit); }
-h3 { font-size: em(30, $base-font-unit); }
-h4 { font-size: em(24, $base-font-unit); }
+// Mobile first smaller heading sizes
+h1 { font-size: em(36, $base-font-unit); }
+h2 { font-size: em(30, $base-font-unit); }
+h3 { font-size: em(24, $base-font-unit); }
+h4 { font-size: $base-font-unit; }
 h5 { font-size: $base-font-unit; }
 h6 { font-size: $base-font-size; }
 
@@ -56,6 +57,16 @@ h6 { font-size: $base-font-size; }
     h3 { font-size: em(36, $base-font-unit); }
     h4 { font-size: em(30, $base-font-unit); }
     h5 { font-size: em(24, $base-font-unit); }
+}
+
+/* Manage word breaks */
+
+// Break long words only on the smallest screens
+h1, h2, h3 { word-break: break-all; }
+
+// remove word breaks on $small-screen and up
+@include media($small-screen) { // Small screen and up
+    h1, h2, h3 { word-break: normal; }
 }
 
 /* ==========================================================================
