@@ -30,6 +30,14 @@ The Playbook is a flat file site built on [Jekyll](http://jekyllrb.com/) and hos
 
 1. *(To do) Please follow the [style guide](http://playbook.gpmd.io/) when writing content*
 
+## Adding pages
+
+1. Browse to the `_posts/pages/` directory and click "New File".
+2. Where it says "Untitled" enter a page name.
+3. Delete the sample content and enter your own content.
+4. Click on the "Meta Data" icon and enter a "Permalink". For example, if your page is called "My Page" you would enter "my-page/" as your permalink, then click "Done".
+5. Finally, click the "Save" floppy disk icon and then click "Commit".
+
 ## Editing Pages
 
 1. Simply browse to the `_posts/pages/` directory and open one of the pages to edit the contents.
@@ -41,17 +49,9 @@ The Playbook is a flat file site built on [Jekyll](http://jekyllrb.com/) and hos
 
 *The Prose Toolbar*
 
-## Adding pages
-
-1. Browse to the `_posts/pages/` directory and click "New File".
-2. Where it says "Untitled" enter a page name.
-3. Delete the sample content and enter your own content.
-4. Click on the "Meta Data" icon and enter a "Permalink". For example, if your page is called "My Page" you would enter "my-page/" as your permalink, then click "Done".
-5. Finally, click the "Save" floppy disk icon and then click "Commit".
-
 ## Publishing pages
 
-1. When you have created and commited a page for the first time it will still be "Unpublished". To publish it you will need to browse away from and then back to the page.
+1. When you have created and commited a page for the first time it will still be "Unpublished". To publish it you need to browse away from, and then back to the page.
 2. You should now see the word "Unpublished" in the Prose toolbar. Click on "Unpublished", then click on "Save" and finally "Commit".
 3. The page will now be published.
 
