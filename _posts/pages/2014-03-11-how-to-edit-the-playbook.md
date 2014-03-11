@@ -48,3 +48,15 @@ The Playbook is a flat file site built on [Jekyll](http://jekyllrb.com/) and hos
 3. Delete the sample content and enter your own content.
 4. Click on the "Meta Data" icon and enter a "Permalink". For example, if your page is called "My Page" you would enter "my-page/" as your permalink, then click "Done".
 5. Finally, click the "Save" floppy disk icon and then click "Commit".
+
+## Publishing pages
+
+1. When you have created and commited a page for the first time it will still be "Unpublished". To publish it you will need to browse away from and then back to the page.
+2. You should now see the word "Unpublished" in the Prose toolbar. Click on "Unpublished", then click on "Save" and finally "Commit".
+3. The page will now be published.
+
+## Adding pages to the Table Of Contents
+
+1. Once you have published a page you need to add it to the TOC. Open `_includes/table-of-contents.md`
+2. Using Markdown syntax add your new page.
+3. You can create new sections within the TOC by adding an h6 tag (in Markdown this is done by prefixing the line with 6 hashes ('###### My Section Heading')
