@@ -32,4 +32,6 @@ The Playbook is a flat file site built on [Jekyll](http://jekyllrb.com/) and hos
 2. Content should be written in Markdown - you can use the simple Prose toolbar if you need some help (see below).
 3. You can also use regular HTML in Markdown documents if you want to do something more complicated (see the [Markdown Demo](http://playbook.gpmd.io/markdown-demo/) for examples).
 
+![prose-toolbar.png](/assets/uploads/prose-toolbar.png)
+
 *Prose Toolbar*
