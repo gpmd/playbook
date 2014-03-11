@@ -1,6 +1,6 @@
 ---
 layout: page
-published: false
+published: true
 title: Style Guide
 permalink: "style-guide/"
 ---
