@@ -33,9 +33,18 @@ The Playbook is a flat file site built on [Jekyll](http://jekyllrb.com/) and hos
 ## Editing Pages
 
 1. Simply browse to the `_posts/pages/` directory and open one of the pages to edit the contents.
-2. Content should be written in Markdown - you can use the simple Prose toolbar if you need some help (see below).
+2. Content should be written using Markdown syntax - you can use the simple Prose toolbar if you need some help (see below).
 3. You can also use regular HTML in Markdown documents if you want to do something more complicated (see the [Markdown Demo](http://playbook.gpmd.io/markdown-demo/) for examples).
+4. Once you have finished editing the page click on the "Save" floppy disk icon and then click "Commit". Your edit should be visible on the site after a few seconds (Github Pages has to rebuild the site after each "Commit").
 
 ![prose-toolbar.png](/assets/uploads/prose-toolbar.png)
 
 *The Prose Toolbar*
+
+## Adding pages
+
+1. Browse to the `_posts/pages/` directory and click "New File".
+2. Where it says "Untitled" enter a page name.
+3. Delete the sample content and enter your own content.
+4. Click on the "Meta Data" icon and enter a "Permalink". For example, if your page is called "My Page" you would enter "my-page/" as your permalink, then click "Done".
+5. Finally, click the "Save" floppy disk icon and then click "Commit".
