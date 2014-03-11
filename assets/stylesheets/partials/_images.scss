@@ -20,10 +20,12 @@ figure {
 	margin: ($base-font-size * 1.5) 0;
 }
 
-figcaption {
+figcaption,
+.caption {
 	font-style: italic;
 	text-align: center;
 	color: lighten($base-font-color, 35);
+	padding: 0 $gutter;
 }
 
 /* ==========================================================================

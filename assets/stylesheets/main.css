@@ -842,11 +842,11 @@ h6 {
   h5 {
     font-size: 1.33333em; } }
 /* Manage word breaks */
-h1, h2, h3 {
+h1 {
   word-break: break-all; }
 
 @media screen and (min-width: 30em) {
-  h1, h2, h3 {
+  h1 {
     word-break: normal; } }
 /* ==========================================================================
    Body copy
@@ -945,10 +945,12 @@ figure {
   padding: 0;
   margin: 1.6875em 0; }
 
-figcaption {
+figcaption,
+.caption {
   font-style: italic;
   text-align: center;
-  color: #8c8c8c; }
+  color: #8c8c8c;
+  padding: 0 20px; }
 
 /* ==========================================================================
    Outsets

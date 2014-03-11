@@ -62,11 +62,11 @@ h6 { font-size: $base-font-size; }
 /* Manage word breaks */
 
 // Break long words only on the smallest screens
-h1, h2, h3 { word-break: break-all; }
+h1 { word-break: break-all; }
 
 // remove word breaks on $small-screen and up
 @include media($small-screen) { // Small screen and up
-    h1, h2, h3 { word-break: normal; }
+    h1 { word-break: normal; }
 }
 
 /* ==========================================================================
