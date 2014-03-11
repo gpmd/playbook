@@ -362,6 +362,13 @@ th {
 
 /* Modules
    ========================================================================== */
+/* Core functions */
+/**
+ * _functions.scss
+ */
+/* ==========================================================================
+   Strip units
+   ========================================================================== */
 /**
  * Bourbon: http://bourbon.io/
  * Neat: http://neat.bourbon.io/
@@ -379,11 +386,13 @@ th {
    Breakpoints
    ========================================================================== */
 /* min/max */
+/* Bourbon Neat media contexts: http://neat.bourbon.io/docs/#new-breakpoint  */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+/* Variables, mixins and extends */
 /**
  * _variables.scss
  */
@@ -523,7 +532,7 @@ h1, h2, h3, h4, h5, h6, .text-transform--uppercase {
   /* Media queries */ }
   .masthead h1 .tagline, .masthead h2 .tagline, .masthead h3 .tagline, .masthead h4 .tagline, .masthead h5 .tagline, .masthead h6 .tagline, .masthead p .tagline {
     display: none; }
-  @media screen and (min-width: 33.75em) {
+  @media screen and (min-width: 35.5625em) {
     .masthead h1, .masthead h2, .masthead h3, .masthead h4, .masthead h5, .masthead h6, .masthead p {
       padding: 0 90px;
       text-align: center; }
@@ -785,7 +794,10 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal;
   letter-spacing: -0.025em;
   margin: 0 0 0.5625em;
-  text-rendering: optimizeLegibility; }
+  text-rendering: optimizeLegibility;
+  -webkit-transition: font-size 0.15s linear;
+  -moz-transition: font-size 0.15s linear;
+  transition: font-size 0.15s linear; }
   h1 .sub-heading, h2 .sub-heading, h3 .sub-heading, h4 .sub-heading, h5 .sub-heading, h6 .sub-heading {
     font-weight: 300;
     font-style: normal; }
@@ -796,23 +808,46 @@ h1, h2, h3, h4, h5, h6 {
  * Uses Bourbon px to em function - $base-font-unit can be found in `_grid-settings.scss`
  */
 h1 {
-  font-size: 2.66667em; }
-
-h2 {
-  font-size: 2.33333em; }
-
-h3 {
   font-size: 2em; }
 
-h4 {
+h2 {
   font-size: 1.66667em; }
 
-h5 {
+h3 {
   font-size: 1.33333em; }
+
+h4 {
+  font-size: 18; }
+
+h5 {
+  font-size: 18; }
 
 h6 {
   font-size: 1.125em; }
 
+/* Media queries */
+@media screen and (min-width: 30em) {
+  h1 {
+    font-size: 2.66667em; }
+
+  h2 {
+    font-size: 2.33333em; }
+
+  h3 {
+    font-size: 2em; }
+
+  h4 {
+    font-size: 1.66667em; }
+
+  h5 {
+    font-size: 1.33333em; } }
+/* Manage word breaks */
+h1 {
+  word-break: break-all; }
+
+@media screen and (min-width: 30em) {
+  h1 {
+    word-break: normal; } }
 /* ==========================================================================
    Body copy
    ========================================================================== */
@@ -910,44 +945,63 @@ figure {
   padding: 0;
   margin: 1.6875em 0; }
 
-figcaption {
+figcaption,
+.caption {
   font-style: italic;
   text-align: center;
-  color: #8c8c8c; }
+  color: #8c8c8c;
+  padding: 0 20px; }
 
-/* Ouset alignment */
+/* ==========================================================================
+   Outsets
+   ========================================================================== */
+/* Variables */
 .outset--right,
-.outset--left,
-.outset--center {
+.outset--left {
   position: relative;
   margin-right: 0;
   margin-left: 0; }
 
+.outset--center {
+  position: relative;
+  margin-right: -20px;
+  margin-left: -20px; }
+
+.outset--right,
+.outset--left,
+.outset--center {
+  -webkit-transition: margin-right 0.15s linear;
+  -moz-transition: margin-right 0.15s linear;
+  transition: margin-right 0.15s linear;
+  -webkit-transition: margin-left 0.15s linear;
+  -moz-transition: margin-left 0.15s linear;
+  transition: margin-left 0.15s linear; }
+
 /* Media queries */
-@media screen and (min-width: 47.5em) {
+@media screen and (min-width: 35.5625em) {
   .outset--right {
-    margin-right: -9.44444em;
+    margin-right: -10.55556em;
     margin-left: 0; }
 
   .outset--right figcaption {
-    margin-right: 9.44444em;
+    margin-right: 10.55556em;
     margin-left: 0; }
 
   .outset--center {
-    margin-right: -9.44444em;
-    margin-left: -9.44444em; }
+    margin-right: -10.55556em;
+    margin-left: -10.55556em; }
 
   .outset--center figcaption {
-    margin-right: 9.44444em;
-    margin-left: 9.44444em; }
+    margin-right: 10.55556em;
+    margin-left: 10.55556em; }
 
   .outset--left {
     margin-right: 0;
-    margin-left: -9.44444em; }
+    margin-left: -10.55556em; }
 
   .outset--left figcaption {
     margin-right: 0;
-    margin-left: 9.44444em; } }
+    margin-left: 10.55556em; } }
 /**
  * _columns.scss
  */
@@ -966,9 +1020,9 @@ figcaption {
 .column-count--10,
 .column-count--11,
 .column-count--12 {
-  -webkit-column-gap: 16px;
-  -moz-column-gap: 16px;
-  column-gap: 16px; }
+  -webkit-column-gap: 20px;
+  -moz-column-gap: 20px;
+  column-gap: 20px; }
 
 .column-count--1 {
   -webkit-column-count: 1;
@@ -1103,7 +1157,7 @@ input[type="submit"] {
   zoom: 1;
   *display: inline;
   *vertical-align: auto;
-  min-width: 90px;
+  min-width: 80px;
   border: none;
   border-radius: 0.125em;
   padding: 0.5625em 1.125em;
@@ -1218,28 +1272,28 @@ dl {
   display: none !important; }
 
 /* Visible */
-@media screen and (min-width: 33.75em) and (max-width: 47.5em) {
+@media screen and (min-width: 30em) and (max-width: 35.5em) {
   .visible--small-screen {
     display: block !important; } }
 
-@media screen and (min-width: 47.5em) and (max-width: 57.5em) {
+@media screen and (min-width: 35.5625em) and (max-width: 59.9375em) {
   .visible--medium-screen {
     display: block !important; } }
 
-@media screen and (min-width: 57.5em) {
+@media screen and (min-width: 60.0625em) {
   .visible--large-screen {
     display: block !important; } }
 
 /* Invisible */
-@media screen and (min-width: 33.75em) and (max-width: 47.5em) {
+@media screen and (min-width: 30em) and (max-width: 35.5em) {
   .invisible--small-screen {
     display: none !important; } }
 
-@media screen and (min-width: 47.5em) and (max-width: 57.5em) {
+@media screen and (min-width: 35.5625em) and (max-width: 59.9375em) {
   .invisible--medium-screen {
     display: none !important; } }
 
-@media screen and (min-width: 57.5em) {
+@media screen and (min-width: 60.0625em) {
   .invisible--large-screen {
     display: none !important; } }
 

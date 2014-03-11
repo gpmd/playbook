@@ -12,31 +12,37 @@
    Variables
    ========================================================================== */
 
-$column: 37px;
-$gutter: 16px;
-$grid-columns: 12;
 $base-font-unit: 18; // This should match the desired $base-font-size in `_variables.scss`
-// $main-column + ($side-margins * 2) = 960
-$main-column: 620;
-$side-margins: 170;
-// Add max-width to `container` in ems - equates to 600px / base font-size of 18px
-$max-width: em($main-column, $base-font-unit);
+
+$column: 30px;
+$column-unitless: strip-unit($column);
+$gutter: 20px;
+$gutter-unitless: strip-unit($gutter);
+
+$grid-columns: 12;
+
+$max-width-unitless: (($column-unitless * 12) + ($gutter-unitless * 11) + ($gutter-unitless * 2)); // ((30*12)+(20*11)+(20*2)) = 620
+$max-width: em($max-width-unitless, $base-font-unit); // Adds a max-width to `.container` in ems
 
 /* ==========================================================================
    Breakpoints
    ========================================================================== */
 
-$small-screen: new-breakpoint(min-width em(540) 2);
-$medium-screen: new-breakpoint(min-width em(760) 4);
-$large-screen: new-breakpoint(min-width em(920) 8);
-
 /* min/max */
 
-$small-screen-min: em(540);
-$small-screen-max: em(760);
+// Small screens
+$small-screen-min: em(480);
+$small-screen-max: em(568);
 
-$medium-screen-min: em(760);
-$medium-screen-max: em(920);
+// Medium screens
+$medium-screen-min: em(569);
+$medium-screen-max: em(959);
 
-$large-screen-min: em(920);
-$large-screen-max: em(1280);
+// Large screens
+$large-screen-min: em(961);
+
+/* Bourbon Neat media contexts: http://neat.bourbon.io/docs/#new-breakpoint  */
+
+$small-screen: new-breakpoint(min-width em(480) 2);
+$medium-screen: new-breakpoint(min-width em(569) 4);
+$large-screen: new-breakpoint(min-width em(961) 8);

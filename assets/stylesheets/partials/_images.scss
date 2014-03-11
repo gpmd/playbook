@@ -20,22 +20,46 @@ figure {
 	margin: ($base-font-size * 1.5) 0;
 }
 
-figcaption {
+figcaption,
+.caption {
 	font-style: italic;
 	text-align: center;
 	color: lighten($base-font-color, 35);
+	padding: 0 $gutter;
 }
 
-/* Ouset alignment */
+/* ==========================================================================
+   Outsets
+   ========================================================================== */
+
+/* Variables */
+
+//$side-margins: 190; // Based on a desired image width of 960px and an actual central column width of 580px
+
+$side-margins: ((960 - (($column-unitless * 12) + ($gutter-unitless * 11))) / 2); // (960 - (30*12)+(20*11)) / 2) = 190
 
 // Defaults
 .outset--right,
-.outset--left,
-.outset--center {
+.outset--left {
 	position: relative;
 	// Start off with no outsets
 	margin-right: 0;
 	margin-left: 0;
+}
+
+.outset--center {
+	position: relative;
+	// Outset
+	margin-right: -$gutter;
+	margin-left: -$gutter;
+}
+
+// Animate margins
+.outset--right,
+.outset--left,
+.outset--center {
+	@include transition(margin-right 0.15s linear);
+	@include transition(margin-left 0.15s linear);
 }
 
 /* Media queries */

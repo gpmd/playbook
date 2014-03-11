@@ -47,6 +47,7 @@ prose:
     - 404.html
     - _config.yml
     - atom.xml
+    - CNAME
     - links.jsonp
     - README.md
   metadata:
