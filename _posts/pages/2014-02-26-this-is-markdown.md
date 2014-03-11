@@ -1,8 +1,8 @@
 ---
 layout: page
 published: true
-title: This is Markdown
-permalink: "this-is-markdown/"
+title: Markdown Demo
+permalink: "markdown-demo/"
 ---
 
 This page demonstrates some of [Markdown][1]'s capabilities. It's worth pointing out that you can also use regular [HTML](http://developers.whatwg.org/) in your markdown document.
