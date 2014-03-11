@@ -15,7 +15,21 @@ The Playbook is a flat file site built on [Jekyll](http://jekyllrb.com/) and hos
 
 ## Project structure
 
-4. Prose is set up to allow you to edit the "Table Of Contents" and pages. All other files are hidden from view.
-5. "Table of Contents" can be found in `_includes/table-of-contents.md`.
-6. Pages are found in `_posts/pages/`.
-7. You can also edit `index.md` (the TOC is automatically pulled in below the content).
+1. Prose is set up to allow you to edit pages and the "Table Of Contents". All other files are hidden from view.
+2. Pages are found in `_posts/pages/`.
+3. "Table of Contents" can be found in `_includes/table-of-contents.md`.
+4. You can also edit `index.md` (FYI, the TOC is automatically pulled in below the content).
+
+## Markdown
+
+1. All content is written in [Markdown](http://daringfireball.net/projects/markdown/basics).
+2. For a demonstration of what you can do with Markdown [click here](http://playbook.gpmd.io/markdown-demo/).
+3. For a reference of Markdown syntax [click here](http://daringfireball.net/projects/markdown/syntax).
+
+## Editing Pages
+
+1. Simply browse to the `_posts/pages/` directory and open one of the pages to edit the contents.
+2. Content should be written in Markdown - you can use the simple Prose toolbar if you need some help (see below).
+3. You can also use regular HTML in Markdown documents if you want to do something more complicated (see the [Markdown Demo](http://playbook.gpmd.io/markdown-demo/) for examples).
+
+*Prose Toolbar*
