@@ -26,6 +26,10 @@ The Playbook is a flat file site built on [Jekyll](http://jekyllrb.com/) and hos
 2. For a demonstration of what you can do with Markdown [click here](http://playbook.gpmd.io/markdown-demo/).
 3. For a reference of Markdown syntax [click here](http://daringfireball.net/projects/markdown/syntax).
 
+## Style
+
+1. *(To do) Please follow the [style guide](http://playbook.gpmd.io/) when writing content*
+
 ## Editing Pages
 
 1. Simply browse to the `_posts/pages/` directory and open one of the pages to edit the contents.
@@ -34,4 +38,4 @@ The Playbook is a flat file site built on [Jekyll](http://jekyllrb.com/) and hos
 
 ![prose-toolbar.png](/assets/uploads/prose-toolbar.png)
 
-*Prose Toolbar*
+*The Prose Toolbar*
