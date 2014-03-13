@@ -4,4 +4,4 @@
 * [Style Guide]({{ site.baseurl }}/style-guide)
 * [Markdown Demo]({{ site.baseurl }}/markdown-demo)
 * [Colophon]({{ site.baseurl }}/colophon)
-* Test
+* [Test](/test)
