@@ -59,16 +59,6 @@ h6 { font-size: $base-font-size; }
     h5 { font-size: em(24, $base-font-unit); }
 }
 
-/* Manage word breaks */
-
-// Break long words only on the smallest screens
-h1 { word-break: break-all; }
-
-// remove word breaks on $small-screen and up
-@include media($small-screen) { // Small screen and up
-    h1 { word-break: normal; }
-}
-
 /* ==========================================================================
    Body copy
    ========================================================================== */
