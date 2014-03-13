@@ -841,13 +841,6 @@ h6 {
 
   h5 {
     font-size: 1.33333em; } }
-/* Manage word breaks */
-h1 {
-  word-break: break-all; }
-
-@media screen and (min-width: 30em) {
-  h1 {
-    word-break: normal; } }
 /* ==========================================================================
    Body copy
    ========================================================================== */
