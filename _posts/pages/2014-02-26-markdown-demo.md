@@ -88,6 +88,14 @@ Division 1 | Division 2 | Division 3
 Division 1 | Division 2 | Division 3
 Division 1 | Division 2 | Division 3
 
+You can also add cell alignment:
+
+Table Header One | Table Header Two | Table Header Three
+--- | :---: | ---:
+Left aligned column | Centered column | Right aligned column
+Division 1 | Division 2 | Division 3
+Division 1 | Division 2 | Division 3
+
 ---
 
 ### Code block
