@@ -88,7 +88,7 @@ Division 1 | Division 2 | Division 3
 Division 1 | Division 2 | Division 3
 Division 1 | Division 2 | Division 3
 
-You can also add cell alignment:
+You can also add column alignment:
 
 Table Header One | Table Header Two | Table Header Three
 --- | :---: | ---:
