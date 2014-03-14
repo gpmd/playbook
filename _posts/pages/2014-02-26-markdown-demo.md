@@ -82,7 +82,7 @@ Links can be made in a handful of ways:
 
 ## Tables
 
-Heading One | Heading Two | Heading Three
+Table Header One | Table Header Two | Table Header Three
 --- | --- | ---
 Division 1 | Division 2 | Division 3
 Division 1 | Division 2 | Division 3
