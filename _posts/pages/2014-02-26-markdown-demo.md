@@ -82,11 +82,11 @@ Links can be made in a handful of ways:
 
 ## Tables
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+Heading One | Heading Two | Heading Three
+--- | --- | ---
+Division 1 | Division 2 | Division 3
+Division 1 | Division 2 | Division 3
+Division 1 | Division 2 | Division 3
 
 ---
 
