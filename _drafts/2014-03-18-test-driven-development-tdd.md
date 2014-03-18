@@ -165,6 +165,27 @@ FAIL! 10 != Buzz
 
 Onto the [Green phase](#fizzbuzz-green-6).
 
+##### <a name="fizzbuzz-red-7"></a>Red: FizzBuzz Step 7
+
+Ok, we are now onto our final functional requirement, which is when we have a number divisible by both 3 and 5, we should print 'FizzBuzz', lets call it '**TestItPrintsFizzBuzzWhenGivenANumberDivisibleByBoth3and5**':
+
+``` php
+function TestItPrintsFizzBuzzWhenGivenANumberDivisibleByBoth3and5() {
+	$testCases = array(
+		15,
+	);
+	
+	assertTestCasesTranslateIntoExpected($testCases, "FizzBuzz");
+}
+```
+
+Running the above produces:
+```
+FAIL! Fizz != FizzBuzz
+```
+
+Thats an interesting output, its because the code returns first by checking divisibility by 3 and because 15 is divisible by 3 we return 'Fizz'. No matter though, its still a failure, onto [Green phase](#fizzbuzz-green-7).
+
 ###  <a name="green"></a>GREEN: Writing just enough code
 
 Writing just enough code to pass your test is probably the next hardest part of TDD. Its very easy to get carried away implementing more functionality into your target method without writing more tests, especially in the beginning. Your target is to satisfy the current failing test with the smallest amount of change to your production code. That may sometimes require you just to return a constant only to know in the next test you are going to replace that with a variable, but in the beginning its best to be more pedantic to really ingrain the discipline. Over time you will start to notice patterns and will be able to save your self the pedanticism.
@@ -290,6 +311,59 @@ function Translate($i) {
 ```
 
 Excellent. Onto the next [Refactoring phase](#fizzbuzz-refactor-6)
+
+##### <a name="fizzbuzz-green-7"></a>Green: FizzBuzz Step 7
+
+We now have our final requirement and a failing test, great. How should we approach this problem, we currently have the following:
+
+``` php
+function Translate($i) {
+	if ($i % 3 == 0) {
+		return "Fizz";
+	}
+	if ($i % 5 == 0) {
+		return "Buzz";
+	}
+	return $i;	
+}
+```
+
+We could use a preceeding conditional to check both divisibility by 3 and 5 and return like so:
+
+``` php
+function Translate($i) {
+	if ($i % 3 == 0 && $i % 5 == 0) {
+		return "FizzBuzz";
+	}
+	if ($i % 3 == 0) {
+		return "Fizz";
+	}
+	if ($i % 5 == 0) {
+		return "Buzz";
+	}
+	return $i;	
+}
+```
+
+But that seems a little clunky and is quite a big change, it does work though. Or how about string concatination with a little ternary return statement:
+
+``` php
+function Translate($i) {
+	$translation = "";
+	if ($i % 3 == 0) {
+		$translation .= "Fizz";
+	}
+	if ($i % 5 == 0) {
+		$translation .= "Buzz";
+	}
+	
+	return ($translation) ? $translation : $i;	
+}
+```
+
+Arguably this change is as big as the last, we have added a new conditional, but it does seem a little more elegant making more use of what was already there (not repeating conditional statements). I am happy to settle on this, but its really a matter of preference.
+
+Onto the final [Refactoring phase](#fizzbuzz-refactor-6)
 
 ### <a name="refactor"></a>REFACTORING: Refactor both tests and production code
 
@@ -636,3 +710,77 @@ function assertItTranslatesArgIntoExpected($arg, $expected) {
 ```
 
 Much better... [Red phase](#fizzbuzz-red-7).
+
+##### <a name="fizzbuzz-refactor-7"></a>Refactor: FizzBuzz Step 7
+
+Well after all that we have ended up with:
+
+``` php
+function TestItPrintsNumberWhenGivenANumberNotDivisibleBy3or5() {
+	$testCases = array(
+		1,
+		2,
+		4,
+		7,
+		8,
+	);
+	
+	assertTestCasesTranslateIntoExpected($testCases, null);
+}
+
+function TestItPrintsFizzWhenGivenANumberDivisableBy3() {
+	$testCases = array(
+		3,
+		6,
+		9,
+	);
+	
+	assertTestCasesTranslateIntoExpected($testCases, "Fizz");
+}
+
+function TestItPrintsBuzzWhenGivenANumberDivisibleBy5() {
+	$testCases = array(
+		5,
+		10,
+	);
+	
+	assertTestCasesTranslateIntoExpected($testCases, "Buzz");
+}
+
+function TestItPrintsFizzBuzzWhenGivenANumberDivisibleByBoth3and5() {
+	$testCases = array(
+		15,
+	);
+	
+	assertTestCasesTranslateIntoExpected($testCases, "FizzBuzz");
+}
+
+function assertTestCasesTranslateIntoExpected($testCases, $expectedValue) {
+	foreach ($testCases as $testCase) {
+		$expected = ($expectedValue == null ? $testCase : $expectedValue);
+		assertItTranslatesArgIntoExpected($testCase, $expected);
+	}
+}
+
+function assertItTranslatesArgIntoExpected($arg, $expected) {
+	if (Translate($arg) != $expected) {
+		print("FAIL! ". Translate($arg) ." != ". $expected);
+	}
+}
+```
+
+``` php
+function Translate($i) {
+	$translation = "";
+	if ($i % 3 == 0) {
+		$translation .= "Fizz";
+	}
+	if ($i % 5 == 0) {
+		$translation .= "Buzz";
+	}
+	
+	return ($translation) ? $translation : $i;
+}
+```
+
+Doesn't look like there is much to refactor. Looks like we are done!
