@@ -76,7 +76,7 @@ function TestItPrints1WhenGiven1() {
 
 I have elected to call the method under test `Transalate()` and it takes a single argument, the int that we want to translate (or not). Notice that `Translate()` doesn't exist yet, another benefit of TDD is that you get to decide on your public interfaces before you write them, not after!
 
-If I were to run the above, I should get an error along the lines of no method `Translate()` exists. This is sufficient for the Red phase, we can now move onto the [Green phase](#green).
+If I were to run the above, I should get an error along the lines of no method `Translate()` exists. This is sufficient for the Red phase, we can now move onto the [>>> **Green phase**](#green).
 
 ##### <a name="fizzbuzz-red-2"></a>Red: FizzBuzz Step 2
 
@@ -96,7 +96,7 @@ Running the above produces:
 FAIL! 2 != 2
 ```
 
-This looks rather similar to our first test, and that has been noted. We will get to it in the next Refactor phase, but for now onto [Green phase](#fizzbuzz-green-2).
+This looks rather similar to our first test, and that has been noted. We will get to it in the next Refactor phase, but for now onto [>>> **Green phase**](#fizzbuzz-green-2).
 
 ##### <a name="fizzbuzz-red-3"></a>Red: FizzBuzz Step 3
 
@@ -114,7 +114,7 @@ Running the above produces:
 FAIL! 3 != Fizz
 ```
 
-Luckily as we refactored our code, implementing this test was just a 1 liner. Onto the [Green phase](#fizzbuzz-green-3).
+Luckily as we refactored our code, implementing this test was just a 1 liner. Onto the [>>> **Green phase**](#fizzbuzz-green-3).
 
 ##### <a name="fizzbuzz-red-4"></a>Red: FizzBuzz Step 4
 
@@ -132,7 +132,7 @@ Running the above produces:
 FAIL! 5 != Buzz
 ```
 
-Onto the [Green phase](#fizzbuzz-green-4).
+Onto the [>>> **Green phase**](#fizzbuzz-green-4).
 
 ##### <a name="fizzbuzz-red-5"></a>Red: FizzBuzz Step 5
 
@@ -150,7 +150,7 @@ Running the above produces:
 FAIL! 6 != Fizz
 ```
 
-Onto the [Green phase](#fizzbuzz-green-5).
+Onto the [>>> **Green phase**](#fizzbuzz-green-5).
 
 ##### <a name="fizzbuzz-red-6"></a>Red: FizzBuzz Step 6
 
@@ -168,7 +168,7 @@ Running the above produces:
 FAIL! 10 != Buzz
 ```
 
-Onto the [Green phase](#fizzbuzz-green-6).
+Onto the [>>> **Green phase**](#fizzbuzz-green-6).
 
 ##### <a name="fizzbuzz-red-7"></a>Red: FizzBuzz Step 7
 
@@ -190,7 +190,7 @@ Running the above produces:
 FAIL! Fizz != FizzBuzz
 ```
 
-Thats an interesting output, its because the code returns first by checking divisibility by 3 and because 15 is divisible by 3 we return 'Fizz'. No matter though, its still a failure, onto [Green phase](#fizzbuzz-green-7).
+Thats an interesting output, its because the code returns first by checking divisibility by 3 and because 15 is divisible by 3 we return 'Fizz'. No matter though, its still a failure, onto [>>> **Green phase**](#fizzbuzz-green-7).
 
 ###  <a name="green"></a>GREEN: Writing just enough code
 
@@ -209,7 +209,7 @@ function Translate($i) {
 
 Notice how we are literally returning just a constant '1'. This is perfectably acceptable as our test runs with no failures, and is the smallest amount of change required to pass.
 
-We now move into our [Refactoring phase](#refactor).
+We now move into our [>>> **Refactoring phase**](#refactor).
 
 ##### <a name="fizzbuzz-green-2"></a>Green: FizzBuzz Step 2
 
@@ -224,7 +224,7 @@ function Translate($i) {
 
 We have turned our constant '1' into the arg varibale $i. Arguably we could of added an if statement to check the value of $i and return the appropriate constant, but I believe this to be a simpler code change.
 
-Tests are passing, so now onto the [Refactoring phase](#fizzbuzz-refactor-2).
+Tests are passing, so now onto the [>>> **Refactoring phase**](#fizzbuzz-refactor-2).
 
 ##### <a name="fizzbuzz-green-3"></a>Green: FizzBuzz Step 3
 
@@ -240,7 +240,7 @@ function Translate($i) {
 }
 ```
 
-Our tests are passing so we can move onto the next [Refactoring phase](#fizzbuzz-refactor-3).
+Our tests are passing so we can move onto the next [>>> **Refactoring phase**](#fizzbuzz-refactor-3).
 
 ##### <a name="fizzbuzz-green-4"></a>Green: FizzBuzz Step 4
 
@@ -259,7 +259,7 @@ function Translate($i) {
 }
 ```
 
-All tests are now passing, onto the next [Refactoring phase](#fizzbuzz-refactor-4)
+All tests are now passing, onto the next [>>> **Refactoring phase**](#fizzbuzz-refactor-4)
 
 ##### <a name="fizzbuzz-green-5"></a>Green: FizzBuzz Step 5
 
@@ -305,7 +305,7 @@ function Translate($i) {
 }
 ```
 
-Thats pretty neat, tests are passing. Onto the next [Refactoring phase](#fizzbuzz-refactor-5)
+Thats pretty neat, tests are passing. Onto the next [>>> **Refactoring phase**](#fizzbuzz-refactor-5)
 
 ##### <a name="fizzbuzz-green-6"></a>Green: FizzBuzz Step 6
 
@@ -324,7 +324,7 @@ function Translate($i) {
 }
 ```
 
-Excellent. Onto the next [Refactoring phase](#fizzbuzz-refactor-6)
+Excellent. Onto the next [>>> **Refactoring phase**](#fizzbuzz-refactor-6)
 
 ##### <a name="fizzbuzz-green-7"></a>Green: FizzBuzz Step 7
 
@@ -380,7 +380,7 @@ function Translate($i) {
 
 Arguably this change is as big as the last, we have added a new conditional, but it does seem a little more elegant making more use of what was already there (not repeating conditional statements). I am happy to settle on this, but its really a matter of preference.
 
-Onto the final [Refactoring phase](#fizzbuzz-refactor-6)
+Onto the final [>>> **Refactoring phase**](#fizzbuzz-refactor-6)
 
 ### <a name="refactor"></a>REFACTORING: Refactor both tests and production code
 
@@ -388,7 +388,7 @@ The refactoring phase is akin to tidying up as you go along. This is where we en
 
 ##### Refactor: FizzBuzz Step 1
 
-Following our FizzBuzz example there isn't anything to be refactored so we would skip back into the [Red phase](#fizzbuzz-red-2).
+Following our FizzBuzz example there isn't anything to be refactored so we would skip back into the [>>> **Red phase**](#fizzbuzz-red-2).
 
 ##### <a name="fizzbuzz-refactor-2"></a>Refactor: FizzBuzz Step 2
 
@@ -446,7 +446,7 @@ function assertItTranslatesArgIntoExpected($arg, $expected) {
 }
 ```
 
-There is still nothing to refactor for the production code, and that is ok. Back into the [Red phase](#fizzbuzz-red-3).
+There is still nothing to refactor for the production code, and that is ok. Back into the [>>> **Red phase**](#fizzbuzz-red-3).
 
 ##### <a name="fizzbuzz-refactor-3"></a>Refactor: FizzBuzz Step 3
 
@@ -483,11 +483,11 @@ function Translate($i) {
 }
 ```
 
-Doesn't look like there is much to refactor right now. Onto the next [Red phase](#fizzbuzz-red-4).
+Doesn't look like there is much to refactor right now. Onto the next [>>> **Red phase**](#fizzbuzz-red-4).
 
 ##### <a name="fizzbuzz-refactor-4"></a>Refactor: FizzBuzz Step 4
 
-Like before there doesn't appear to be much to refactor, so we shall skip straight on to our next [Red phase](#fizzbuzz-red-5).
+Like before there doesn't appear to be much to refactor, so we shall skip straight on to our next [>>> **Red phase**](#fizzbuzz-red-5).
 
 ##### <a name="fizzbuzz-refactor-5"></a>Refactor: FizzBuzz Step 5
 
@@ -556,7 +556,7 @@ function assertItTranslatesArgIntoExpected($arg, $expected) {
 }
 ```
 
-We can now move onto our next [Red phase](#fizzbuzz-red-6).
+We can now move onto our next [>>> **Red phase**](#fizzbuzz-red-6).
 
 ##### <a name="fizzbuzz-refactor-6"></a>Refactor: FizzBuzz Step 6
 
@@ -738,7 +738,7 @@ function assertItTranslatesArgIntoExpected($arg, $expected) {
 }
 ```
 
-Much better... [Red phase](#fizzbuzz-red-7).
+Much better... [>>> **Red phase**](#fizzbuzz-red-7).
 
 ##### <a name="fizzbuzz-refactor-7"></a>Refactor: FizzBuzz Step 7
 
