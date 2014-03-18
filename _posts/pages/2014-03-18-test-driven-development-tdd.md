@@ -65,6 +65,7 @@ Once you have your behaviour and name hopefully its fairly evident exactly what 
 Following on from the [FizzBuzz test name](#fizzbuzz-naming) examples above, here is the first test for '**TestItPrints1WhenGiven1**':
 
 ```php
+<?
 function TestItPrints1WhenGiven1() {
 	if (Translate(1) != 1) {
 		print("FAIL! ". Translate(1) . " != 1");
