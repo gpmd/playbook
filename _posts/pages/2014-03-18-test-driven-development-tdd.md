@@ -222,7 +222,7 @@ function Translate($i) {
 }
 ```
 
-We have turned our constant '1' into the arg varibale $i. Arguably we could of added an if statement to check the value of $i and return the appropriate constant, but I believe this to be a simpler code change.
+We have turned our constant '1' into the arg varibale `$i`. Arguably we could of added an if statement to check the value of `$i` and return the appropriate constant, but I believe this to be a simpler code change.
 
 Tests are passing, so now onto the [>>> **Refactoring phase**](#fizzbuzz-refactor-2).
 
