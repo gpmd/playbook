@@ -86,14 +86,14 @@ Now that we have 1 passing test and nothing to refactor, we can move onto writin
 <?
 function TestItPrints2WhenGiven2() {
 	if (Translate(2) != 2) {
-		print("FAIL! ". Translate(1) . " != 2");
+		print("FAIL! ". Translate(2) . " != 2");
 	}
 }
 ```
 
 Running the above produces:
 ```
-FAIL! 2 != 2
+FAIL! 1 != 2
 ```
 
 This looks rather similar to our first test, and that has been noted. We will get to it in the next Refactor phase, but for now onto [>>> **Green phase**](#fizzbuzz-green-2).
