@@ -64,7 +64,7 @@ Once you have your behaviour and name hopefully its fairly evident exactly what 
 
 ##### Red: FizzBuzz Step 1
 
-Following on from the [FizzBuzz test name](#fizzbuzz-naming) examples above, here is the first failing test for '**TestItPrints1WhenGiven1**':
+Following on from the [FizzBuzz test name](#fizzbuzz-naming) examples above, here is the first test for '**TestItPrints1WhenGiven1**':
 
 ``` php
 function TestItPrints1WhenGiven1() {
@@ -95,7 +95,7 @@ Running the above produces:
 FAIL! 2 != 2
 ```
 
-This looks rather similar to our first test, and that has been noted. We will get to it in the next Refactor phase, but for now onto [Green phase](#fizzbuzz-green-2)
+This looks rather similar to our first test, and that has been noted. We will get to it in the next Refactor phase, but for now onto [Green phase](#fizzbuzz-green-2).
 
 ##### <a name="fizzbuzz-red-3"></a>Red: FizzBuzz Step 3
 
@@ -112,7 +112,58 @@ Running the above produces:
 FAIL! 3 != Fizz
 ```
 
-Luckily as we refactored our code implementing this test was just a 1 liner. Onto the [Green phase](#fizzbuzz-green-3)
+Luckily as we refactored our code, implementing this test was just a 1 liner. Onto the [Green phase](#fizzbuzz-green-3).
+
+##### <a name="fizzbuzz-red-4"></a>Red: FizzBuzz Step 4
+
+We are going to skip testing arg value of '4' for the sakes of page length, and move straight onto '5'. Now we need our code to return 'Buzz' when it receives a '5' so I think '**TestItReturnsBuzzWhenGiven5**' is suitable:
+
+``` php
+function TestItPrintsBuzzWhenGiven5() {
+	assertItTranslatesArgIntoExpected(5, "Buzz");
+}
+```
+
+Running the above produces:
+```
+FAIL! 5 != Buzz
+```
+
+Onto the [Green phase](#fizzbuzz-green-4).
+
+##### <a name="fizzbuzz-red-5"></a>Red: FizzBuzz Step 5
+
+We now move onto an arg value of '6', continuing in the same vein I am going to choose the test name '**TestItPrintsFizzWhenGiven6**'. My refactoring sense are tingling, we appear to have 2 tests that take an argument and return 'Fizz', but we will leave that until the next Refactoring phase:
+
+``` php
+function TestItPrintsFizzWhenGiven6() {
+	assertItTranslatesArgIntoExpected(6, "Fizz");
+}
+```
+
+Running the above produces:
+```
+FAIL! 6 != Fizz
+```
+
+Onto the [Green phase](#fizzbuzz-green-5).
+
+##### <a name="fizzbuzz-red-6"></a>Red: FizzBuzz Step 6
+
+Again for the sakes of page length we are going to skip onto '10' and whilst we are at it add '9' to our '**TestItPrintsFizzWhenGivenANumberDivisableBy3**' test. Very much like the previous Red phase we are going to add another test called '**TestItPrintsBuzzWhenGiven10**'. Again my refactoring sense are tingling for the same reasons as before, we have 2 very similar tests, but we will get to it in the Refactoring phase:
+
+``` php
+function TestItPrintsBuzzWhenGiven10() {
+	assertItTranslatesArgIntoExpected(10, "Buzz");
+}
+```
+
+Running the above produces:
+```
+FAIL! 10 != Buzz
+```
+
+Onto the [Green phase](#fizzbuzz-green-6).
 
 ###  <a name="green"></a>GREEN: Writing just enough code
 
@@ -144,7 +195,7 @@ function Translate($i) {
 
 We have turned our constant '1' into the arg varibale $i. Arguably we could of added an if statement to check the value of $i and return the appropriate constant, but I believe this to be a simpler code change.
 
-Tests are passing, so now onto the [Refactoring phase](#fizzbuzz-refactor-2)
+Tests are passing, so now onto the [Refactoring phase](#fizzbuzz-refactor-2).
 
 ##### <a name="fizzbuzz-green-3"></a>Green: FizzBuzz Step 3
 
@@ -159,7 +210,86 @@ function Translate($i) {
 }
 ```
 
-Our tests are passing so we can move onto the next [Refactoring phase](#fizzbuzz-refactor-3)
+Our tests are passing so we can move onto the next [Refactoring phase](#fizzbuzz-refactor-3).
+
+##### <a name="fizzbuzz-green-4"></a>Green: FizzBuzz Step 4
+
+Another interesting test case, I think the quickest and simplest solution would be another conditional as follows:
+
+``` php
+function Translate($i) {
+	if ($i == 3){
+		return "Fizz";
+	}
+	if ($i == 5){
+		return "Buzz";
+	}
+	return $i;	
+}
+```
+
+All tests are now passing, onto the next [Refactoring phase](#fizzbuzz-refactor-4)
+
+##### <a name="fizzbuzz-green-5"></a>Green: FizzBuzz Step 5
+
+We now come to a fork in the road. We have both '3' and '6' which require the same outcome, and there are different approaches we could take. One approach could be to just add another condition like so:
+
+``` php
+	if ($i == 3){
+		return "Fizz";
+	}
+	if ($i == 5){
+		return "Buzz";
+	}
+	if ($i == 6){
+		return "Fizz";
+	}
+```
+
+But it doesn't take much forethought to realise that we could be repeating that pattern a lot (9, 10, 12, 15, 18, 20, 21... etc), also this doesn't appear to be a simple change, we have added a fair amount of code, is there a shorter way? Well yes, we could condense the new conditional into a chanined OR expression on the first if like so:
+
+``` php
+	if ($i == 3 || $i == 6){
+		return "Fizz";
+	}
+	if ($i == 5){
+		return "Buzz";
+	}
+```
+
+But again, we could be repeating this pattern A LOT. So we are really only left with searching for an algroithm that saves us from having to chain OR's. Luckily modulus comes to mind and would solve this problem in less characters. Here is my implementation with modulus:
+
+``` php
+function Translate($i) {
+	if ($i % 3 == 0) {
+		return "Fizz";
+	}
+	if ($i == 5) {
+		return "Buzz";
+	}
+	return $i;	
+}
+```
+
+Thats pretty neat, tests are passing. Onto the next [Refactoring phase](#fizzbuzz-refactor-5)
+
+##### <a name="fizzbuzz-green-6"></a>Green: FizzBuzz Step 6
+
+Very much like the Green phase before we come to a fork, but we have learned from our previous encounter and know that modulus will be the neatest and simplest answer to our problem:
+
+``` php
+function Translate($i) {
+	if ($i % 3 == 0) {
+		return "Fizz";
+	}
+	if ($i % 5 == 0) {
+		return "Buzz";
+	}
+	return $i;	
+}
+```
+
+Excellent. Onto the next [Refactoring phase](#fizzbuzz-refactor-6)
 
 ### <a name="refactor"></a>REFACTORING: Refactor both tests and production code
 
@@ -167,9 +297,9 @@ The refactoring phase is akin to tidying up as you go along. This is where we en
 
 ##### Refactor: FizzBuzz Step 1
 
-Following our FizzBuzz example there isn't anything to be refactored so we would skip back into the [Red phase](#fizzbuzz-red-2)
+Following our FizzBuzz example there isn't anything to be refactored so we would skip back into the [Red phase](#fizzbuzz-red-2).
 
-##### Refactor: FizzBuzz Step 2
+##### <a name="fizzbuzz-refactor-2"></a>Refactor: FizzBuzz Step 2
 
 Our current code base looks as follows:
 
@@ -221,4 +351,288 @@ function assertItTranslatesArgIntoExpected($arg, $expected) {
 }
 ```
 
-There is still nothing to refactor for the production code, and that is ok. Back into the [Red phase](#fizzbuzz-red-3)
+There is still nothing to refactor for the production code, and that is ok. Back into the [Red phase](#fizzbuzz-red-3).
+
+##### <a name="fizzbuzz-refactor-3"></a>Refactor: FizzBuzz Step 3
+
+Our current code base looks as follows:
+
+``` php
+function TestItPrints1WhenGiven1() {
+	assertItTranslatesArgIntoExpected(1, 1);
+}
+
+function TestItPrints2WhenGiven2() {
+	assertItTranslatesArgIntoExpected(2, 2);
+}
+
+function TestItPrintsFizzWhenGiven3() {
+	assertItTranslatesArgIntoExpected(3, "Fizz");
+}
+
+function assertItTranslatesArgIntoExpected($arg, $expected) {
+	if (Translate($arg) != $expected) {
+		print("FAIL! ". Translate($arg) ." != ". $expected);
+	}
+}
+```
+
+``` php
+function Translate($i) {
+	if ($i == 3){
+		return "Fizz";
+	}
+	return $i;	
+}
+```
+
+Doesn't look like there is much to refactor right now. Onto the next [Red phase](#fizzbuzz-red-4).
+
+##### <a name="fizzbuzz-refactor-4"></a>Refactor: FizzBuzz Step 4
+
+Like before there doesn't appear to be much to refactor, so we shall skip straight on to our next [Red phase](#fizzbuzz-red-5).
+
+##### <a name="fizzbuzz-refactor-5"></a>Refactor: FizzBuzz Step 5
+
+As mentioned in the previous Red phase, we now have 2 tests that look awfully similar:
+
+``` php
+function TestItPrints1WhenGiven1() {
+	assertItTranslatesArgIntoExpected(1, 1);
+}
+
+function TestItPrints2WhenGiven2() {
+	assertItTranslatesArgIntoExpected(2, 2);
+}
+
+function TestItPrintsFizzWhenGiven3() {
+	assertItTranslatesArgIntoExpected(3, "Fizz");
+}
+
+function TestItPrintsBuzzWhenGiven5() {
+	assertItTranslatesArgIntoExpected(5, "Buzz");
+}
+
+function TestItPrintsFizzWhenGiven6() {
+	assertItTranslatesArgIntoExpected(6, "Fizz");
+}
+
+function assertItTranslatesArgIntoExpected($arg, $expected) {
+	if (Translate($arg) != $expected) {
+		print("FAIL! ". Translate($arg) ." != ". $expected);
+	}
+}
+```
+
+Infact its not a coincidence that they look similar, there is an underlying business rule that connects them (the fact that they are divisible by 3 and should return 'Fizz') and with that realisation our understanding of this program has expanded, we now know that args that are divisable by 3 should always return 'Fizz' and our tests should reflect our new understanding by refactoring them into something with a more appropriate name... I propose '**TestItPrintsFizzWhenGivenANumberDivisableBy3**':
+
+``` php
+function TestItPrints1WhenGiven1() {
+	assertItTranslatesArgIntoExpected(1, 1);
+}
+
+function TestItPrints2WhenGiven2() {
+	assertItTranslatesArgIntoExpected(2, 2);
+}
+
+function TestItPrintsBuzzWhenGiven5() {
+	assertItTranslatesArgIntoExpected(5, "Buzz");
+}
+
+function TestItPrintsFizzWhenGivenANumberDivisableBy3() {
+	$testCases = array(
+		3,
+		6,
+	);
+	
+	foreach ($testCases as $testCase) {
+		assertItTranslatesArgIntoExpected($testCase, "Fizz");
+	}
+}
+
+function assertItTranslatesArgIntoExpected($arg, $expected) {
+	if (Translate($arg) != $expected) {
+		print("FAIL! ". Translate($arg) ." != ". $expected);
+	}
+}
+```
+
+We can now move onto our next [Red phase](#fizzbuzz-red-6).
+
+##### <a name="fizzbuzz-refactor-6"></a>Refactor: FizzBuzz Step 6
+
+We are back to where we were last refactoring phase, we have 2 tests that are intriniscally linked by a business rule:
+
+``` php
+function TestItPrints1WhenGiven1() {
+	assertItTranslatesArgIntoExpected(1, 1);
+}
+
+function TestItPrints2WhenGiven2() {
+	assertItTranslatesArgIntoExpected(2, 2);
+}
+
+function TestItPrintsBuzzWhenGiven5() {
+	assertItTranslatesArgIntoExpected(5, "Buzz");
+}
+
+function TestItPrintsFizzWhenGivenANumberDivisableBy3() {
+	$testCases = array(
+		3,
+		6,
+        9,
+	);
+	
+	foreach ($testCases as $testCase) {
+		assertItTranslatesArgIntoExpected($testCase, "Fizz");
+	}
+}
+
+function TestItPrintsBuzzWhenGiven10() {
+	assertItTranslatesArgIntoExpected(10, "Buzz");
+}
+
+function assertItTranslatesArgIntoExpected($arg, $expected) {
+	if (Translate($arg) != $expected) {
+		print("FAIL! ". Translate($arg) ." != ". $expected);
+	}
+}
+```
+
+So to reflect our new understanding of the domain we shall condense the 2 tests into a single, and we can call it '**TestItPrintsBuzzWhenGivenANumberDivisibleBy5**':
+
+``` php
+function TestItPrints1WhenGiven1() {
+	assertItTranslatesArgIntoExpected(1, 1);
+}
+
+function TestItPrints2WhenGiven2() {
+	assertItTranslatesArgIntoExpected(2, 2);
+}
+
+function TestItPrintsFizzWhenGivenANumberDivisableBy3() {
+	$testCases = array(
+		3,
+		6,
+		9,
+	);
+	
+	foreach ($testCases as $testCase) {
+		assertItTranslatesArgIntoExpected($testCase, "Fizz");
+	}
+}
+
+function TestItPrintsBuzzWhenGivenANumberDivisibleBy5() {
+	$testCases = array(
+		5,
+		10,
+	);
+	
+	foreach ($testCases as $testCase) {
+		assertItTranslatesArgIntoExpected($testCase, "Buzz");
+	}
+}
+
+function assertItTranslatesArgIntoExpected($arg, $expected) {
+	if (Translate($arg) != $expected) {
+		print("FAIL! ". Translate($arg) ." != ". $expected);
+	}
+}
+```
+
+Brilliant, but we still have our original 2 tests '**TestItPrints1WhenGiven1**' and '**TestItPrints2WhenGiven2**' which with our new understanding of the system can actually be refactored into their own condensed test, because we know that any number that is NOT divisible by 3 or 5 should return the original number, so lets call that test '**TestItPrintsNumberWhenGivenANumberNotDivisibleBy3or5**':
+
+``` php
+function TestItPrintsNumberWhenGivenANumberNotDivisibleBy3or5() {
+	$testCases = array(
+		1,
+		2,
+		4,
+		7,
+		8,
+	);
+	
+	foreach ($testCases as $testCase) {
+		assertItTranslatesArgIntoExpected($testCase, $testCase);
+	}
+}
+
+function TestItPrintsFizzWhenGivenANumberDivisableBy3() {
+	$testCases = array(
+		3,
+		6,
+		9,
+	);
+	
+	foreach ($testCases as $testCase) {
+		assertItTranslatesArgIntoExpected($testCase, "Fizz");
+	}
+}
+
+function TestItPrintsBuzzWhenGivenANumberDivisibleBy5() {
+	$testCases = array(
+		5,
+		10,
+	);
+	
+	foreach ($testCases as $testCase) {
+		assertItTranslatesArgIntoExpected($testCase, "Buzz");
+	}
+}
+
+function assertItTranslatesArgIntoExpected($arg, $expected) {
+	if (Translate($arg) != $expected) {
+		print("FAIL! ". Translate($arg) ." != ". $expected);
+	}
+}
+```
+
+And whilst we are at it, lets refactor all that looping that looks rather similar:
+
+``` php
+function TestItPrintsNumberWhenGivenANumberNotDivisibleBy3or5() {
+	$testCases = array(
+		1,
+		2,
+		4,
+		7,
+		8,
+	);
+	
+	assertTestCasesTranslateIntoExpected($testCases, null);
+}
+
+function TestItPrintsFizzWhenGivenANumberDivisableBy3() {
+	$testCases = array(
+		3,
+		6,
+		9,
+	);
+	
+	assertTestCasesTranslateIntoExpected($testCases, "Fizz");
+}
+
+function TestItPrintsBuzzWhenGivenANumberDivisibleBy5() {
+	$testCases = array(
+		5,
+		10,
+	);
+	
+	assertTestCasesTranslateIntoExpected($testCases, "Buzz");
+}
+
+function assertTestCasesTranslateIntoExpected($testCases, $expectedValue) {
+	foreach ($testCases as $testCase) {
+		$expected = ($expectedValue == null ? $testCase : $expectedValue);
+		assertItTranslatesArgIntoExpected($testCase, $expected);
+	}
+}
+
+function assertItTranslatesArgIntoExpected($arg, $expected) {
+	if (Translate($arg) != $expected) {
+		print("FAIL! ". Translate($arg) ." != ". $expected);
+	}
+}
+```
+
+Much better... [Red phase](#fizzbuzz-red-7).
