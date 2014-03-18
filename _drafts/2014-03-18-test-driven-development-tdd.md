@@ -10,7 +10,7 @@ title: "Test-Driven Development [TDD]"
 
 Test-Driven Development is a discipline for writing software. The developer works in a short repetitive cycle known commonly as: Red, Green, Refactor. Each phase of the cycle requiring different action to be undertaken:
 
-1. [**Red**: Write a failing test][#red]
+1. [**Red**: Write a failing test](#red)
 2. **Green**: Write just enough code to pass the test
 3. **Refactor**: Refactor both tests and production code
 
