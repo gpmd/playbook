@@ -60,7 +60,7 @@ Writing tests at an abstract level is about 2 things:
 1. Scaffolding how you intend your code to work. E.g. The method name you intend to call and what parameters (if any) it will accept, and what it may or may not return.
 2. Defining the acceptance criterea that signals if the code is working or not. E.g. In our FizzBuzz example above, when our method receives a '1' it is only considered working if it returns a '1' and not if it returned a '2'.
 
-Once you have your behaviour and name its fairly evident exactly what you need to do. To help solidify this, follow along the FizzBuzz example below: 
+Once you have your behaviour and name hopefully its fairly evident exactly what you need to do. To help solidify this, follow along the FizzBuzz example below: 
 
 ##### Red: FizzBuzz Step 1
 
@@ -90,7 +90,29 @@ function TestItPrints2WhenGiven2() {
 }
 ```
 
+Running the above produces:
+```
+FAIL! 2 != 2
+```
+
 This looks rather similar to our first test, and that has been noted. We will get to it in the next Refactor phase, but for now onto [Green phase](#fizzbuzz-green-2)
+
+##### <a name="fizzbuzz-red-3"></a>Red: FizzBuzz Step 3
+
+We now have 2 passing tests, albeit very simple, our next test however is where things get interesting. We now hit the case where by we pass '3' to our `Translate()` method and require it to return 'Fizz'. I think we should call our test '**TestItPrintsFizzWhenGiven3**', and heres what it looks like:
+
+``` php
+function TestItPrintsFizzWhenGiven3() {
+	assertItTranslatesArgIntoExpected(3, "Fizz");
+}
+```
+
+Running the above produces:
+```
+FAIL! 3 != Fizz
+```
+
+Luckily as we refactored our code implementing this test was just a 1 liner. Onto the [Green phase](#fizzbuzz-green-3)
 
 ###  <a name="green"></a>GREEN: Writing just enough code
 
@@ -122,7 +144,22 @@ function Translate($i) {
 
 We have turned our constant '1' into the arg varibale $i. Arguably we could of added an if statement to check the value of $i and return the appropriate constant, but I believe this to be a simpler code change.
 
-Now onto the [Refactoring phase](#fizzbuzz-refactor-2)
+Tests are passing, so now onto the [Refactoring phase](#fizzbuzz-refactor-2)
+
+##### <a name="fizzbuzz-green-3"></a>Green: FizzBuzz Step 3
+
+We now have our first interesting test case, we need to get our function to return 'Fizz' when it receives a '3'. I believe the easiest way to do that would be to add a condition to check the `$i` variable. Here is what I have chosen to implement:
+
+``` php
+function Translate($i) {
+	if ($i == 3){
+		return "Fizz";
+	}
+	return $i;	
+}
+```
+
+Our tests are passing so we can move onto the next [Refactoring phase](#fizzbuzz-refactor-3)
 
 ### <a name="refactor"></a>REFACTORING: Refactor both tests and production code
 
