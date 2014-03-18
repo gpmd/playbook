@@ -65,12 +65,13 @@ Once you have your behaviour and name hopefully its fairly evident exactly what 
 Following on from the [FizzBuzz test name](#fizzbuzz-naming) examples above, here is the first test for '**TestItPrints1WhenGiven1**':
 
 ```php
-<?
+<?php
 function TestItPrints1WhenGiven1() {
 	if (Translate(1) != 1) {
 		print("FAIL! ". Translate(1) . " != 1");
 	}
 }
+?>
 ```
 
 I have elected to call the method under test `Transalate()` and it takes a single argument, the int that we want to translate (or not). Notice that `Translate()` doesn't exist yet, another benefit of TDD is that you get to decide on your public interfaces before you write them, not after!
