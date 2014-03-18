@@ -380,7 +380,7 @@ function Translate($i) {
 
 Arguably this change is as big as the last, we have added a new conditional, but it does seem a little more elegant making more use of what was already there (not repeating conditional statements). I am happy to settle on this, but its really a matter of preference.
 
-Onto the final [>>> **Refactoring phase**](#fizzbuzz-refactor-6)
+Onto the final [>>> **Refactoring phase**](#fizzbuzz-refactor-7)
 
 ### <a name="refactor"></a>REFACTORING: Refactor both tests and production code
 
