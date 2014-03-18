@@ -10,7 +10,7 @@ title: "Test-Driven Development [TDD]"
 
 Test-Driven Development is a discipline for writing software. The developer works in a short repetitive cycle known commonly as: Red, Green, Refactor. Each phase of the cycle requiring different action to be undertaken:
 
-1. **Red**: Write a failing test
+1. [**Red**: Write a failing test][#red]
 2. **Green**: Write just enough code to pass the test
 3. **Refactor**: Refactor both tests and production code
 
@@ -41,11 +41,7 @@ It is for these reasons we use TDD. TDD provides an assurance that bare back dev
 
 ## How
 
-1. **Red**: Write a failing test
-2. **Green**: Write just enough code to pass the test
-3. **Refactor**: Refactor both tests and production code
-
-### **RED**: Writing Failing Tests
+### <a name="red"></a>RED: Writing Failing Tests
 
 #### Naming Tests
 
@@ -72,5 +68,7 @@ function TestItPrints1WhenGiven1() {
 
 I have elected to call the method under test `Transalate()` and it takes a single argument, the int that we want to translate (or not). Notice that `Translate()` doesn't exist yet, another benefit of TDD is that you get to decide on your public interfaces before you write them, not after!
 
-If I were to run the above, I shoudl get an error along the lines of no method `Translate()` exists. This is sufficient for the Red phase, we can now move onto the Green phase.
+If I were to run the above, I should get an error along the lines of no method `Translate()` exists. This is sufficient for the Red phase, we can now move onto the Green phase.
+
+### GREEN: Writing just enough code
 
