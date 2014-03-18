@@ -8,7 +8,7 @@ title: "Test-Driven Development [TDD]"
 
 Test-Driven Development is a discipline for writing software. The developer works in a short repetitive cycle known commonly as: Red, Green, Refactor. Each phase of the cycle requiring different action to be undertaken:
 
-1. [**Red**: Write a failing test](/#red)
+1. [**Red**: Write a failing test](#red)
 2. [**Green**: Write just enough code to pass the test](#green)
 3. [**Refactor**: Refactor both tests and production code](#refactor)
 
@@ -64,7 +64,7 @@ Once you have your behaviour and name hopefully its fairly evident exactly what 
 
 Following on from the [FizzBuzz test name](#fizzbuzz-naming) examples above, here is the first test for '**TestItPrints1WhenGiven1**':
 
-``` php
+```php
 function TestItPrints1WhenGiven1() {
 	if (Translate(1) != 1) {
 		print("FAIL! ". Translate(1) . " != 1");
@@ -80,7 +80,7 @@ If I were to run the above, I should get an error along the lines of no method `
 
 Now that we have 1 passing test and nothing to refactor, we can move onto writing our second test '**TestItPrints2WhenGiven2**':
 
-``` php
+```php
 function TestItPrints2WhenGiven2() {
 	if (Translate(2) != 2) {
 		print("FAIL! ". Translate(1) . " != 2");
@@ -99,7 +99,7 @@ This looks rather similar to our first test, and that has been noted. We will ge
 
 We now have 2 passing tests, albeit very simple, our next test however is where things get interesting. We now hit the case where by we pass '3' to our `Translate()` method and require it to return 'Fizz'. I think we should call our test '**TestItPrintsFizzWhenGiven3**', and heres what it looks like:
 
-``` php
+```php
 function TestItPrintsFizzWhenGiven3() {
 	assertItTranslatesArgIntoExpected(3, "Fizz");
 }
@@ -116,7 +116,7 @@ Luckily as we refactored our code, implementing this test was just a 1 liner. On
 
 We are going to skip testing arg value of '4' for the sakes of page length, and move straight onto '5'. Now we need our code to return 'Buzz' when it receives a '5' so I think '**TestItReturnsBuzzWhenGiven5**' is suitable:
 
-``` php
+```php
 function TestItPrintsBuzzWhenGiven5() {
 	assertItTranslatesArgIntoExpected(5, "Buzz");
 }
@@ -133,7 +133,7 @@ Onto the [Green phase](#fizzbuzz-green-4).
 
 We now move onto an arg value of '6', continuing in the same vein I am going to choose the test name '**TestItPrintsFizzWhenGiven6**'. My refactoring sense are tingling, we appear to have 2 tests that take an argument and return 'Fizz', but we will leave that until the next Refactoring phase:
 
-``` php
+```php
 function TestItPrintsFizzWhenGiven6() {
 	assertItTranslatesArgIntoExpected(6, "Fizz");
 }
@@ -150,7 +150,7 @@ Onto the [Green phase](#fizzbuzz-green-5).
 
 Again for the sakes of page length we are going to skip onto '10' and whilst we are at it add '9' to our '**TestItPrintsFizzWhenGivenANumberDivisableBy3**' test. Very much like the previous Red phase we are going to add another test called '**TestItPrintsBuzzWhenGiven10**'. Again my refactoring sense are tingling for the same reasons as before, we have 2 very similar tests, but we will get to it in the Refactoring phase:
 
-``` php
+```php
 function TestItPrintsBuzzWhenGiven10() {
 	assertItTranslatesArgIntoExpected(10, "Buzz");
 }
@@ -167,7 +167,7 @@ Onto the [Green phase](#fizzbuzz-green-6).
 
 Ok, we are now onto our final functional requirement, which is when we have a number divisible by both 3 and 5, we should print 'FizzBuzz', lets call it '**TestItPrintsFizzBuzzWhenGivenANumberDivisibleByBoth3and5**':
 
-``` php
+```php
 function TestItPrintsFizzBuzzWhenGivenANumberDivisibleByBoth3and5() {
 	$testCases = array(
 		15,
@@ -192,7 +192,7 @@ Writing just enough code to pass your test is probably the next hardest part of 
 
 Here is our code to pass our first test:
 
-``` php
+```php
 function Translate($i) {
 	return 1;	
 }
@@ -206,7 +206,7 @@ We now move into our [Refactoring phase](#refactor).
 
 Keeping in mind the least amount of change required to implement the next failing test, here is our passing production code:
 
-``` php
+```php
 function Translate($i) {
 	return $i;	
 }
@@ -220,7 +220,7 @@ Tests are passing, so now onto the [Refactoring phase](#fizzbuzz-refactor-2).
 
 We now have our first interesting test case, we need to get our function to return 'Fizz' when it receives a '3'. I believe the easiest way to do that would be to add a condition to check the `$i` variable. Here is what I have chosen to implement:
 
-``` php
+```php
 function Translate($i) {
 	if ($i == 3){
 		return "Fizz";
@@ -235,7 +235,7 @@ Our tests are passing so we can move onto the next [Refactoring phase](#fizzbuzz
 
 Another interesting test case, I think the quickest and simplest solution would be another conditional as follows:
 
-``` php
+```php
 function Translate($i) {
 	if ($i == 3){
 		return "Fizz";
@@ -253,7 +253,7 @@ All tests are now passing, onto the next [Refactoring phase](#fizzbuzz-refactor-
 
 We now come to a fork in the road. We have both '3' and '6' which require the same outcome, and there are different approaches we could take. One approach could be to just add another condition like so:
 
-``` php
+```php
 	if ($i == 3){
 		return "Fizz";
 	}
@@ -267,7 +267,7 @@ We now come to a fork in the road. We have both '3' and '6' which require the sa
 
 But it doesn't take much forethought to realise that we could be repeating that pattern a lot (9, 10, 12, 15, 18, 20, 21... etc), also this doesn't appear to be a simple change, we have added a fair amount of code, is there a shorter way? Well yes, we could condense the new conditional into a chanined OR expression on the first if like so:
 
-``` php
+```php
 	if ($i == 3 || $i == 6){
 		return "Fizz";
 	}
@@ -278,7 +278,7 @@ But it doesn't take much forethought to realise that we could be repeating that 
 
 But again, we could be repeating this pattern A LOT. So we are really only left with searching for an algroithm that saves us from having to chain OR's. Luckily modulus comes to mind and would solve this problem in less characters. Here is my implementation with modulus:
 
-``` php
+```php
 function Translate($i) {
 	if ($i % 3 == 0) {
 		return "Fizz";
@@ -296,7 +296,7 @@ Thats pretty neat, tests are passing. Onto the next [Refactoring phase](#fizzbuz
 
 Very much like the Green phase before we come to a fork, but we have learned from our previous encounter and know that modulus will be the neatest and simplest answer to our problem:
 
-``` php
+```php
 function Translate($i) {
 	if ($i % 3 == 0) {
 		return "Fizz";
@@ -314,7 +314,7 @@ Excellent. Onto the next [Refactoring phase](#fizzbuzz-refactor-6)
 
 We now have our final requirement and a failing test, great. How should we approach this problem, we currently have the following:
 
-``` php
+```php
 function Translate($i) {
 	if ($i % 3 == 0) {
 		return "Fizz";
@@ -328,7 +328,7 @@ function Translate($i) {
 
 We could use a preceeding conditional to check both divisibility by 3 and 5 and return like so:
 
-``` php
+```php
 function Translate($i) {
 	if ($i % 3 == 0 && $i % 5 == 0) {
 		return "FizzBuzz";
@@ -345,7 +345,7 @@ function Translate($i) {
 
 But that seems a little clunky and is quite a big change, it does work though. Or how about string concatination with a little ternary return statement:
 
-``` php
+```php
 function Translate($i) {
 	$translation = "";
 	if ($i % 3 == 0) {
@@ -375,7 +375,7 @@ Following our FizzBuzz example there isn't anything to be refactored so we would
 
 Our current code base looks as follows:
 
-``` php
+```php
 function TestItPrints1WhenGiven1() {
 	if (Translate(1) != 1) {
 		print("FAIL! ". Translate(1) . " != 1");
@@ -389,7 +389,7 @@ function TestItPrints2WhenGiven2() {
 }
 ```
 
-``` php
+```php
 function Translate($i) {
 	return $i;	
 }
@@ -397,7 +397,7 @@ function Translate($i) {
 
 I believe we have a DRY violation in our test code base, the 2 test contents look rather similar, and I'd like to refactor into a helper function as follows:
 
-``` php
+```php
 function assertItTranslatesArgIntoExpected($arg, $expected) {
 	if (Translate($arg) != $expected) {
 		print("FAIL! ". Translate($arg) ." != ". $expected);
@@ -407,7 +407,7 @@ function assertItTranslatesArgIntoExpected($arg, $expected) {
 
 This leaves us with in our test code:
 
-``` php
+```php
 function TestItPrints1WhenGiven1() {
 	assertItTranslatesArgIntoExpected(1, 1);
 }
@@ -429,7 +429,7 @@ There is still nothing to refactor for the production code, and that is ok. Back
 
 Our current code base looks as follows:
 
-``` php
+```php
 function TestItPrints1WhenGiven1() {
 	assertItTranslatesArgIntoExpected(1, 1);
 }
@@ -449,7 +449,7 @@ function assertItTranslatesArgIntoExpected($arg, $expected) {
 }
 ```
 
-``` php
+```php
 function Translate($i) {
 	if ($i == 3){
 		return "Fizz";
@@ -468,7 +468,7 @@ Like before there doesn't appear to be much to refactor, so we shall skip straig
 
 As mentioned in the previous Red phase, we now have 2 tests that look awfully similar:
 
-``` php
+```php
 function TestItPrints1WhenGiven1() {
 	assertItTranslatesArgIntoExpected(1, 1);
 }
@@ -498,7 +498,7 @@ function assertItTranslatesArgIntoExpected($arg, $expected) {
 
 Infact its not a coincidence that they look similar, there is an underlying business rule that connects them (the fact that they are divisible by 3 and should return 'Fizz') and with that realisation our understanding of this program has expanded, we now know that args that are divisable by 3 should always return 'Fizz' and our tests should reflect our new understanding by refactoring them into something with a more appropriate name... I propose '**TestItPrintsFizzWhenGivenANumberDivisableBy3**':
 
-``` php
+```php
 function TestItPrints1WhenGiven1() {
 	assertItTranslatesArgIntoExpected(1, 1);
 }
@@ -535,7 +535,7 @@ We can now move onto our next [Red phase](#fizzbuzz-red-6).
 
 We are back to where we were last refactoring phase, we have 2 tests that are intriniscally linked by a business rule:
 
-``` php
+```php
 function TestItPrints1WhenGiven1() {
 	assertItTranslatesArgIntoExpected(1, 1);
 }
@@ -573,7 +573,7 @@ function assertItTranslatesArgIntoExpected($arg, $expected) {
 
 So to reflect our new understanding of the domain we shall condense the 2 tests into a single, and we can call it '**TestItPrintsBuzzWhenGivenANumberDivisibleBy5**':
 
-``` php
+```php
 function TestItPrints1WhenGiven1() {
 	assertItTranslatesArgIntoExpected(1, 1);
 }
@@ -614,7 +614,7 @@ function assertItTranslatesArgIntoExpected($arg, $expected) {
 
 Brilliant, but we still have our original 2 tests '**TestItPrints1WhenGiven1**' and '**TestItPrints2WhenGiven2**' which with our new understanding of the system can actually be refactored into their own condensed test, because we know that any number that is NOT divisible by 3 or 5 should return the original number, so lets call that test '**TestItPrintsNumberWhenGivenANumberNotDivisibleBy3or5**':
 
-``` php
+```php
 function TestItPrintsNumberWhenGivenANumberNotDivisibleBy3or5() {
 	$testCases = array(
 		1,
@@ -661,7 +661,7 @@ function assertItTranslatesArgIntoExpected($arg, $expected) {
 
 And whilst we are at it, lets refactor all that looping that looks rather similar:
 
-``` php
+```php
 function TestItPrintsNumberWhenGivenANumberNotDivisibleBy3or5() {
 	$testCases = array(
 		1,
@@ -713,7 +713,7 @@ Much better... [Red phase](#fizzbuzz-red-7).
 
 Well after all that we have ended up with:
 
-``` php
+```php
 function TestItPrintsNumberWhenGivenANumberNotDivisibleBy3or5() {
 	$testCases = array(
 		1,
@@ -767,7 +767,7 @@ function assertItTranslatesArgIntoExpected($arg, $expected) {
 }
 ```
 
-``` php
+```php
 function Translate($i) {
 	$translation = "";
 	if ($i % 3 == 0) {
