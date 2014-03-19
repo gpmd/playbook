@@ -35,7 +35,6 @@ figcaption,
 /* Variables */
 
 //$side-margins: 190; // Based on a desired image width of 960px and an actual central column width of 580px
-
 $side-margins: ((960 - (($column-unitless * 12) + ($gutter-unitless * 11))) / 2); // (960 - (30*12)+(20*11)) / 2) = 190
 
 // Defaults

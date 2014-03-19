@@ -18,3 +18,14 @@
 .highlight table {
     background-color: $dark-gray !important;
 }
+
+/* Outset code at larger screen widths
+   ========================================================================== */
+
+@include media($large-screen) {
+	.highlight {
+		position: relative;
+		width: 165.5%;
+        left: -32.75%;
+	}
+}

@@ -926,6 +926,13 @@ cite {
 .highlight table {
   background-color: #333333 !important; }
 
+/* Outset code at larger screen widths
+   ========================================================================== */
+@media screen and (min-width: 60.0625em) {
+  .highlight {
+    position: relative;
+    width: 165.5%;
+    left: -32.75%; } }
 /**
  * _images.scss
  */
