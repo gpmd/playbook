@@ -846,7 +846,11 @@ h6 {
    ========================================================================== */
 /* Paragraphs */
 p {
-  margin: 0 0 0.84375em; }
+  margin: 0 0 0.84375em;
+  word-break: break-all; }
+  @media screen and (min-width: 30em) {
+    p {
+      word-break: normal; } }
   p.lead {
     font-size: 1.6875em;
     line-height: 1.25em; }
