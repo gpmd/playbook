@@ -19,7 +19,7 @@ As TDD is a discipline, it like other disciplines requires practise. Practising 
 
 Writing the minimum amount of bug free code to satisfy the clients requirements is hard, really hard.
 
-Every line of code written by a developer has the potential to introduce new bugs into the system, every method composed has the potential to veer away from the customer requirements and every design pattern introduced has the potential to add un-needed complexity. Add to this that there are many solutions to any given software problem and that developers come with their own set of flaws and you quickly see the cocktail of complexity emerging. No wonder then why ~65% of software projects undertaken fail (note that the developer isn't the sole reason for this failure rate, but is definitely apart of it).
+Every line of code written by a developer has the potential to introduce new bugs into the system, every method composed has the potential to veer away from the customer requirements and every design pattern introduced has the potential to add unneeded complexity. Add to this that there are many solutions to any given software problem and that developers come with their own set of flaws and you quickly see the cocktail of complexity emerging. No wonder then why ~65% of software projects undertaken fail (note that the developer isn't the sole reason for this failure rate, but is definitely part of it).
 
 It is for these reasons we use TDD. TDD provides an assurance that bare back development does not, and it's not just as developers that we see the benefits. The benefits that we have found from practising TDD are as follows:
 
@@ -118,7 +118,7 @@ Luckily as we refactored our code, implementing this test was just a 1 liner. On
 
 ##### <a name="fizzbuzz-red-4"></a>Red: FizzBuzz Step 4
 
-We are going to skip testing arg value of '4' for the sakes of page length, and move straight onto '5'. Now we need our code to return 'Buzz' when it receives a '5' so I think '**TestItReturnsBuzzWhenGiven5**' is suitable:
+We are going to skip testing arg value of '4' for the sake of page length, and move straight onto '5'. Now we need our code to return 'Buzz' when it receives a '5' so I think '**TestItReturnsBuzzWhenGiven5**' is suitable:
 
 ```php
 <?
@@ -154,7 +154,7 @@ Onto the [>>> **Green phase**](#fizzbuzz-green-5).
 
 ##### <a name="fizzbuzz-red-6"></a>Red: FizzBuzz Step 6
 
-Again for the sakes of page length we are going to skip onto '10' and whilst we are at it add '9' to our '**TestItPrintsFizzWhenGivenANumberDivisableBy3**' test. Very much like the previous Red phase we are going to add another test called '**TestItPrintsBuzzWhenGiven10**'. Again my refactoring sense are tingling for the same reasons as before, we have 2 very similar tests, but we will get to it in the Refactoring phase:
+Again for the sake of page length we are going to skip onto '10' and whilst we are at it add '9' to our '**TestItPrintsFizzWhenGivenANumberDivisableBy3**' test. Very much like the previous Red phase we are going to add another test called '**TestItPrintsBuzzWhenGiven10**'. Again my refactoring sense are tingling for the same reasons as before, we have 2 very similar tests, but we will get to it in the Refactoring phase:
 
 ```php
 <?
@@ -207,7 +207,7 @@ function Translate($i) {
 }
 ```
 
-Notice how we are literally returning just a constant '1'. This is perfectably acceptable as our test runs with no failures, and is the smallest amount of change required to pass.
+Notice how we are literally returning just a constant '1'. This is perfectly acceptable as our test runs with no failures, and is the smallest amount of change required to pass.
 
 We now move into our [>>> **Refactoring phase**](#refactor).
 
@@ -278,7 +278,7 @@ We now come to a fork in the road. We have both '3' and '6' which require the sa
 	}
 ```
 
-But it doesn't take much forethought to realise that we could be repeating that pattern a lot (9, 10, 12, 15, 18, 20, 21... etc), also this doesn't appear to be a simple change, we have added a fair amount of code, is there a shorter way? Well yes, we could condense the new conditional into a chanined OR expression on the first if like so:
+But it doesn't take much forethought to realise that we could be repeating that pattern a lot (9, 10, 12, 15, 18, 20, 21... etc), also this doesn't appear to be a simple change, we have added a fair amount of code, is there a shorter way? Well yes, we could condense the new conditional into a chainned OR expression on the first if like so:
 
 ```php
 <?
@@ -343,7 +343,7 @@ function Translate($i) {
 }
 ```
 
-We could use a preceeding conditional to check both divisibility by 3 and 5 and return like so:
+We could use a preceding conditional to check both divisibility by 3 and 5 and return like so:
 
 ```php
 <?
