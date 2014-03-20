@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6 {
     font-style: $extra-bold-font-style;
     @extend %text-transform--uppercase;
     letter-spacing: -0.025em;
-    margin: 0 0 ($base-font-size * 0.5);
+    margin: 0 0 ($base-line-height * 0.35);
     text-rendering: optimizeLegibility; // Fix the character spacing for headings
     @include transition(font-size 0.15s linear); // Animate font-size changes
     .sub-heading {
@@ -46,7 +46,7 @@ h2 { font-size: em(30, $base-font-unit); }
 h3 { font-size: em(24, $base-font-unit); }
 h4 { font-size: $base-font-unit; }
 h5 { font-size: $base-font-unit; }
-h6 { font-size: $base-font-size; }
+h6 { font-size: $base-font-unit; }
 
 /* Media queries */
 

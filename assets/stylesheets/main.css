@@ -793,7 +793,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 900;
   font-style: normal;
   letter-spacing: -0.025em;
-  margin: 0 0 0.5625em;
+  margin: 0 0 0.59062em;
   text-rendering: optimizeLegibility;
   -webkit-transition: font-size 0.15s linear;
   -moz-transition: font-size 0.15s linear;
@@ -823,7 +823,7 @@ h5 {
   font-size: 18; }
 
 h6 {
-  font-size: 1.125em; }
+  font-size: 18; }
 
 /* Media queries */
 @media screen and (min-width: 30em) {
