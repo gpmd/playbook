@@ -19,9 +19,9 @@ As TDD is a discipline, it like other disciplines requires practise. Practising 
 
 Writing the minimum amount of bug free code to satisfy the clients requirements is hard, really hard.
 
-Every line of code written by a developer has the potential to introduce new bugs into the system, every method composed has the potential to veer away from the customer requirements and every design pattern introduced has the potential to add un-needed complexity. Add to this that there are many solutions to any given software problem and that developers come with their own set of flaws and you quickly see the cocktail of complexity emerging. No wonder then why ~65% of software projects undertaken fail (note that the developer isn't the sole reason for this failure rate, but is definitely apart of it).
+Every line of code written by a developer has the potential to introduce new bugs into the system, every method composed has the potential to veer away from the customer requirements and every design pattern introduced has the potential to add unneeded complexity. Add to this that there are many solutions to any given software problem and that developers come with their own set of flaws and you quickly see the cocktail of complexity emerging. No wonder then why ~65% of software projects undertaken fail (note that the developer isn't the sole reason for this failure rate, but is definitely part of it).
 
-It is for these reasons we use TDD. TDD provides an assurance that bare back development does not, and its not just as developers that we see the benefits. The benefits that we have found from practising TDD are as follows:
+It is for these reasons we use TDD. TDD provides an assurance that bare back development does not, and it's not just as developers that we see the benefits. The benefits that we have found from practising TDD are as follows:
 
 #### Beneficiaries:
 - Code
@@ -44,11 +44,11 @@ It is for these reasons we use TDD. TDD provides an assurance that bare back dev
 
 #### Naming Tests
 
-Naming tests is the first step of the Red phase and sometimes seen as the hardest part of TDD, and rightly so, as everyone knows the 2 hardest problems in computing sciences is cache invalidation and naming things (Phil Karlton). The aim is to summerise in a sentance the specific behaviour you require, and call your test that. Here are a few examples:
+Naming tests is the first step of the Red phase and sometimes seen as the hardest part of TDD, and rightly so, as everyone knows the 2 hardest problems in computing sciences is cache invalidation and naming things (Phil Karlton). The aim is to summarise in a sentence the specific behaviour you require, and call your test that. Here are a few examples:
 
-<a name="fizzbuzz-naming"></a>Lets imagine we are implementing FizzBuzz. The first and simplest test case we know is that when given the number 1, it prints the number 1, so lets call it just that: '**TestItPrints1WhenGiven1**'. Next test case is that when given the number 2 it prints the number 2, so lets keep consistent and call it: '**TestItPrints2WhenGiven2**'
+<a name="fizzbuzz-naming"></a>Let's imagine we are implementing FizzBuzz. The first and simplest test case we know is that when given the number 1, it prints the number 1, so let's call it just that: '**TestItPrints1WhenGiven1**'. Next test case is that when given the number 2 it prints the number 2, so let's keep consistent and call it: '**TestItPrints2WhenGiven2**'
 
-Lets now imagine we are implementing a javascript powered menu that converts a UL into an interactive menu. Our first behaviour here is likely that given an ID it grabs the DOM element so lets call our first test case: '**TestItGetsDomElementById**'. Now we can get DOM elements our second behaviour is that it will display a warning if the DOM element got by ID is not an UL, so lets call that: '**TestItDisplaysWarningIfDomElementIsNotUL**'
+Let's now imagine we are implementing a javascript powered menu that converts a UL into an interactive menu. Our first behaviour here is likely that given an ID it grabs the DOM element so let's call our first test case: '**TestItGetsDomElementById**'. Now we can get DOM elements our second behaviour is that it will display a warning if the DOM element got by ID is not an UL, so let's call that: '**TestItDisplaysWarningIfDomElementIsNotUL**'
 
 As you can see, each test name is an apt summary of exactly the behaviour we require, there is no ambiguity about what the production code should be doing.
 
@@ -57,9 +57,9 @@ As you can see, each test name is an apt summary of exactly the behaviour we req
 Writing tests at an abstract level is about 2 things:
 
 1. Scaffolding how you intend your code to work. E.g. The method name you intend to call and what parameters (if any) it will accept, and what it may or may not return.
-2. Defining the acceptance criterea that signals if the code is working or not. E.g. In our FizzBuzz example above, when our method receives a '1' it is only considered working if it returns a '1' and not if it returned a '2'.
+2. Defining the acceptance criteria that signals if the code is working or not. E.g. In our FizzBuzz example above, when our method receives a '1' it is only considered working if it returns a '1' and not if it returned a '2'.
 
-Once you have your behaviour and name hopefully its fairly evident exactly what you need to do. To help solidify this, follow along the FizzBuzz example below: 
+Once you have your behaviour and name hopefully it's fairly evident exactly what you need to do. To help solidify this, follow along the FizzBuzz example below: 
 
 ##### Red: FizzBuzz Step 1
 
@@ -74,7 +74,7 @@ function TestItPrints1WhenGiven1() {
 }
 ```
 
-I have elected to call the method under test `Transalate()` and it takes a single argument, the int that we want to translate (or not). Notice that `Translate()` doesn't exist yet, another benefit of TDD is that you get to decide on your public interfaces before you write them, not after!
+I have elected to call the method under test `Translate()` and it takes a single argument, the int that we want to translate (or not). Notice that `Translate()` doesn't exist yet, another benefit of TDD is that you get to decide on your public interfaces before you write them, not after!
 
 If I were to run the above, I should get an error along the lines of no method `Translate()` exists. This is sufficient for the Red phase, we can now move onto the [>>> **Green phase**](#green).
 
@@ -118,7 +118,7 @@ Luckily as we refactored our code, implementing this test was just a 1 liner. On
 
 ##### <a name="fizzbuzz-red-4"></a>Red: FizzBuzz Step 4
 
-We are going to skip testing arg value of '4' for the sakes of page length, and move straight onto '5'. Now we need our code to return 'Buzz' when it receives a '5' so I think '**TestItReturnsBuzzWhenGiven5**' is suitable:
+We are going to skip testing arg value of '4' for the sake of page length, and move straight onto '5'. Now we need our code to return 'Buzz' when it receives a '5' so I think '**TestItReturnsBuzzWhenGiven5**' is suitable:
 
 ```php
 <?
@@ -154,7 +154,7 @@ Onto the [>>> **Green phase**](#fizzbuzz-green-5).
 
 ##### <a name="fizzbuzz-red-6"></a>Red: FizzBuzz Step 6
 
-Again for the sakes of page length we are going to skip onto '10' and whilst we are at it add '9' to our '**TestItPrintsFizzWhenGivenANumberDivisableBy3**' test. Very much like the previous Red phase we are going to add another test called '**TestItPrintsBuzzWhenGiven10**'. Again my refactoring sense are tingling for the same reasons as before, we have 2 very similar tests, but we will get to it in the Refactoring phase:
+Again for the sake of page length we are going to skip onto '10' and whilst we are at it add '9' to our '**TestItPrintsFizzWhenGivenANumberDivisableBy3**' test. Very much like the previous Red phase we are going to add another test called '**TestItPrintsBuzzWhenGiven10**'. Again my refactoring sense are tingling for the same reasons as before, we have 2 very similar tests, but we will get to it in the Refactoring phase:
 
 ```php
 <?
@@ -172,7 +172,7 @@ Onto the [>>> **Green phase**](#fizzbuzz-green-6).
 
 ##### <a name="fizzbuzz-red-7"></a>Red: FizzBuzz Step 7
 
-Ok, we are now onto our final functional requirement, which is when we have a number divisible by both 3 and 5, we should print 'FizzBuzz', lets call it '**TestItPrintsFizzBuzzWhenGivenANumberDivisibleByBoth3and5**':
+Ok, we are now onto our final functional requirement, which is when we have a number divisible by both 3 and 5, we should print 'FizzBuzz', let's call it '**TestItPrintsFizzBuzzWhenGivenANumberDivisibleByBoth3and5**':
 
 ```php
 <?
@@ -190,11 +190,11 @@ Running the above produces:
 FAIL! Fizz != FizzBuzz
 ```
 
-Thats an interesting output, its because the code returns first by checking divisibility by 3 and because 15 is divisible by 3 we return 'Fizz'. No matter though, its still a failure, onto [>>> **Green phase**](#fizzbuzz-green-7).
+Thats an interesting output, it's because the code returns first by checking divisibility by 3 and because 15 is divisible by 3 we return 'Fizz'. No matter though, it's still a failure, onto [>>> **Green phase**](#fizzbuzz-green-7).
 
 ###  <a name="green"></a>GREEN: Writing just enough code
 
-Writing just enough code to pass your test is probably the next hardest part of TDD. Its very easy to get carried away implementing more functionality into your target method without writing more tests, especially in the beginning. Your target is to satisfy the current failing test with the smallest amount of change to your production code. That may sometimes require you just to return a constant only to know in the next test you are going to replace that with a variable, but in the beginning its best to be more pedantic to really ingrain the discipline. Over time you will start to notice patterns and will be able to save your self the pedanticism.
+Writing just enough code to pass your test is probably the next hardest part of TDD. It's very easy to get carried away implementing more functionality into your target method without writing more tests, especially in the beginning. Your target is to satisfy the current failing test with the smallest amount of change to your production code. That may sometimes require you just to return a constant only to know in the next test you are going to replace that with a variable, but in the beginning it's best to be more pedantic to really ingrain the discipline. Over time you will start to notice patterns and will be able to save your self the pedanticism.
 
 ##### Green: FizzBuzz Step 1
 
@@ -207,7 +207,7 @@ function Translate($i) {
 }
 ```
 
-Notice how we are literally returning just a constant '1'. This is perfectably acceptable as our test runs with no failures, and is the smallest amount of change required to pass.
+Notice how we are literally returning just a constant '1'. This is perfectly acceptable as our test runs with no failures, and is the smallest amount of change required to pass.
 
 We now move into our [>>> **Refactoring phase**](#refactor).
 
@@ -222,7 +222,7 @@ function Translate($i) {
 }
 ```
 
-We have turned our constant '1' into the arg varibale `$i`. Arguably we could of added an if statement to check the value of `$i` and return the appropriate constant, but I believe this to be a simpler code change.
+We have turned our constant '1' into the arg variable `$i`. Arguably we could have added an if statement to check the value of `$i` and return the appropriate constant, but I believe this to be a simpler code change.
 
 Tests are passing, so now onto the [>>> **Refactoring phase**](#fizzbuzz-refactor-2).
 
@@ -278,7 +278,7 @@ We now come to a fork in the road. We have both '3' and '6' which require the sa
 	}
 ```
 
-But it doesn't take much forethought to realise that we could be repeating that pattern a lot (9, 10, 12, 15, 18, 20, 21... etc), also this doesn't appear to be a simple change, we have added a fair amount of code, is there a shorter way? Well yes, we could condense the new conditional into a chanined OR expression on the first if like so:
+But it doesn't take much forethought to realise that we could be repeating that pattern a lot (9, 10, 12, 15, 18, 20, 21... etc), also this doesn't appear to be a simple change, we have added a fair amount of code, is there a shorter way? Well yes, we could condense the new conditional into a chainned OR expression on the first if like so:
 
 ```php
 <?
@@ -290,7 +290,7 @@ But it doesn't take much forethought to realise that we could be repeating that 
 	}
 ```
 
-But again, we could be repeating this pattern A LOT. So we are really only left with searching for an algroithm that saves us from having to chain OR's. Luckily modulus comes to mind and would solve this problem in less characters. Here is my implementation with modulus:
+But again, we could be repeating this pattern A LOT. So we are really only left with searching for an algorithm that saves us from having to chain OR's. Luckily modulus comes to mind and would solve this problem in less characters. Here is my implementation with modulus:
 
 ```php
 <?
@@ -343,7 +343,7 @@ function Translate($i) {
 }
 ```
 
-We could use a preceeding conditional to check both divisibility by 3 and 5 and return like so:
+We could use a preceding conditional to check both divisibility by 3 and 5 and return like so:
 
 ```php
 <?
@@ -361,7 +361,7 @@ function Translate($i) {
 }
 ```
 
-But that seems a little clunky and is quite a big change, it does work though. Or how about string concatination with a little ternary return statement:
+But that seems a little clunky and is quite a big change, it does work though. Or how about string concatenation with a little ternary return statement:
 
 ```php
 <?
@@ -378,7 +378,7 @@ function Translate($i) {
 }
 ```
 
-Arguably this change is as big as the last, we have added a new conditional, but it does seem a little more elegant making more use of what was already there (not repeating conditional statements). I am happy to settle on this, but its really a matter of preference.
+Arguably this change is as big as the last, we have added a new conditional, but it does seem a little more elegant making more use of what was already there (not repeating conditional statements). I am happy to settle on this, but it's really a matter of preference.
 
 Onto the final [>>> **Refactoring phase**](#fizzbuzz-refactor-7)
 
@@ -522,7 +522,7 @@ function assertItTranslatesArgIntoExpected($arg, $expected) {
 }
 ```
 
-Infact its not a coincidence that they look similar, there is an underlying business rule that connects them (the fact that they are divisible by 3 and should return 'Fizz') and with that realisation our understanding of this program has expanded, we now know that args that are divisable by 3 should always return 'Fizz' and our tests should reflect our new understanding by refactoring them into something with a more appropriate name... I propose '**TestItPrintsFizzWhenGivenANumberDivisableBy3**':
+Infact it's not a coincidence that they look similar, there is an underlying business rule that connects them (the fact that they are divisible by 3 and should return 'Fizz') and with that realisation our understanding of this program has expanded, we now know that args that are divisable by 3 should always return 'Fizz' and our tests should reflect our new understanding by refactoring them into something with a more appropriate name... I propose '**TestItPrintsFizzWhenGivenANumberDivisableBy3**':
 
 ```php
 <?
@@ -641,7 +641,7 @@ function assertItTranslatesArgIntoExpected($arg, $expected) {
 }
 ```
 
-Brilliant, but we still have our original 2 tests '**TestItPrints1WhenGiven1**' and '**TestItPrints2WhenGiven2**' which with our new understanding of the system can actually be refactored into their own condensed test, because we know that any number that is NOT divisible by 3 or 5 should return the original number, so lets call that test '**TestItPrintsNumberWhenGivenANumberNotDivisibleBy3or5**':
+Brilliant, but we still have our original 2 tests '**TestItPrints1WhenGiven1**' and '**TestItPrints2WhenGiven2**' which with our new understanding of the system can actually be refactored into their own condensed test, because we know that any number that is NOT divisible by 3 or 5 should return the original number, so let's call that test '**TestItPrintsNumberWhenGivenANumberNotDivisibleBy3or5**':
 
 ```php
 <?
@@ -689,7 +689,7 @@ function assertItTranslatesArgIntoExpected($arg, $expected) {
 }
 ```
 
-And whilst we are at it, lets refactor all that looping that looks rather similar:
+And whilst we are at it, let's refactor all that looping that looks rather similar:
 
 ```php
 <?
