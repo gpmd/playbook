@@ -17,4 +17,4 @@ Percentages should use numerals and spell out the word "percent". For example, 1
 
 ## Titles
 
-All titles should be written in title case. For example "This is the New GPMD Playbook".
+All titles should be written in title case. For example **"This is the New GPMD Playbook"**.
