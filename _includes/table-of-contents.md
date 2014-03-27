@@ -1,14 +1,16 @@
 ###### Process
+
 * [Projects](/project-process)
 * [Support](/support-process)
 
 ###### Development
 
 * [Test-Driven Development](/test-driven-development)
+* [Gitflow](/gitflow)
 
 ###### Miscellaneous
 
-* [How to edit the Playbook]({{ site.baseurl }}/how-to-edit-the-playbook)
-* [Style Guide]({{ site.baseurl }}/style-guide)
-* [Markdown Demo]({{ site.baseurl }}/markdown-demo)
-* [Colophon]({{ site.baseurl }}/colophon)
+* [How to edit the Playbook](/how-to-edit-the-playbook)
+* [Style Guide](/style-guide)
+* [Markdown Demo](/markdown-demo)
+* [Colophon](/colophon)
