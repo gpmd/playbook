@@ -1,7 +1,8 @@
 ---
 layout: page
-published: true
+published: false
 title: Project Process
+permalink: "project-process"
 ---
 
 ## Project Process
