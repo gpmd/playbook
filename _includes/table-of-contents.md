@@ -1,6 +1,6 @@
 ###### Process
-* [Projects](/process-projects)
-* [Support](/process-support)
+* [Projects](/project-process)
+* [Support](/support-process)
 
 ###### Development
 
