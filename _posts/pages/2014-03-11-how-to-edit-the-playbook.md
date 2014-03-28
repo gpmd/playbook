@@ -9,7 +9,7 @@ The Playbook is a flat file site built on [Jekyll](http://jekyllrb.com/) and hos
 
 ---
 
-**Note:** *If you use [prose.io](http://prose.io/) to edit the site there are a number of known issues/bugs. If you encounter any strange behaviour it's usually best to just close the browser window and then reload the page.*
+**Note: If you use [prose.io](http://prose.io/) to edit the site there are a number of known issues/bugs. If you encounter any strange behaviour it's usually best to just close the browser window and then reload the page.**
 
 ---
 
