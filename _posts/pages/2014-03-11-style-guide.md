@@ -2,7 +2,7 @@
 layout: page
 published: true
 title: Style Guide
-permalink: "style-guide/"
+permalink: "writers-style-guide/"
 ---
 
 Below are some suggestions on maintaining a consistent style on the Playbook. Please do see them as guidelines though – everyone's writing style is their own. Enjoy!
