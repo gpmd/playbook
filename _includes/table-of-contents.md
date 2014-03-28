@@ -3,6 +3,10 @@
 * [Projects](/process/projects)
 * [Support](/support-process)
 
+###### Project Management
+
+* *Coming soon...*
+
 ###### Development
 
 * [Test-Driven Development](/test-driven-development)
@@ -10,7 +14,7 @@
 
 ###### Frontend Development
 
-* [To do...](#)
+* *Coming soon...*
 
 ###### Miscellaneous
 
