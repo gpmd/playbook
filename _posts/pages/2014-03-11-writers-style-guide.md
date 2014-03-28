@@ -1,7 +1,7 @@
 ---
 layout: page
 published: true
-title: Style Guide
+title: "Writer's Style Guide"
 permalink: "writers-style-guide/"
 ---
 
