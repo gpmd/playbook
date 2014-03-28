@@ -11,6 +11,6 @@
 ###### Miscellaneous
 
 * [How to edit the Playbook](/how-to-edit-the-playbook)
-* [Style Guide](/style-guide)
+* [Writer's Style Guide](/writers-style-guide)
 * [Markdown Demo](/markdown-demo)
 * [Colophon](/colophon)
