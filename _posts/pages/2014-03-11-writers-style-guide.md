@@ -5,7 +5,7 @@ title: "Writer's Style Guide"
 permalink: "writers-style-guide"
 ---
 
-Below are some suggestions for maintaining a consistent writing style on the Playbook.
+<p class="lead">Below are some suggestions for maintaining a consistent writing style on the Playbook.</p>
 
 ## Spelling
 
