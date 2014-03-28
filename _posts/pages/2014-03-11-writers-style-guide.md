@@ -23,7 +23,7 @@ Use only one space after a full-stop. Two spaces is just wrong - we don't use ty
 
 Don't use periods in Acronyms. For example, IKEA (**I**ngvar **K**amprad **E**lmtaryd **A**gunnaryd)
 
-But do use periods in abbreviations. For example, R.S.V.P. (Répondez s'il vous plaît).
+But do use periods in abbreviations. For example, R.S.V.P. (**R**épondez **s**'il **v**ous **p**laît).
 
 ## Numbers
 
