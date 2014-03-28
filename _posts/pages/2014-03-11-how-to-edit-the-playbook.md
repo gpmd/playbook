@@ -41,7 +41,7 @@ The Playbook is a flat file site built on [Jekyll](http://jekyllrb.com/) and hos
 1. Browse to the `_posts/pages/` directory and click "New File".
 2. Where it says "Untitled" enter a page name.
 3. Delete the sample content and enter your own content.
-4. Click on the "Meta Data" icon and enter a "Permalink". For example, if your page is called "My Page" you would enter "my-page/" as your permalink, then click "Done".
+4. Click on the "Meta Data" icon and enter a "Permalink". For example, if your page is called "My Page" you would enter "my-page" as your permalink, then click "Done".
 5. Finally, click the "Save" floppy disk icon and then click "Commit".
 
 ## Editing Pages
@@ -64,5 +64,6 @@ The Playbook is a flat file site built on [Jekyll](http://jekyllrb.com/) and hos
 ## Adding pages to the Table Of Contents
 
 1. Once you have published a page you need to add it to the TOC. Open `_includes/table-of-contents.md` to edit it.
-2. Using Markdown syntax add your new page.
-3. You can create new sections within the TOC by adding an h6 tag (in Markdown this is done by prefixing the line with 6 hashes: `###### My Section Heading`
+2. Using Markdown syntax add your new page to one of the lists.
+3. Links must start with a preceeding slash.
+4. You can create new sections within the TOC by adding an h6 tag (in Markdown this is done by prefixing the line with 6 hashes: `###### My Section Heading`
