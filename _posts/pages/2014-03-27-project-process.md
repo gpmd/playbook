@@ -2,7 +2,7 @@
 layout: page
 published: true
 title: Project Process
-permalink: "project-process"
+permalink: process/projects
 ---
 
 To do...
