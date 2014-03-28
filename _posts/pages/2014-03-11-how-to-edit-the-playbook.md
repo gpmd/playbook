@@ -30,7 +30,7 @@ permalink: "how-to-edit-the-playbook"
 
 ## Style
 
-1. *(To do) Please follow the [style guide](http://playbook.gpmd.io/) when writing content*
+1. Please follow the [Writer's Style Guide](/writers-style-guide) when writing content.
 
 ## Adding pages
 
