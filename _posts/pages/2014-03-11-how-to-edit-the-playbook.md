@@ -7,9 +7,11 @@ permalink: "how-to-edit-the-playbook"
 
 The Playbook is a flat file site built on [Jekyll](http://jekyllrb.com/) and hosted on [GitHub Pages](http://pages.github.com/).
 
-<div class="panel">
+---
+
 **Note:** *If you use [prose.io](http://prose.io/) to edit the site there are a number of known issues/bugs. If you encounter any strange behaviour it's usually best to just close the browser window and then reload the page.*
-</div>
+
+---
 
 ## Signing up and logging in
 
