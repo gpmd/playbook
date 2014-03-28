@@ -5,7 +5,7 @@ title: How To Edit The Playbook
 permalink: "how-to-edit-the-playbook"
 ---
 
-<p class="lead">The Playbook is a flat file site built on <a href="http://jekyllrb.com/"> title="Jekyll">Jekyll</a> and hosted on <a href="http://pages.github.com/" title="GitHub Pages">GitHub Pages</a>.</p>
+<p class="lead">The Playbook is a flat file site built on <a href="http://jekyllrb.com/" title="Jekyll">Jekyll</a> and hosted on <a href="http://pages.github.com/" title="GitHub Pages">GitHub Pages</a>.</p>
 
 ---
 
