@@ -14,7 +14,10 @@ British English spelling is preferred. There are many online dictionaries you co
 However, when writing code (particularly CSS), use American English spellings. For example:
 
 ```css
-.link--primary-color { color: blue; }
+.link--primary-color {
+    color: white;
+    background-color: blue;
+}
 ```
 
 ## Titles
