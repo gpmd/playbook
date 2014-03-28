@@ -11,6 +11,8 @@ Below are some suggestions for maintaining a consistent writing style on the Pla
 
 British English spelling is preferred. There are many online dictionaries you could use for reference, the [Collins English Dictionary](http://www.collinsdictionary.com/ "Collins English Dictionary") being one of them.
 
+However, when writing code (particularly CSS), use American English spellings.
+
 ## Titles
 
 All titles should be written in title case. For example **"This is the New GPMD Playbook"**. The first letter of the first and last word should always be capitalised.
