@@ -2,7 +2,7 @@
 layout: page
 published: true
 title: "Test-Driven Development [TDD]"
-permalink: "test-driven-development"
+permalink: "developement/test-driven-development"
 ---
 
 ## What
