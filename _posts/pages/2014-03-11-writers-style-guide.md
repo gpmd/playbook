@@ -13,6 +13,10 @@ British English spelling is preferred. There are many online dictionaries you co
 
 However, when writing code (particularly CSS), use American English spellings.
 
+```css
+.link--primary-color { color: blue; }
+```
+
 ## Titles
 
 All titles should be written in title case. For example **"This is the New GPMD Playbook"**. The first letter of the first and last word should always be capitalised.
