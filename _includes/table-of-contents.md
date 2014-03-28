@@ -1,7 +1,7 @@
 ###### Process
 
 * [Projects](/process/projects)
-* [Support](/support-process)
+* [Support](/process/support)
 
 ###### Project Management
 
