@@ -1,7 +1,7 @@
 ---
 layout: page
 published: false
-title: ""
+title: "Tools & Automation"
 ---
 
 ## Tools & Automation
@@ -12,4 +12,4 @@ title: ""
 ### Development
 
 
-### System Admin & 
+### System Admin &
