@@ -1,8 +1,8 @@
 ###### Process & Project Management
 
 * [Project Process](/process/projects)
-* [Support Process](/process/support)
-* [Release Process](/process/releases)
+* [Support & Ongoing Work](/process/support)
+* [Release Management](/process/releases)
 
 ###### Development
 
