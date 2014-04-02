@@ -18,7 +18,9 @@
 * [Server Set-up](/sys-admin/servers)
 * [Domain Names & DNS](/sys-admin/dns)
 * [SSL Certificates](/sys-admin/ssl)
-* [Automation & Tools](/tools#sys-admin)
+* [Performance Monitoring](/sys-admin/monitoring)
+* [Error Tacking](sys-admin/error-tracking)
+* [Transactional Emails](sys-admin/transactional-emails)
 
 ###### Digital Marketing
 
