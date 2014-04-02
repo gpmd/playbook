@@ -3,7 +3,6 @@
 * [Project Process](/process/projects)
 * [Support Process](/process/support)
 * [Release Process](/process/releases)
-* [Tools](/tools#process)
 
 ###### Development
 
@@ -11,6 +10,8 @@
 * [Gitflow](/development/gitflow)
 * [Platforms & Frameworks](/development/platforms-frameworks)
 * [Launch Checklist](/development/checklist)
+* [Frontend Audits](/development/frontend-audits)
+* [Performance Audits](development/performance-audits)
 * [Automation & Tools](/tools#development)
 
 ###### System Admin & Hosting
