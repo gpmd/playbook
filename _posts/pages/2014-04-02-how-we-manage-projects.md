@@ -1,6 +1,6 @@
 ---
 layout: page
-published: false
+published: true
 title: How we Manage Projects
 permalink: "/process/how-we-manage-projects"
 ---
