@@ -1,7 +1,8 @@
 ---
 layout: page
-published: false
+published: true
 title: Project Process
+permalink: /process/projects
 ---
 
 ## Project Process
@@ -25,4 +26,3 @@ We work in sprints, each sprint results in a release.
 - **Testing**: work is tested and issues resolved
 - **Demo**: of the qork completed to the client and the team
 - **Launch**: The release is pushed live
-
