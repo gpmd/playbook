@@ -3,7 +3,7 @@
 * [Project Process](/process/projects)
 * [Support & Ongoing Work](/process/support)
 * [Release Management](/process/releases)
-*[How we manage projects](/process/how-we-manage-projects)
+* [How we manage projects](/process/how-we-manage-projects)
 
 ###### Development
 
