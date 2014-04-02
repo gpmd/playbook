@@ -1,11 +1,9 @@
 ---
 layout: page
-published: true
+published: false
 title: Project Process
 permalink: /process/projects
 ---
-
-## Project Process
 
 We work in sprints, each sprint results in a release.
 - **Discovery & Scoping**
