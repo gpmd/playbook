@@ -6,6 +6,7 @@ permalink: /process/projects
 ---
 
 We work in sprints, each sprint results in a release.
+
 - **Discovery & Scoping** x
 - **Design** x
 - **Development** x
