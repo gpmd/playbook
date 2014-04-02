@@ -1,6 +1,6 @@
 ---
 layout: page
-published: false
+published: true
 title: Project Process
 permalink: /process/projects
 ---
