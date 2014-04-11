@@ -5,7 +5,7 @@ title: Release Management
 permalink: /process/releases
 ---
 
-### The Release Process
+GPMD run our release process as follows:
 
 #### Pre Planning
 - Client confirms work is required, either by phone, email or support
