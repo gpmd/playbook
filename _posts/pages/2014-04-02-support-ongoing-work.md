@@ -22,3 +22,5 @@ We follow these simple rules for each release:
 - Make sure we understand the business benefit of the work we are doing 
 - Each release is agreed in advance
 - Once planning has started no items can be added to the release
+
+Our release process is outlined [here](/process/releases/)
