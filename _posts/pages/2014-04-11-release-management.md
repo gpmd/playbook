@@ -14,8 +14,9 @@ GPMD run our release process as follows:
 - During Pre-planning a risk and effort estimation are assigned to each item
 - Items are marked as **Must Have** or **Nice to Have**
 - Must have items should account for **no more** than half the available time for the sprint
+- Allocate a release number for the release (see release numbering)
 - A project for the Release is created in Harvest ([our time tracking tool](/tools/))
-- Release notes and investment required are drafted and emailed to the client (cc Office Manager)
+- Release notes and investment required are written and emailed to the client (cc Office Manager)
 - Client gives written agreement for the release / sprint to go ahead
 
 #### Planning
