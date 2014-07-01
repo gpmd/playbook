@@ -85,8 +85,10 @@ We also use the `picture` element (and [Picturefill 2] polyfill(http://scottjehl
 
 ### CSS
 
-Our CSS is developed in a modular, component based fashion, making it possible to easily create specific page, or feature based CSS files.
+We develop CSS in a modular and layered, component based fashion, making it possible to easily create page, or feature specific CSS files. We use [SCSS](http://sass-lang.com/) or [Less](http://lesscss.org/) as CSS preprocessors. We minify the CSS on all our production sites.
 
 We inline critical CSS in the head, and then load less critical CSS conditionally and in a non-blocking manner (asynchronously) in order to speed up the page rendering time using [this script](https://gist.github.com/matt-bailey/602b40c77a5d3381ff26#file-async-and-conditional-css-loading-html).
 
 ### Javascript
+
+We load javascript asychronously from the foot of the page in order to not block the rendering. We use an asynchronous script loader called [Yep Nope](http://yepnopejs.com/) for this purpose. We minify the Javascript on all our production sites.
