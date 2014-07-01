@@ -8,13 +8,14 @@
 
 ###### Development
 
-* [Test-Driven Development](/development/test-driven-development/)
-* [Gitflow](/development/gitflow/)
+* [Project set-up](/development/project-setup)
 * [Platforms & Frameworks](/development/platforms-frameworks/)
+* [Gitflow](/development/gitflow/)
 * [Launch Checklist](/development/checklist/)
 * [Frontend Audits](/development/frontend-audits/)
 * [Performance Audits](development/performance-audits/)
 * [Automation & Tools](/tools#development/)
+* [Test-Driven Development](/development/test-driven-development/)
 
 ###### System Admin & Hosting
 
