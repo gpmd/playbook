@@ -29,7 +29,6 @@ We work in virtual machines in order to maintain a consistent development enviro
 
 ![logo-composer-transparent.png](/assets/uploads/logo-composer-transparent.png)
 
-
 We use [Composer](https://getcomposer.org/) to manage external PHP packages/modules.
 
 ## Set-up script
