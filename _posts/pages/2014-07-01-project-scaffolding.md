@@ -67,6 +67,8 @@ We use Git hooks to automate the running of repetitive tasks when certain Git co
 
 ## Grunt
 
+![grunt-logo.png](/assets/uploads/grunt-logo.png)
+
 We use [Grunt](http://gruntjs.com/) to automate front-end tasks, such as minifying images, compiling SCSS into CSS, uglifying Javascript and so on.
 
 A simple Grunt setup may look something like this:
