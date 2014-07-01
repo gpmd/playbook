@@ -41,8 +41,6 @@ We use [Composer](https://getcomposer.org/) to manage external PHP packages/modu
 
 ## 4. Set-up script
 
-**Example directory structure:**
-
 ```
 my-project/site/.shell/frontend-setup.sh
 ```
@@ -64,8 +62,6 @@ We use [Git](http://git-scm.com/) as out version control system. We run our own 
 We follow a Git branching model called [Gitflow](/development/gitflow).
 
 #### Git hooks
-
-**Example directory structure:**
 
 ```
 my-project/site/.githooks/post-merge
