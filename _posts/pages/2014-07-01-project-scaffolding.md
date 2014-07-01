@@ -99,16 +99,18 @@ Building on [research and recommendations by Ilya Gregorik at Google](https://ww
 
 #### Images
 
-Theme images are optimised using the [grunt-contrib-imagemin](https://github.com/gruntjs/grunt-contrib-imagemin) Grunt task.
-
-We also use the `picture` element (and [Picturefill 2](http://scottjehl.github.io/picturefill/) polyfill as a fallback for legacy browsers) to serve up different sized images for different sized screens and bandwidth capabilities.
+1. Theme images are optimised using the [grunt-contrib-imagemin](https://github.com/gruntjs/grunt-contrib-imagemin) Grunt task.
+2. We also use the `picture` element (and [Picturefill 2](http://scottjehl.github.io/picturefill/) polyfill as a fallback for legacy browsers) to serve up different sized images for different sized screens and bandwidth capabilities.
 
 #### CSS
 
-We develop CSS in a modular and layered, component based fashion (using [SCSS](http://sass-lang.com/) or [Less](http://lesscss.org/) as preprocessors), making it easy to create page, or feature specific CSS files. We minify the CSS on all our production sites.
-
-We inline critical CSS in the head, and then load less critical CSS conditionally and in a non-blocking manner (asynchronously) in order to speed up the page rendering time using [this script](https://gist.github.com/matt-bailey/602b40c77a5d3381ff26#file-async-and-conditional-css-loading-html).
+1. We develop CSS in a modular and layered, component based fashion (using [SCSS](http://sass-lang.com/) or [Less](http://lesscss.org/) as preprocessors), making it easy to create page, or feature specific CSS files.
+2. We minify the CSS on all our production sites.
+3. We inline critical CSS in the head.
+4. We then load less critical CSS conditionally, and in a non-blocking manner (asynchronously) in order to speed up the page rendering time using [this script](https://gist.github.com/matt-bailey/602b40c77a5d3381ff26#file-async-and-conditional-css-loading-html).
 
 #### Javascript
 
-We load javascript asychronously from the foot of the page in order to not block the rendering. We use an asynchronous script loader called [Yep Nope](http://yepnopejs.com/) for this purpose. We minify all the Javascript on all our production sites, and concatenate as much of it as possible into page, or feature specific files.
+1. We load javascript asychronously from the foot of the page in order to not block the rendering.
+2. We use an asynchronous script loader called [Yep Nope](http://yepnopejs.com/) for this purpose.
+3. We minify all the Javascript on all our production sites, and concatenate as much of it as possible into page, or feature specific files.
