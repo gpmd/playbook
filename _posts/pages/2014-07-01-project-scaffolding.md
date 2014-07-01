@@ -81,7 +81,7 @@ We use [Bower](http://bower.io/) to manage external front-end components.
 
 Theme images are optimised using the [grunt-contrib-imagemin](https://github.com/gruntjs/grunt-contrib-imagemin) Grunt task.
 
-We also use the `picture` element (and [Picturefill 2] polyfill(http://scottjehl.github.io/picturefill/) as a fallback for legacy browsers) to serve up different sized images for different sized screens and bandwidth capabilities.
+We also use the `picture` element (and [Picturefill 2](http://scottjehl.github.io/picturefill/) polyfill as a fallback for legacy browsers) to serve up different sized images for different sized screens and bandwidth capabilities.
 
 ### CSS
 
