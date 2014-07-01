@@ -75,4 +75,18 @@ my-project/site/theme/package.json
 
 We use [Bower](http://bower.io/) to manage external front-end components.
 
-## Front-end optimisation
+## Optimisation
+
+### Images
+
+Theme images are optimised using the [grunt-contrib-imagemin](https://github.com/gruntjs/grunt-contrib-imagemin) Grunt task.
+
+We also use the `picture` element (and [Picturefill 2] polyfill(http://scottjehl.github.io/picturefill/) as a fallback for legacy browsers) to serve up different sized images for different sized screens and bandwidth capabilities.
+
+### CSS
+
+Our CSS is developed in a modular, component based fashion, making it possible to easily create specific page, or feature based CSS files.
+
+We inline critical CSS in the head, and then load less critical CSS conditionally and in a non-blocking manner (asynchronously) in order to speed up the page rendering time using [this script](https://gist.github.com/matt-bailey/602b40c77a5d3381ff26#file-async-and-conditional-css-loading-html).
+
+### Javascript
