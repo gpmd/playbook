@@ -71,4 +71,8 @@ my-project/site/theme/package.json
 * `grunt` contains the config for each individual grunt task (requires [load-grunt-config](https://github.com/firstandthird/load-grunt-config))
 * `package.json` defines the Grunt task dependencies required for the build
 
+## Bower
+
+We use [Bower](http://bower.io/) to manage external front-end components.
+
 ## Front-end optimisation
