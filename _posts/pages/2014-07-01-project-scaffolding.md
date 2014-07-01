@@ -57,7 +57,7 @@ We use set-up scripts for some of the 'first run' tasks. For example, our `front
 my-project/site/.githooks/post-merge
 ```
 
-**Example [post-merge]() file →**
+**Example [post-merge](https://gist.github.com/matt-bailey/bfdaaa290954e1a23f2f#file-post-merge) file →**
 
 We use Git hooks to automate the running of repetitive tasks when certain Git commands are run. For example, our `post-merge` hook automatically checks to see if any of our Node modules or Bower components need installing, updating or removing, and runs the Grunt build process whenever we `pull` or `merge`.
 
