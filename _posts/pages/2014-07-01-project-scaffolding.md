@@ -7,6 +7,8 @@ permalink: "development/project-scaffolding"
 
 When setting up new projects we follow the process outlined below.
 
+---
+
 ## 1. Directory structure
 
 ```
@@ -19,17 +21,23 @@ my-project/sql
 * `site` is the root directory of the main project. It contains things such as `public_html`, the project's theme/skin directory (symlinked into the relevant location) and Composer and Vagrant configs.
 * `sql` contains databases we want to import into our Vagrant virtual machine.
 
+---
+
 ![logo_wide-cab47086.png](/assets/uploads/logo_wide-cab47086.png)
 
 ## 2. Vagrant
 
 We work in virtual machines in order to maintain a consistent development environment. Each project has a Vagrant config based on this [boilerplate](https://github.com/gpmd/vagrant-puppet-boilerplate).
 
+---
+
 ![logo-composer-transparent.png](/assets/uploads/logo-composer-transparent.png)
 
 ## 3. Composer
 
 We use [Composer](https://getcomposer.org/) to manage external PHP packages/modules.
+
+---
 
 ## 4. Set-up script
 
@@ -42,6 +50,8 @@ my-project/site/.shell/frontend-setup.sh
 **Example [frontend-setup.sh](https://gist.github.com/matt-bailey/22122af72c7be33e3bf6#file-frontend-setup-sh) file →**
 
 We use set-up scripts for some of the 'first run' tasks. For example, our `frontend-setup.sh` script creates symlinks to our Git hooks, installs Node modules and Bower components, and runs the front-end build process for the first time.
+
+---
 
 ![Git-Logo-1788C.png](/assets/uploads/Git-Logo-1788C.png)
 
@@ -65,6 +75,8 @@ my-project/site/.githooks/post-merge
 
 We use Git hooks to automate the running of repetitive tasks when certain Git commands are run. For example, our `post-merge` hook automatically checks to see if any of our Node modules or Bower components need installing, updating or removing, and runs the Grunt build process whenever we `pull` or `merge`.
 
+---
+
 ![grunt-logo.png](/assets/uploads/grunt-logo.png)
 
 ## 6. Grunt
@@ -87,11 +99,15 @@ my-project/site/theme/package.json
 * `grunt` contains the config for each individual grunt task (requires [load-grunt-config](https://github.com/firstandthird/load-grunt-config))
 * `package.json` defines the Grunt task dependencies required for the build
 
+---
+
 ![bower-logo.png](/assets/uploads/bower-logo.png)
 
 ## 7. Bower
 
 We use [Bower](http://bower.io/) to manage external front-end components.
+
+---
 
 ## 8. Optimisation
 
