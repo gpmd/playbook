@@ -49,7 +49,7 @@ We use [Git](http://git-scm.com/) as out version control system. We run our own 
 
 ### Gitflow
 
-We use Git as out version control system. We follow a process called Gitflow
+We follow a process called [Gitflow](/development/gitflow).
 
 ### Git hooks
 
