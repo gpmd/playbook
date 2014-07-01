@@ -19,15 +19,15 @@ my-project/sql
 * `site` is the root directory of the main project. It contains things such as `public_html`, the project's theme/skin directory (symlinked into the relevant location) and Composer and Vagrant configs.
 * `sql` contains databases we want to import into our Vagrant virtual machine.
 
-## 2. Vagrant
-
 ![logo_wide-cab47086.png](/assets/uploads/logo_wide-cab47086.png)
+
+## 2. Vagrant
 
 We work in virtual machines in order to maintain a consistent development environment. Each project has a Vagrant config based on this [boilerplate](https://github.com/gpmd/vagrant-puppet-boilerplate).
 
-## 3. Composer
-
 ![logo-composer-transparent.png](/assets/uploads/logo-composer-transparent.png)
+
+## 3. Composer
 
 We use [Composer](https://getcomposer.org/) to manage external PHP packages/modules.
 
@@ -43,9 +43,9 @@ my-project/site/.shell/frontend-setup.sh
 
 We use set-up scripts for some of the 'first run' tasks. For example, our `frontend-setup.sh` script creates symlinks to our Git hooks, installs Node modules and Bower components, and runs the front-end build process for the first time.
 
-## 5. Git
-
 ![Git-Logo-1788C.png](/assets/uploads/Git-Logo-1788C.png)
+
+## 5. Git
 
 We use [Git](http://git-scm.com/) as out version control system. We run our own Git server, and also use [Github](https://github.com/).
 
@@ -65,9 +65,9 @@ my-project/site/.githooks/post-merge
 
 We use Git hooks to automate the running of repetitive tasks when certain Git commands are run. For example, our `post-merge` hook automatically checks to see if any of our Node modules or Bower components need installing, updating or removing, and runs the Grunt build process whenever we `pull` or `merge`.
 
-## 6. Grunt
-
 ![grunt-logo.png](/assets/uploads/grunt-logo.png)
+
+## 6. Grunt
 
 We use [Grunt](http://gruntjs.com/) to automate front-end tasks, such as minifying images, compiling SCSS into CSS, uglifying Javascript and so on.
 
@@ -87,9 +87,9 @@ my-project/site/theme/package.json
 * `grunt` contains the config for each individual grunt task (requires [load-grunt-config](https://github.com/firstandthird/load-grunt-config))
 * `package.json` defines the Grunt task dependencies required for the build
 
-## 7. Bower
-
 ![bower-logo.png](/assets/uploads/bower-logo.png)
+
+## 7. Bower
 
 We use [Bower](http://bower.io/) to manage external front-end components.
 
