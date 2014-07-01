@@ -45,6 +45,7 @@ We use set-up scripts for some of the 'first run' tasks. For example, our `front
 
 ## Git
 
+
 We use [Git](http://git-scm.com/) as out version control system. We run our own Git server, and also use [Github](https://github.com/).
 
 ### Gitflow
