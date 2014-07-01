@@ -8,7 +8,7 @@
 
 ###### Development
 
-* [Project set-up](/development/project-setup)
+* [Project scaffolding](/development/project-scaffolding)
 * [Platforms & Frameworks](/development/platforms-frameworks/)
 * [Gitflow](/development/gitflow/)
 * [Launch Checklist](/development/checklist/)
