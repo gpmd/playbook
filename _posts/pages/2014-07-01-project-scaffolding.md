@@ -9,7 +9,7 @@ When setting up new projects we follow the process outlined below.
 
 ## Directory structure
 
-```bash
+```
 my-project/shared
 my-project/site
 my-project/sql
@@ -31,7 +31,7 @@ We use [Composer](https://getcomposer.org/) to manage external PHP packages/modu
 
 **Example directory structure:**
 
-```bash
+```
 my-project/site/.shell/frontend-setup.sh
 ```
 
@@ -43,7 +43,7 @@ We use set-up scripts for some of the 'first run' tasks. For example, our `front
 
 **Example directory structure:**
 
-```bash
+```
 my-project/site/.githooks/post-merge
 ```
 
@@ -57,7 +57,7 @@ We use [Grunt](http://gruntjs.com/) to automate front-end tasks, such as minifyi
 
 A simple Grunt setup may look something like this:
 
-```bash
+```
 my-project/site/theme/dist
 my-project/site/theme/grunt
 my-project/site/theme/src
