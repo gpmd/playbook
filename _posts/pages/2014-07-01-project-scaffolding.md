@@ -126,3 +126,7 @@ Building on [research and recommendations by Ilya Gregorik at Google](https://ww
 1. We load javascript asychronously from the foot of the page in order to not block the rendering.
 2. We use an asynchronous script loader called [Yep Nope](http://yepnopejs.com/) for this purpose.
 3. We minify all the Javascript on all our production sites, and concatenate as much of it as possible into page, or feature specific files.
+
+## 9. Documentation
+
+All projects contain clear and easy-to-follow developer documentation ([example](https://github.com/gpmd/vagrant-puppet-boilerplate/blob/master/README.md)).
