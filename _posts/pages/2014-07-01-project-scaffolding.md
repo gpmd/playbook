@@ -91,4 +91,4 @@ We inline critical CSS in the head, and then load less critical CSS conditionall
 
 ### Javascript
 
-We load javascript asychronously from the foot of the page in order to not block the rendering. We use an asynchronous script loader called [Yep Nope](http://yepnopejs.com/) for this purpose. We minify the Javascript on all our production sites.
+We load javascript asychronously from the foot of the page in order to not block the rendering. We use an asynchronous script loader called [Yep Nope](http://yepnopejs.com/) for this purpose. We minify all the Javascript on all our production sites, and concatenate as much of it as possible into page, or feature specific files.
