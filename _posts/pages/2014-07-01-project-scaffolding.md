@@ -77,6 +77,8 @@ We use [Bower](http://bower.io/) to manage external front-end components.
 
 ## Optimisation
 
+Building on [research and recommendations by Ilya Gregorik at Google](https://www.youtube.com/watch?v=YV1nKLWoARQ&feature=youtu.be), we have invested time in optimising the critical rendering path on our projects. This focuses particularly on optimising sites when viewed on lower bandwidth 'mobile' devices.
+
 ### Images
 
 Theme images are optimised using the [grunt-contrib-imagemin](https://github.com/gruntjs/grunt-contrib-imagemin) Grunt task.
