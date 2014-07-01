@@ -89,6 +89,8 @@ my-project/site/theme/package.json
 
 ## Bower
 
+![bower-logo.png](/assets/uploads/bower-logo.png)
+
 We use [Bower](http://bower.io/) to manage external front-end components.
 
 ## Optimisation
