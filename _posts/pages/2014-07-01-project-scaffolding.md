@@ -29,7 +29,7 @@ We use [Composer](https://getcomposer.org/) to manage external PHP packages/modu
 
 Composer uses a file called `composer.json` to define a project's dependencies. Below is a very simple example:
 
-```Json
+```
 {
     "require": {
         "gpmd/mypackage": "*"
