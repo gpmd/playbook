@@ -45,6 +45,8 @@ We use set-up scripts for some of the 'first run' tasks. For example, our `front
 
 ## Git Hooks
 
+![Git-Logo-1788C.png](/assets/uploads/Git-Logo-1788C.png)
+
 **Example directory structure:**
 
 ```
