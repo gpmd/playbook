@@ -21,6 +21,9 @@ my-project/sql
 
 ## Vagrant
 
+![logo_wide-cab47086.png](/assets/uploads/logo_wide-cab47086.png)
+
+
 We work in virtual machines in order to maintain a consistent development environment. Each project has a Vagrant config based on this [boilerplate](https://github.com/gpmd/vagrant-puppet-boilerplate).
 
 ## Composer
