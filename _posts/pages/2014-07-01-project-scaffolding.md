@@ -39,7 +39,7 @@ Composer uses a file called `composer.json` to define a project's dependencies. 
 
 ## Set-up script
 
-**Example:**
+**Example directory structure:**
 
 ```
 my-project/site/.shell/frontend-setup.sh
@@ -51,11 +51,13 @@ We use set-up scripts for some of the 'first run' tasks. For example, our `front
 
 ## Git Hooks
 
-**Example:**
+**Example directory structure:**
 
 ```
 my-project/site/.githooks/post-merge
 ```
+
+**Example [post-merge]() file →**
 
 We use Git hooks to automate the running of repetitive tasks when certain Git commands are run. For example, our `post-merge` hook automatically checks to see if any of our Node modules or Bower components need installing, updating or removing, and runs the Grunt build process whenever we `pull` or `merge`.
 
