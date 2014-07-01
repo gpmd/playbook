@@ -39,11 +39,13 @@ Composer uses a file called `composer.json` to define a project's dependencies. 
 
 ## Set-up script
 
+**Example:**
+
 ```
 my-project/site/.shell/frontend-setup.sh
 ```
 
-Example [frontend-setup.sh](https://gist.github.com/matt-bailey/22122af72c7be33e3bf6#file-frontend-setup-sh) file.
+**Example [frontend-setup.sh](https://gist.github.com/matt-bailey/22122af72c7be33e3bf6#file-frontend-setup-sh) file →**
 
 We use set-up scripts for some of the 'first run' tasks. For example, our `frontend-setup.sh` script creates symlinks to our Git hooks, installs Node modules and Bower components, and runs the front-end build process for the first time.
 
