@@ -117,9 +117,10 @@ Building on [research and recommendations by Ilya Gregorik at Google](https://ww
 #### CSS
 
 1. We develop CSS in a modular and layered, component based fashion (using [SCSS](http://sass-lang.com/) or [Less](http://lesscss.org/) as preprocessors), making it easy to create page, or feature specific CSS files.
-2. We minify the CSS on all our production sites.
-3. We inline critical CSS in the head.
-4. We then load less critical CSS conditionally, and in a non-blocking manner (asynchronously) in order to speed up the page rendering time using [this script](https://gist.github.com/matt-bailey/602b40c77a5d3381ff26#file-async-and-conditional-css-loading-html).
+2. We maintain a consistent CSS writing style ([principles](https://github.com/necolas/idiomatic-css)).
+3. We minify the CSS on all our production sites.
+4. We inline critical CSS in the head.
+5. We then load less critical CSS conditionally, and in a non-blocking manner (asynchronously) in order to speed up the page rendering time using [this script](https://gist.github.com/matt-bailey/602b40c77a5d3381ff26#file-async-and-conditional-css-loading-html).
 
 #### Javascript
 
