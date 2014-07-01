@@ -27,16 +27,6 @@ We work in virtual machines in order to maintain a consistent development enviro
 
 We use [Composer](https://getcomposer.org/) to manage external PHP packages/modules.
 
-Composer uses a file called `composer.json` to define a project's dependencies. Below is a very simple example:
-
-```json
-{
-    "require": {
-        "gpmd/mypackage": "*"
-    }
-}
-```
-
 ## Set-up script
 
 **Example directory structure:**
