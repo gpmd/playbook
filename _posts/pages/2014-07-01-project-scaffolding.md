@@ -43,9 +43,15 @@ my-project/site/.shell/frontend-setup.sh
 
 We use set-up scripts for some of the 'first run' tasks. For example, our `frontend-setup.sh` script creates symlinks to our Git hooks, installs Node modules and Bower components, and runs the front-end build process for the first time.
 
-## Git Hooks
+## Git
 
-![Git-Logo-1788C.png](/assets/uploads/Git-Logo-1788C.png)
+We use [Git](http://git-scm.com/) as out version control system. We run our own Git server, and also use [Github](https://github.com/).
+
+### Gitflow
+
+We use Git as out version control system. We follow a process called Gitflow
+
+### Git hooks
 
 **Example directory structure:**
 
