@@ -23,17 +23,17 @@ my-project/sql
 
 ---
 
-![logo_wide-cab47086.png](/assets/uploads/logo_wide-cab47086.png)
-
 ## 2. Vagrant
+
+![logo_wide-cab47086.png](/assets/uploads/logo_wide-cab47086.png)
 
 We work in virtual machines in order to maintain a consistent development environment. Each project has a Vagrant config based on this [boilerplate](https://github.com/gpmd/vagrant-puppet-boilerplate).
 
 ---
 
-![logo-composer-transparent.png](/assets/uploads/logo-composer-transparent.png)
-
 ## 3. Composer
+
+![logo-composer-transparent.png](/assets/uploads/logo-composer-transparent.png)
 
 We use [Composer](https://getcomposer.org/) to manage external PHP packages/modules.
 
@@ -51,9 +51,9 @@ We use set-up scripts for some of the 'first run' tasks. For example, our `front
 
 ---
 
-![Git-Logo-1788C.png](/assets/uploads/Git-Logo-1788C.png)
-
 ## 5. Git
+
+![Git-Logo-1788C.png](/assets/uploads/Git-Logo-1788C.png)
 
 We use [Git](http://git-scm.com/) as out version control system. We run our own Git server, and also use [Github](https://github.com/).
 
@@ -73,9 +73,9 @@ We use Git hooks to automate the running of repetitive tasks when certain Git co
 
 ---
 
-![grunt-logo.png](/assets/uploads/grunt-logo.png)
-
 ## 6. Grunt
+
+![grunt-logo.png](/assets/uploads/grunt-logo.png)
 
 We use [Grunt](http://gruntjs.com/) to automate front-end tasks, such as minifying images, compiling SCSS into CSS, uglifying Javascript and so on.
 
@@ -97,9 +97,9 @@ my-project/site/theme/package.json
 
 ---
 
-![bower-logo.png](/assets/uploads/bower-logo.png)
-
 ## 7. Bower
+
+![bower-logo.png](/assets/uploads/bower-logo.png)
 
 We use [Bower](http://bower.io/) to manage external front-end components.
 
