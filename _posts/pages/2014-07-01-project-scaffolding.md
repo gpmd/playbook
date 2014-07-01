@@ -85,7 +85,7 @@ We also use the `picture` element (and [Picturefill 2](http://scottjehl.github.i
 
 ### CSS
 
-We develop CSS in a modular and layered, component based fashion (using [SCSS](http://sass-lang.com/) or [Less](http://lesscss.org/) as preprocessors), making it possible to easily create page, or feature specific CSS files. We minify the CSS on all our production sites.
+We develop CSS in a modular and layered, component based fashion (using [SCSS](http://sass-lang.com/) or [Less](http://lesscss.org/) as preprocessors), making it easy to create page, or feature specific CSS files. We minify the CSS on all our production sites.
 
 We inline critical CSS in the head, and then load less critical CSS conditionally and in a non-blocking manner (asynchronously) in order to speed up the page rendering time using [this script](https://gist.github.com/matt-bailey/602b40c77a5d3381ff26#file-async-and-conditional-css-loading-html).
 
