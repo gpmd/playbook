@@ -107,7 +107,7 @@ We use [Bower](http://bower.io/) to manage external front-end components.
 
 ## 8. Optimisation
 
-Building on [research and recommendations by Ilya Gregorik at Google](https://www.youtube.com/watch?v=YV1nKLWoARQ&feature=youtu.be), we have invested time in optimising the critical rendering path on our projects. This focuses particularly on optimising sites when viewed on lower bandwidth 'mobile' devices.
+Building on [research and recommendations by Ilya Gregorik at Google](https://www.youtube.com/watch?v=YV1nKLWoARQ&feature=youtu.be), we are investing time in "optimising the critical rendering path". This focuses particularly on optimising sites when viewed on lower bandwidth 'mobile' devices.
 
 #### Images
 
