@@ -45,12 +45,13 @@ We use set-up scripts for some of the 'first run' tasks. For example, our `front
 
 ## Git
 
+![Git-Logo-1788C.png](/assets/uploads/Git-Logo-1788C.png)
 
 We use [Git](http://git-scm.com/) as out version control system. We run our own Git server, and also use [Github](https://github.com/).
 
 ### Gitflow
 
-We follow a process called [Gitflow](/development/gitflow).
+We use Git as out version control system. We follow a process called Gitflow
 
 ### Git hooks
 
