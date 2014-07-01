@@ -39,7 +39,23 @@ Composer uses a file called `composer.json` to define a project's dependencies. 
 
 ## Set-up script
 
+**Example:**
+
+```
+my-project/site/.shell/frontend-setup.sh
+```
+
+We use set-up scripts for some of the 'first run' tasks. For example, our `frontend-setup.sh` script creates symlinks to our Git hooks, installs Node modules and Bower components, and runs the front-end build process for the first time.
+
 ## Git Hooks
+
+**Example:**
+
+```
+my-project/site/.githooks/post-merge
+```
+
+We use Git hooks to automate the running of repetitive tasks when certain Git commands are run. For example, our `post-merge` hook automatically checks to see if any of our Node modules or Bower components need installing, updating or removing, and runs the Grunt build process whenever we `pull` or `merge`.
 
 ## Grunt
 
@@ -59,5 +75,6 @@ my-project/site/theme/package.json
 * `dist` is generated automatically each time we run the build process
 * `Gruntfile.js` contains the core Grunt config
 * `grunt` contains the config for each individual grunt task (requires [load-grunt-config](https://github.com/firstandthird/load-grunt-config))
+* `package.json` defines the Grunt task dependencies required for the build
 
 ## Front-end optimisation
