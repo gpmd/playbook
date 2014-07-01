@@ -2,6 +2,7 @@
 layout: page
 published: true
 title: Project Scaffolding
+permalink: "development/project-scaffolding"
 ---
 
 When setting up new projects we follow the process outlined below.
